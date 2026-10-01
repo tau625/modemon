@@ -1,0 +1,70 @@
+# 全局运行配置
+#
+# 当前使用：小米 MiMo（OpenAI 兼容端点）
+#   - executor = mimo-v2.6-flash（执行：建模、写代码、写论文）
+#   - reviewer = mimo-v2.6-pro  （评审：挑错、打分、给必改项）
+#   两个模型同厂不同代，满足"模型不评自己作业"；想真·跨厂商就把 reviewer 换成别家。
+#   另有 Anthropic 格式端点：https://token-plan-cn.xiaomimimo.com/anthropic
+#
+# 历史提示：deepseek-chat / deepseek-reasoner 已于 2026-07-24 停用，切勿沿用旧名。
+
+run:
+  output_dir: runs
+  max_review_rounds: 2        # 对抗评审最多几轮（含首轮产出后的评审）
+  pass_score: 8.5             # 10 分制，达到即通过
+  require_no_blockers: true   # 有"高严重度"问题时即使总分达标也判不通过
+  request_timeout_s: 1800     # 思考型模型单次调用可能较久
+  execute_timeout_s: 600      # 生成代码的单次运行超时
+  retry: 3
+  # 论文编译闭环：跑完流水线自动编译，失败则把报错回灌给执行者自动回修
+  compile_paper: true
+  max_compile_rounds: 2
+  latex_engine: xelatex
+  compile_timeout_s: 300
+  # 人工检查点：在这些环节完成后暂停等待确认（也可用 mma run --checkpoint <环节> 临时指定）
+  checkpoints: []
+  # 上下文预算：上游产物注入下游提示词的字符上限（太小会丢信息，太大吃 token）
+  context_per_artifact: 20000
+  context_total: 160000
+  heartbeat_s: 60             # 长调用期间的心跳事件间隔（秒），便于监控页判断进程是否还活着
+  # solve_python: C:\Python314\python.exe   # 跑生成代码用的解释器；留空=用当前解释器
+
+models:
+  # ---- 执行者：负责建模、写代码、写论文 ----
+  executor:
+    provider: xiaomi
+    model: mimo-v2.6-flash
+    temperature: 0.3
+    max_tokens: 32000         # 注意：思考 token 也计入 max_tokens
+    # reasoning_effort: high  # 可选，留空则用服务端默认
+
+  # ---- 评审者：负责挑错、打分、给必改项 ----
+  reviewer:
+    provider: xiaomi
+    model: mimo-v2.6-pro
+    temperature: 0.0
+    max_tokens: 32000         # 评审要读长产物：思考 token 也占预算，留够避免"只有思考、没有正文"
+    json_mode: true           # 强制结构化 JSON 评审结果（已实测该端点支持）
+
+# OpenAI 兼容服务商端点；api_key_env 指向环境变量名，密钥只放 .env，绝不写进配置
+providers:
+  xiaomi:
+    base_url: https://token-plan-cn.xiaomimimo.com/v1
+    api_key_env: XIAOMI_API_KEY
+  deepseek:                   # 备用
+    base_url: https://api.deepseek.com
+    api_key_env: DEEPSEEK_API_KEY
+  modelscope:                 # 免费额度渠道，可当第二家评审者
+    base_url: https://api-inference.modelscope.cn/v1
+    api_key_env: MODELSCOPE_API_KEY
+  siliconflow:
+    base_url: https://api.siliconflow.cn/v1
+    api_key_env: SILICONFLOW_API_KEY
+
+# 成本估算表（USD / 1M tokens）。**留空则只统计 tokens、不估算金额。**
+# 填入你自己套餐的单价后，「运行结束」与 `mma show` 会显示估算成本。
+# 字段：in_miss=输入未命中缓存、in_hit=输入命中缓存（可选）、out=输出（含思考 token）
+# 例（把下面两行取消注释并改成你的实际单价）：
+#   mimo-v2.6-flash: {in_miss: 0.10, out: 0.40}
+#   mimo-v2.6-pro:   {in_miss: 0.40, out: 1.60}
+pricing: {}

@@ -1,0 +1,21 @@
+id: mcm
+name: MCM/ICM（美赛）
+language: en
+page_limit: 25
+min_pages: 18
+min_figures: 3
+abstract_first: true
+required_sections:
+  - Summary Sheet
+  - Introduction
+  - Assumptions and Justifications
+  - Notations
+  - Model Development
+  - Results and Sensitivity Analysis
+  - Model Evaluation and Strengths/Weaknesses
+  - References
+  - Appendices
+notes:
+  - Summary Sheet 单独一页，最重要
+  - 正文不超过 25 页（含图表不含附录/参考文献）
+  - 排版可用 mcmthesis（LPPL 1.3c，TeX Live 自带）

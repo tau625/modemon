@@ -1,0 +1,48 @@
+# 流水线定义：每一步 = 一个 Skill + 可选的对抗评审 + 可选的代码真实执行
+stages:
+  - id: problem_analysis
+    title: 赛题解析
+    skill: problem_analysis
+    kind: text
+    review: true
+    artifact: artifacts/01_problem_analysis.md
+
+  - id: modeling_design
+    title: 建模设计
+    skill: modeling_design
+    kind: text
+    review: true
+    artifact: artifacts/02_modeling_design.md
+
+  - id: solve_code
+    title: 求解实现
+    skill: solve_code
+    kind: code
+    review: true
+    execute: true            # 真实运行生成的 Python，数值只认运行结果
+    artifact: solve/         # 实际落盘路径由代码块里的 `# file:` 标记决定
+
+  - id: figures
+    title: 图表生成
+    skill: figures
+    kind: code
+    review: false
+    execute: true
+    artifact: figures/      # 同上，路径由 `# file:` 标记决定
+    thinking: "off"         # 纯机械的绘图任务，关掉思考可省大量时间（实测思考 token 从上千降到 0）
+
+  - id: paper_outline
+    title: 论文大纲
+    skill: paper_outline
+    kind: text
+    review: true
+    artifact: artifacts/05_paper_outline.md
+
+  - id: paper_writing
+    title: 论文成文
+    skill: paper_writing
+    kind: code            # 产出 LaTeX 文件，按 ```latex # file: xxx.tex 写盘
+    review: true
+    artifact: paper/
+    max_tokens: 64000     # 整篇论文很长：实测 32000 会中途截断（含思考 token）
+    thinking: "off"       # 只作用于本环节的执行者：写作不需要思考，思考 token 会挤占正文预算并导致截断
