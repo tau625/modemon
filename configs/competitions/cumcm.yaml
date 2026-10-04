@@ -1,0 +1,23 @@
+id: cumcm
+name: 全国大学生数学建模竞赛（国赛）
+language: zh
+page_limit: 20
+min_pages: 15
+min_figures: 3
+abstract_first: true
+required_sections:
+  - 摘要
+  - 问题重述
+  - 问题分析
+  - 模型假设
+  - 符号说明
+  - 模型的建立与求解
+  - 模型检验
+  - 灵敏度分析
+  - 模型的评价与推广
+  - 参考文献
+  - 附录
+notes:
+  - 摘要必须独立成页并给出方法与结论要点
+  - 正文 20 页以内（不含附录），附录放支撑材料与代码
+  - 排版：官方 cumcmthesis 模板无开源许可，本工程使用自写 preamble（见 docs/CREDITS.md）

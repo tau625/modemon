@@ -1,5 +1,17 @@
 # ─────────────────────────────────────────────────────────────
-# 只提交「我们自己的产出」，不提交「从商业产品里提取的原始物」
+# 一、原 modemon 项目（src/ + pyproject.toml 布局）
+# ─────────────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+.env
+runs/
+!runs/.gitkeep
+*.egg-info/
+.pytest_cache/
+
+# ─────────────────────────────────────────────────────────────
+# 二、逆向分析工作区（reports/ + tools/ + modemon/）
 # ─────────────────────────────────────────────────────────────
 #
 # ⚠️ 下面这几个目录是**从蓝方商业产品（Modex-MH-Agent）里提取出来的原始内容**：
@@ -9,7 +21,7 @@
 #    - asar/          : Electron 包内解出的文件
 #    - beauty/        : 反混淆后的 minified JS
 #
-# 这些**不是我们的作品**，把它们推到 GitHub 等于转载该产品的内部实现。
+# 这些**不是我们的作品**，推到 GitHub 等于转载该产品的内部实现。
 # 分析结论（reports/）保留，原始提取物排除。
 strings/
 strings_cjk/
@@ -19,7 +31,7 @@ beauty/
 source/
 
 # 上游 ARIS 的 clone（第三方仓库本体，1.9 MB）。
-# 不作为嵌套仓库提交——我们需要的内容已按 MIT 许可复制到 modemon/skills/ 并附了许可文本。
+# 不作为嵌套仓库提交——需要的内容已按 MIT 许可复制到 modemon/skills/ 并附了许可文本。
 upstream-ARIS/
 upstream-ARIS-cache.json
 
@@ -27,8 +39,6 @@ upstream-ARIS-cache.json
 Modex-MH-Agent/
 
 # ── 运行时 / 临时产物 ──
-__pycache__/
-*.py[cod]
 *.pyo
 .papercheck/
 *.log
