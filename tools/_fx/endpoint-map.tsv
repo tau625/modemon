@@ -1,0 +1,163 @@
+Account-CFNFyFpM	GET	/api/account/inference	piWallet-BJVw6ude.js";var y=e(t(),1),b=r(),x=
+Account-CFNFyFpM	POST	/api/account/native/	nDigits:6});async function H(e,t,n){return i(
+Account-CFNFyFpM	GET	/settings	消费记录请在 MHcoding 查看。`})]})]}),(0,b.jsx)(n,{to:
+Account-CFNFyFpM	GET	/account/history	tatus`,children:`正在确认服务状态`}),(0,b.jsx)(n,{to:
+AccountHistory-DV1tVxrt	GET	/api/account/native/wallet	ect)(()=>{let e=new AbortController;return i(
+AccountHistory-DV1tVxrt	GET	/account	版 New API 账户登录后查看余额和消费明细。`}),(0,l.jsx)(n,{to:
+AccountMessagesInference-C-hk-by7	GET	/api/account/messages	cessMode-CYwsqbbI.js";var o=e(t(),1),s=n(),c=
+AccountModelCatalog-DdzyHjab	GET	/api/account/models	b?(v.current=Date.now(),y.current=!0,g(!0),i(
+AccountModelCatalog-DdzyHjab	GET	/account	ss-hint`,children:o(r)}),!e&&(0,l.jsx)(n,{to:
+ArtifactViewer-DS3mPR9-	GET	/api/workflows/${encodeURIComponent(e||``)}/artifacts/${K}?raw=true	it(`/`).map(encodeURIComponent).join(`/`),he=
+ArtifactViewer-DS3mPR9-	GET	/api/workflows/${encodeURIComponent(e)}/artifacts	resolve().then(()=>{n&&(z(!0),V(``))}),fetch(
+ArtifactViewer-DS3mPR9-	GET	/api/workflows/${encodeURIComponent(e)}/artifacts/${r}	p(encodeURIComponent).join(`/`);return fetch(
+ArtifactViewer-DS3mPR9-	GET	/api/workflows/${encodeURIComponent(e)}/artifacts/${r}#page=1&zoom=page-width&navpanes=0	y?.cancel().catch(()=>void 0),n&&(b(`pdf`),g(
+ArtifactViewer-DS3mPR9-	GET	/api/workflows/${encodeURIComponent(e)}/artifact-context/inspect/${r}	ge:`无法加载文件`)}).finally(()=>{n&&S(!1)}),fetch(
+ArtifactViewer-DS3mPR9-	GET	/workflow/${e}/chat	t q=!!a.state?.fromChat||!!E?.chat_mode,ge=q?
+ArtifactViewer-DS3mPR9-	GET	/workflow/${e}/editor?file=${encodeURIComponent(J)}	able_targets?.[0]||``,ve=(0,d.useMemo)(()=>J?
+ArtifactViewer-DS3mPR9-	GET	/workflow/${e}/editor	w/${e}/editor?file=${encodeURIComponent(J)}`:
+ArtifactViewer-DS3mPR9-	POST	/api/workflows/${encodeURIComponent(e)}/artifact-context/prompt/build	。`);return}F(!0),L(``);try{let n=await fetch(
+ArtifactViewer-DS3mPR9-	GET	/api/workflows/${encodeURIComponent(e||``)}/artifacts/${K}?preview=html	&&l(m)===`document`&&(0,f.jsx)(`iframe`,{src:
+ArtifactViewer-DS3mPR9-	GET	/api/workflows/${encodeURIComponent(e||``)}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}	h:m,content:h,literal:!!_,resolveAssetUrl:t=>
+ChatWorkbench-B0gSrHl3	POST	/api/workflows/${u}/chat/messages/${e.id}/resume-draft	(){if(!ee){C(!0),w(``);try{let t=await fetch(
+ChatWorkbench-B0gSrHl3	GET	/api/workflows/${u}/chat/messages/${e.id}/diff	!(j||ae)){A(!0),ce(``);try{let t=await fetch(
+ChatWorkbench-B0gSrHl3	GET	/workflow/${u}/editor?file=${encodeURIComponent(Qe)}	assName:`chat-action chat-action-primary`,to:
+ChatWorkbench-B0gSrHl3	GET	/api/workflows/${encodeURIComponent(e)}/chat	),E=(0,T.useRef)(!1),D=(0,T.useRef)(Fe(e)),O=
+ChatWorkbench-B0gSrHl3	GET	${O}/messages/${e.id}/diff	:[],loading:!0,error:``});try{let r=await Ve(
+ChatWorkbench-B0gSrHl3	GET	${O}/messages/${t.id}/diff	...t,version_id:i.versionId});let a=await Ve(
+ChatWorkbench-B0gSrHl3	GET	${O}/messages/${t.id}/rollback-preview	d_back`){A(t.id,a);return}}let i=Ne(await Ve(
+ChatWorkbench-B0gSrHl3	GET	${O}/messages/${i.id}/rollback	=!0,ee(!0),g(``);let c=!1;try{let e=await Ve(
+ChatWorkbench-B0gSrHl3	GET	/api/workflows/${encodeURIComponent(e)}/chat/materials	ed:n,onBusy:r,onReadiness:i}},[n,r,i]);let O=
+ChatWorkbench-B0gSrHl3	POST	/api/workflows/${encodeURIComponent(e)}/chat/stages/${encodeURIComponent(t.skill)}/accept	在检查现有文件并确认完成状态；不会重新生成文件。`);try{let n=await S(
+ChatWorkbench-B0gSrHl3	GET	/settings	assName:`chat-action chat-action-primary`,to:
+ChatWorkbench-B0gSrHl3	GET	/api/workflows/${encodeURIComponent(t)}/artifacts?view=overview&refresh=true	resolve().then(()=>{n&&(c(!0),u(``))}),fetch(
+ChatWorkbench-B0gSrHl3	GET	/api/workflows/${encodeURIComponent(t)}/artifacts	ct:!0,defaultCollapsed:!0,collectionEndpoint:
+Dashboard-2mxANXyi	POST	/api/workflows/${e[0]}/export	let e=Array.from(v),t=v.size===1?await fetch(
+Dashboard-2mxANXyi	POST	/api/workflows/export-batch	`/api/workflows/${e[0]}/export`):await fetch(
+Dashboard-2mxANXyi	POST	/api/workflows/import	ormData;e.append(`file`,n);let r=await fetch(
+LatexEditor-I1nsgpA4	POST	/api/editor/${encodeURIComponent(e)}/generate-image	r(`无法保存生图恢复记录，未发起生成。`);return Te(await fetch(
+LatexEditor-I1nsgpA4	GET	/api/editor/${encodeURIComponent(e)}/image-requests/${encodeURIComponent(t)}	ow Error(`没有待确认的生图请求`);return Te(await fetch(
+LatexEditor-I1nsgpA4	GET	/api/editor/${encodeURIComponent(e)}/ai-agent-history	s(``);return}d(``),h(!0),await g.current.run(
+LatexEditor-I1nsgpA4	GET	/api/editor/${encodeURIComponent(e)}/ai-agent-version/${t}	){s(t),p(!0),d(``),l([]),await _.current.run(
+LatexEditor-I1nsgpA4	GET	/api/editor/${encodeURIComponent(e)}	0,b.useRef)(new M),Ce=(0,b.useRef)(new M),we=
+LatexEditor-I1nsgpA4	GET	/api/editor/${encodeURIComponent(e)}/model-options	!e)return;let t=new AbortController;return T(
+LatexEditor-I1nsgpA4	GET	/api/editor	0,500)}catch{return`HTTP ${e.status}`}}var P=
+LatexEditor-I1nsgpA4	GET	${P}/${e}/files?view=overview	roller,o=setTimeout(()=>a.abort(),2e4);fetch(
+LatexEditor-I1nsgpA4	GET	${P}/${e}/chat-history	`+(e.sha256||Date.now())))}).catch(()=>{}),T(
+LatexEditor-I1nsgpA4	GET	${P}/${e}/files?view=overview&refresh=true	e),xn(0),J(e[0].content),Y(e[0].path))}fetch(
+LatexEditor-I1nsgpA4	GET	${P}/${n}/files?view=overview&refresh=true	code}\n\`\`\``,timestamp:Date.now()}]),fetch(
+LatexEditor-I1nsgpA4	DELETE	${P}/${e}/chat-history	ut(()=>t.abort(),15e3);try{let n=await fetch(
+LatexEditor-I1nsgpA4	GET	${P}/${e}/files	tCollapsed:!0,mainFile:jt,collectionEndpoint:
+NewWorkflow-Ld6TEJjT	POST	/api/workflows/${encodeURIComponent(e)}/artifacts/upload	pend(`target_dir`,`user_data`);let i=await f(
+NewWorkflow-Ld6TEJjT	POST	/api/templates/${encodeURIComponent(t)}/resolve-steps	`读取步骤超时，请重试。`),o(!1),n.abort())},15e3),fetch(
+NewWorkflow-Ld6TEJjT	GET	/api/account/messages/capabilities	oller;return ee(!0),ne(``),p(null),n(null),i(
+NewWorkflow-Ld6TEJjT	GET	/api/palette-preview?colors=${encodeURIComponent(m)}	atplotlib 渲染）：`}),m&&!h?(0,v.jsx)(`img`,{src:
+NewWorkflow-Ld6TEJjT	GET	/api/style-preview?frame=${d.frame}&grid=${d.grid}&lw=${d.lw}&font=${d.font}&legend=${d.legend}&bg=${d.bg}	 matplotlib 渲染，即改即出）`}),(0,v.jsx)(`img`,{src:
+NewWorkflow-Ld6TEJjT	GET	/api/settings/presets	,rr(!1),dr(``),e.status?.mode===`key`?(fetch(
+NewWorkflow-Ld6TEJjT	GET	/api/settings	resets)&&Qn(e.presets)}).catch(()=>{}),fetch(
+NewWorkflow-Ld6TEJjT	POST	/api/workflows/${e}/artifacts/upload	e of n)t.append(`files`,e);let r=await fetch(
+NewWorkflow-Ld6TEJjT	GET	/settings	确定：仍然现在就跑（编译步可能失败）   · 取消：先去设置页安装 LaTeX`)){r(
+NewWorkflow-Ld6TEJjT	POST	/api/workflows/${f}/artifacts/upload	e of t)r.append(`files`,e);let i=await fetch(
+NewWorkflow-Ld6TEJjT	POST	/api/workflows/${f}/artifacts/custom-requirements	ormData;e.append(`file`,W);let t=await fetch(
+NewWorkflow-Ld6TEJjT	GET	/workflow/${f}/chat	, 工作流仍会继续, 但导出 .docx 时不会按这个模板排版。`)}S?(s=!0,r(
+PatchReviewDialog-CE7kb4Sp	GET	/api/workflows/${encodeURIComponent(y)}/artifacts/${e.split(`/`).map(encodeURIComponent).join(`/`)}	"--patch-review-scale":String(D/100)},H=y?e=>
+Settings-D4EW1h0L	GET	/api/account/native/image-settings	ontroller;return c(!0),i(null),m(``),g(``),r(
+Settings-D4EW1h0L	PUT	/api/account/native/image-settings	rrent=!0,u(!0),m(``),g(``);try{let e=await r(
+Settings-D4EW1h0L	GET	/api/settings/presets	eturn U.current={controller:t,timer:n},fetch(
+Settings-D4EW1h0L	GET	/api/settings	urrent=!1,m(`loading`);try{let i=await fetch(
+Settings-D4EW1h0L	GET	/api/settings/data-dir	(0,_.useEffect)(()=>{Q.current=!0,we(),fetch(
+Settings-D4EW1h0L	PUT	/api/settings/data-dir	请保留原目录  继续吗？`)){Oe(!0);try{let e=await fetch(
+Settings-D4EW1h0L	PUT	/api/settings	model_context_policies;try{let e=await fetch(
+Settings-D4EW1h0L	POST	/api/settings/test/${e}	({...t,[e]:!0}));try{let t=await(await fetch(
+Settings-D4EW1h0L	DELETE	/api/settings/presets/${e.id}	{controller:a,timer:o};try{let t=await fetch(
+Settings-D4EW1h0L	GET	/api/settings/detect-claude	nClick:async()=>{try{let e=await(await fetch(
+Settings-D4EW1h0L	GET	/api/settings/presets/${R.id}	={controller:n,timer:i};try{let i=!!R.id,a=i?
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/checkpoints/current	ut(()=>o?.abort(),8e3);try{let i=await fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts/ASSETS_INVENTORY.md	!E)return;let t=!1;return Promise.all([fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts/ASSETS_CONFLICTS.md	e=>e.ok?e.json():null).catch(()=>null),fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts/${encodeURIComponent(r)}	et r of t){if(n)return;try{let t=await fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts/PAPER_PLAN.md	)=>{if(!T)return;let t=!1;return P(!0),fetch(
+WorkflowDetail-bN89YgNS	PUT	/api/workflows/${e}/checkpoints/plan	checkpoint_id)){pe(!0);try{let t=await fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}	en:(0,k.jsx)(m,{content:A,resolveAssetUrl:t=>
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${encodeURIComponent(e)}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}${n}	/1048576).toFixed(1)} MB`}var EN=(e,t,n=``)=>
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${n}/artifacts/${encodeURIComponent(e.path)}?raw=true	ition`,children:`全屏查看`}),(0,k.jsx)(`a`,{href:
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${n}/artifacts/${e.split(`/`).map(encodeURIComponent).join(`/`)}	(h,{path:e.path,content:t,resolveAssetUrl:e=>
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${n}/artifacts/${encodeURIComponent(e.path)}	,artifact:e},e.path),c&&(0,k.jsx)(`img`,{src:
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${n}/artifacts/${encodeURIComponent(e.path)}?preview=html	r)]`,children:t}),d&&(0,k.jsx)(`iframe`,{src:
+WorkflowDetail-bN89YgNS	GET	/api/account/messages/capabilities	r;return M([]),ae(``),ce(!0),ne.status&&(N?l(
+WorkflowDetail-bN89YgNS	GET	/api/settings/presets	inally(()=>{e.signal.aborted||ce(!1)}):fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/export?mode=${t}	]);let ue=async(e,t)=>{try{let n=await fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/logs?limit=200&compact=true	15e3);return(async()=>{try{let r=await fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts?view=overview	rt(),2e4);try{let n=[];try{let r=await fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts/extract-status	or?e.message:`网络异常`}`)}try{let n=await fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts/paper%2FPAPER_IMPROVEMENT_LOG.md	R_IMPROVEMENT_LOG.md`))try{let n=await fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts/${encodeURIComponent(t.path)}	`){Ce(t),Te(``);return}try{let r=await fetch(
+WorkflowDetail-bN89YgNS	POST	/api/workflows/${e}/artifacts/upload	arget.files))n.append(`files`,e);await fetch(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts?view=overview&refresh=true	d`,{method:`POST`,body:n});let r=await fetch(
+WorkflowDetail-bN89YgNS	GET	/workflow/${t.id}/chat	urn t.params?.chat_mode===!0?(0,k.jsx)(a,{to:
+WorkflowDetail-bN89YgNS	GET	/workflow/${t.id}/editor	hildren:me?`切换中…`:`改用协同模式`}),(0,k.jsx)(s,{to:
+WorkflowDetail-bN89YgNS	PATCH	/api/workflows/${t.id}/steps/${e}/account-model	):void 0,onSetModel:async(e,n,i)=>{N?await l(
+WorkflowDetail-bN89YgNS	PATCH	/api/workflows/${t.id}/steps/${e}/effort	ffort:d,onSetEffort:async(e,n,i)=>{N?await l(
+WorkflowDetail-bN89YgNS	GET	/api/workflows/${e}/artifacts	en:Re,defaultCollapsed:!0,collectionEndpoint:
+index-BeImsYqE	GET	/api/client-config/refresh	y{if(m.signal.aborted)return;let t=await e(c?
+index-BeImsYqE	?	/api/client-config	let t=await e(c?`/api/client-config/refresh`:
+index-BeImsYqE	POST	/api/account/${e}	,c(``),d(``),a?o(!0):i(!0);try{let i=await u(
+index-BeImsYqE	POST	/api/account/activate	ntroller;m.current=r,o(!0);try{let t=await u(
+index-BeImsYqE	GET	/api/account/logout-all	操作已取消。`,`ACCOUNT_SUPERSEDED`,409);return e===
+index-BeImsYqE	GET	/api/account/status	urn m.current=e,(async()=>{try{let r=await u(
+index-BeImsYqE	GET	/api/account/send-code	nt=!0,T(!0),b(``),S(``);try{let t=xe(await n(
+index-BeImsYqE	GET	/api/account/${e===`register`?`register`:e===`reset`?`reset-password`:`bind-email`}	eset`?{new_password:u}:{}};try{if(xe(await n(
+index-BeImsYqE	GET	/api/account/identity	return Promise.resolve().then(()=>e?void 0:t(
+index-BeImsYqE	GET	/api/account/identity/withdraw	{confirm:!0}:{});if(!k.current)return;if(n===
+index-BeImsYqE	GET	/api/account/licenses/claim	:`access-primary`,disabled:P,onClick:()=>{se(
+index-BeImsYqE	GET	/api/account/licenses/${e.id}/unbind	-f0-9]{32}$/.test(e.id),onClick:()=>te({path:
+index-BeImsYqE	GET	/api/account/native/software	ent_digest:s.policy.sha256}:void 0,r=await e(
+index-BeImsYqE	GET	/api/account/native/realname	){g.current=!0,f(!0),u(``);try{let t=await e(
+index-BeImsYqE	GET	/api/account/native/	est)throw Error(`账号服务暂不可用`);return e.request(
+index-BeImsYqE	GET	/api/account/workbench-access	!0),a(``);let i=(async()=>{try{let e=await u(
+index-BeImsYqE	POST	/api/license/verify	er;w.current=r,m(!0),x(``);try{let e=await u(
+index-BeImsYqE	GET	/account	,M.jsx)(s,{className:`access-text-button`,to:
+index-BeImsYqE	GET	/account/history	ng:n}=y(),{pathname:r}=c();return[`/account`,
+index-BeImsYqE	GET	/settings	:`/account`,children:`账号`}),(0,M.jsx)(nt,{to:
+index-BeImsYqE	GET	/workflow/:id/editor	element:(0,M.jsx)(Xe,{})}),(0,M.jsx)(r,{path:
+index-BeImsYqE	GET	/workflow/:id/chat	element:(0,M.jsx)(Ze,{})}),(0,M.jsx)(r,{path:
+modelDiscovery-BRyakWgC	POST	/api/settings/models/discover	?i:t}async function n(e,n){let r=await fetch(
+newApiWallet-BJVw6ude	GET	/api/account/native/	)&&Number(e)>=0;async function v(e){return r(
+newApiWallet-BJVw6ude	GET	/api/account/native/usage?	ge:`+t+`:`+u,g=n||a?d(h):null,_=E(g??await r(
+useAccessMode-CYwsqbbI	GET	/api/account/inference/operations	}-[0-9a-f]{12})?)$/.test(e)||r===`POST`&&e===
+useAccessMode-CYwsqbbI	GET	/api/account/messages/operations	}-[0-9a-f]{12})?)$/.test(e)||r===`POST`&&e===
+useAccessMode-CYwsqbbI	GET	/api/account/native/image-settings	2}$/.test(e)||[`GET`,`PUT`].includes(r)&&e===
+useAccessMode-CYwsqbbI	GET	/api/license/	(t.detail).code,80);throw new i(e.startsWith(
+useAccessMode-CYwsqbbI	POST	/api/account/access-mode	d 0&&m.current===null,c=!1;try{let t=await g(
+useWebSocket-DhwRyw4C	POST	/api/workflows/${n}/chat/session	ng:!0,error:null});try{let a=await U(await R(
+useWebSocket-DhwRyw4C	GET	/api/workflows/${i}/chat/turns/${encodeURIComponent(e)}	rn!1;let a=C,o=h(i),s=L,c=async e=>U(await R(
+useWebSocket-DhwRyw4C	POST	/api/workflows/${i}/chat/say	tem_kind:`user_message`}]}));try{let n=()=>R(
+useWebSocket-DhwRyw4C	DELETE	/api/workflows/${n}/chat/session	的执行任务需单独中断。`});try{if(typeof(await U(await R(
+useWebSocket-DhwRyw4C	POST	/api/workflows/${a}/chat/messages/${r}/confirm	null,errorInfo:null});try{if(await U(await R(
+useWebSocket-DhwRyw4C	PATCH	/api/workflows/${o}/chat/messages/${r}/proposal	et c=C;n(r,`edit`);try{let n=await U(await R(
+useWebSocket-DhwRyw4C	GET	/api/workflows/${n}/chat/config	turn;let r=C,i=++N;try{let a=await U(await R(
+useWebSocket-DhwRyw4C	PATCH	/api/workflows/${r}/chat/config	g:!0,error:null});try{return await U(await R(
+useWebSocket-DhwRyw4C	POST	/api/workflows/${n}/chat/queue	rn!1;let r=C,i=++F;try{let a=await U(await R(
+useWebSocket-DhwRyw4C	POST	/api/workflows/${r}/chat/queue/${n}/promote	wId;if(!r)return;let i=C;try{await U(await R(
+useWebSocket-DhwRyw4C	POST	/api/workflows/${i}/chat/messages/${r}/cancel	let a=C;n(r,`cancel`);try{if(await U(await R(
+useWebSocket-DhwRyw4C	POST	/api/workflows/${i}/chat/messages/${r}/rollback	=C;n(r,`rollback`);try{let n=await U(await R(
+useWebSocket-DhwRyw4C	POST	/api/workflows/${i}/chat/messages/${r}/validation-proposal	t a=C;n(r,`validate`);try{if(await U(await R(
+useWebSocket-DhwRyw4C	POST	/api/workflows/${r}/chat/decisions	wId;if(!r)return;let i=C;try{await U(await R(
+useWebSocket-DhwRyw4C	DELETE	/api/workflows/${r}/chat/decisions/${n}	wId;if(!r)return;let i=C;try{await U(await R(
+useWebSocket-DhwRyw4C	GET	/api/workflows/${n}/chat/forks?pending_only=false	turn;let r=C,i=++I;try{let a=await U(await R(
+useWebSocket-DhwRyw4C	POST	/api/workflows/${a}/chat/forks/${n}/choose	{...e.forkOps,[n]:!0}}));try{await U(await R(
+useWebSocket-DhwRyw4C	GET	/api/workflows/${i}/chat/messages${f}	loadingOlder:!0}));try{let o=await U(await R(
+useWebSocket-DhwRyw4C	GET	/api/workflows/${i}/chat/messages/${n}/events?after_sequence=${Math.max(0,r)}&limit=80	A.has(o)){A.add(o);try{let o=await U(await R(
+useWebSocket-DhwRyw4C	GET	/api/workflows/${n}/chat/state	rn!1;let r=C,i=++P;try{let a=await U(await R(
+workflowStore-DtYgz0OF	GET	${u}/workflows	)=>{t||e({loading:!0});try{let n=await fetch(
+workflowStore-DtYgz0OF	GET	${u}/workflows/${n}	,checkpointId:null}}));try{let i=await fetch(
+workflowStore-DtYgz0OF	POST	${u}/workflows	rkflow:async(e,t,n,r=!1)=>{let i=await fetch(
+workflowStore-DtYgz0OF	POST	${u}/workflows/${n}/start	a},startWorkflow:async n=>{let r=await fetch(
+workflowStore-DtYgz0OF	POST	${u}/workflows/${n}/resume	esumeWorkflow:async(n,r)=>{let i=await fetch(
+workflowStore-DtYgz0OF	POST	${u}/workflows/${t}/pause	low(n)},pauseWorkflow:async t=>{(await fetch(
+workflowStore-DtYgz0OF	POST	${u}/workflows/${t}/restart	,restartWorkflow:async t=>{let n=await fetch(
+workflowStore-DtYgz0OF	DELETE	${u}/workflows/${t}	},deleteWorkflow:async t=>{let n=await fetch(
+workflowStore-DtYgz0OF	POST	${u}/workflows/${t}/steps/${n}/rerun	))},rerunStep:async(t,n)=>{let r=await fetch(
+workflowStore-DtYgz0OF	PATCH	${u}/workflows/${e}/mode	tWorkflowMode:async(e,n)=>{let r=await fetch(
+workflowStore-DtYgz0OF	PATCH	${u}/workflows/${t}/steps/${n}/model	StepModel:async(t,n,r,i)=>{let a=await fetch(
+workflowStore-DtYgz0OF	PATCH	${u}/workflows/${t}/steps/${n}/effort	tepEffort:async(t,n,r,i)=>{let a=await fetch(
+workflowStore-DtYgz0OF	POST	${u}/workflows/${e}/checkpoints/resolve	kpoint:async(e,n,r={},i)=>{let a=await fetch(

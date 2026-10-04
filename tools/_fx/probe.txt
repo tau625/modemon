@@ -1,0 +1,257 @@
+
+========== PROBE DATA_FIG_PALETTES=|DATA_FIG_STYLES=|PALETTES=\[|STYLES=\[  (NewWorkflow-Ld6TEJjT.pretty.js) ==========
+(no match)
+
+========== PROBE project_type|projectType  (NewWorkflow-Ld6TEJjT.pretty.js) ==========
+--- NewWorkflow-Ld6TEJjT.pretty.js:1011 @56873
+anguage=Te.find(e=>e.value===u)?.lang||`zh`,e.output_format=k,e.flowchart_engine=P,xn&&(e.enable_comp_review=!0)):Cr?(e.project_type=V,e.skip_report=!Mt,Mt&&(e.output_format=Pt)):Or&&(e.output_format=Ar),vi&&(e.skip_improvement_loop=!yi),R.trim()&&(e.format_text=R.trim()),I?e.template_file=`user_data/${I.name}`:Q&&Or&&(e.template_
+--- NewWorkflow-Ld6TEJjT.pretty.js:1011 @62416
+style_custom=Un         }         else N!==`nature`&&(n.data_fig_style=q)       }       let c=h.trim();       if(Cr&&(n.project_type=V,V===`fullstack`?(n.tech_frontend=St,n.tech_backend=wt,n.tech_db=Et):V===`frontend`?n.tech_frontend=St:(V===`cli`||V===`script`)&&(n.tech_lang=Ot),At.trim()&&(n.custom_requirements=At.trim()),n.skip
+
+========== PROBE template:|templateId|templates\.  (NewWorkflow-Ld6TEJjT.pretty.js) ==========
+(no match)
+
+========== PROBE cumcm|mcm|icom|huawei|competition_zh|course_paper|thesis_proposal  (NewWorkflow-Ld6TEJjT.pretty.js) ==========
+--- NewWorkflow-Ld6TEJjT.pretty.js:309 @13459
+t n=le(e);   return!n||!t.trim()?``:n.modelPattern.test(t)?t:`` } function w(e){   return e===`comp_cumcm` } function de(e,t){   if(!t)return`请先确认所填 AI 使用记录真实、完整，并已由参赛队人工核验`;   if(e.length<1||e.length>5)return`请填写 1–5 条真实 AI 工具记录`;   let n=new Set(b.map(e=>e.id)),r
+--- NewWorkflow-Ld6TEJjT.pretty.js:309 @47154
+`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`6月`,lang:`zh`,pages:30,stars:2,group:`zh` },{   value:`comp_apmcm_zh`,icon:`🌏`,label:`亚太赛中文 (APMCM)`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`6月`,lang:`zh`,pages:25,stars:3,group:`zh` },{   value:`comp_shenzhen`,icon:`🏙️`
+--- NewWorkflow-Ld6TEJjT.pretty.js:309 @47568
+c:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`8月`,lang:`zh`,pages:30,stars:3,group:`zh` },{   value:`comp_cumcm`,icon:`🏆`,label:`国赛 (CUMCM)`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`9月`,lang:`zh`,pages:30,stars:5,group:`zh` },{   value:`comp_huawei`,icon:`📱`,label:`华
+--- NewWorkflow-Ld6TEJjT.pretty.js:894 @47707
+c:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`9月`,lang:`zh`,pages:30,stars:5,group:`zh` },{   value:`comp_huawei`,icon:`📱`,label:`华为杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`9月`,lang:`zh`,pages:50,stars:5,group:`zh` },{   value:`comp_mcm`,icon:`🌍`,label:`美赛 (MCM/ICM
+--- NewWorkflow-Ld6TEJjT.pretty.js:309 @47840
+c:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`9月`,lang:`zh`,pages:50,stars:5,group:`zh` },{   value:`comp_mcm`,icon:`🌍`,label:`美赛 (MCM/ICM)`,desc:`Analysis → Modeling → Code → Figures → Paper → Compile`,time:`2月`,lang:`en`,pages:25,stars:5,group:`en` },{   value:`comp
+--- NewWorkflow-Ld6TEJjT.pretty.js:309 @48171
+e → Figures → Paper → Compile`,time:`11月`,lang:`en`,pages:25,stars:3,group:`en` },{   value:`comp_apmcm`,icon:`🌏`,label:`亚太 (APMCM)`,desc:`Analysis → Modeling → Code → Figures → Paper → Compile`,time:`11月`,lang:`en`,pages:25,stars:3,group:`en` },{   value:`comp_
+--- NewWorkflow-Ld6TEJjT.pretty.js:918 @48965
+学术 / Nature 顶刊 / 人文社科 — 卡片内切换分支，各有专属规划与撰写 skill`,time:`~30-120 分钟`,category:`academic` },{   value:`thesis_proposal`,icon:`📋`,label:`开题报告`,desc:`文献调研 → 开题撰写 → 技术路线 → Word导出`,time:`~30-60 分钟`,category:`academic` },{   value:`literature_review`,icon:`📚`,label:`文献综述`,desc:`文献
+--- NewWorkflow-Ld6TEJjT.pretty.js:922 @49225
+`文献综述`,desc:`文献检索 → 真实性验证 → 主题聚类 → 综述撰写 → Word导出`,time:`~30-60 分钟`,category:`academic` },{   value:`course_paper`,icon:`📖`,label:`课程论文`,desc:`大纲规划 → [可选: 数据分析+图表] → 撰写嵌入图 → 审查 → Word导出`,time:`~25-50 分钟`,category:`academic` },{   value:`course_report`,icon:`📊`,label:`课程报
+--- NewWorkflow-Ld6TEJjT.pretty.js:918 @54553
+g`,`paper_writing_zh`,`full_pipeline`,`nature_writing`].includes(u)&&!M,yr=Y&&u!==`comp_stats`,br=[`thesis_proposal`,`literature_review`,`course_paper`,`course_report`,`humanities_paper`,`paper_writing`,`paper_writing_zh`,`nature_writing`].includes(u),xr=u===`course_paper`||
+--- NewWorkflow-Ld6TEJjT.pretty.js:922 @54591
+`nature_writing`].includes(u)&&!M,yr=Y&&u!==`comp_stats`,br=[`thesis_proposal`,`literature_review`,`course_paper`,`course_report`,`humanities_paper`,`paper_writing`,`paper_writing_zh`,`nature_writing`].includes(u),xr=u===`course_paper`||u===`course_report`,Sr=u===`humanit
+--- NewWorkflow-Ld6TEJjT.pretty.js:922 @54713
+report`,`humanities_paper`,`paper_writing`,`paper_writing_zh`,`nature_writing`].includes(u),xr=u===`course_paper`||u===`course_report`,Sr=u===`humanities_paper`,Cr=u===`grad_project`,X=u===`copyright_material`,wr=u===`patent_disclosure`,Tr=X||wr,[Z,Er]=(0,g.useState)(()=>
+--- NewWorkflow-Ld6TEJjT.pretty.js:922 @56268
+t_format=k,e.skip_figures=j,e.skip_drawio=M,j&&(e.skip_analysis=!0),M||(e.flowchart_engine=P)):u===`course_paper`||u===`course_report`?(e.skip_figures=Ke,e.skip_analysis=Ke,e.skip_drawio=A,A||(e.flowchart_engine=P)):u===`thesis_proposal`?(e.skip_drawio=A,A||(e.flowchart_e
+
+========== PROBE problem_analysis  (.*\.pretty\.js) ==========
+--- ArtifactLibrary-BPEftl07.pretty.js:11787 @486344
+beginnerHint:`普通使用通常无需查看` },{   key:`other`,label:`其他文件`,shortLabel:`其他`,hint:`暂未归入以上类别的工作区文件`,beginnerHint:`需要时再查看` }],Fg=new Map(Pg.map((e,t)=>[e.key,t])),Ig={   "problem_statement.md":`赛题原文与补充说明`,"problem_analysis.md":`赛题分析报告`,"modeling_report.md":`建模方案报告`,"modeling_precheck.json":`建模预检查结果`,"code_report.md":`代码实现报告`,"result_analysis.md":`结果分析报告`,"paper_outline.md":`论文结构大纲`,"review_report.md":`论文审阅报告`,"delivery_report.md":`交付检查报告`,"main.pdf":`最终论文（PDF）`,"main.docx":`最终论文（Word）`,"main.tex":`论文主稿（LaTeX）`,"main.md":`论文主稿（Markdown）`,"ai工具使用详情.pdf":`AI 工具使用详情（独立支撑材料）` },Lg={   fig:``,gen:`生成`,q:``,question:``,pr
+--- ArtifactLibrary-BPEftl07.pretty.js:11787 @494800
+)return 1e3;   if(t===`paper/main.docx`)return 980;   if(t===`ai工具使用详情.pdf`)return 970;   if(t===`paper/main.tex`)return 950;   if(t.endsWith(`/main.pdf`)||t===`main.pdf`)return 940;   if(t.endsWith(`problem_analysis.md`))return 900;   if(t.endsWith(`modeling_report.md`))return 880;   if(t.endsWith(`result_analysis.md`))return 860;   let n=zg(t);   return n===`final`?800:n===`report`?700:n===`figure`?600:n===`input`?400:n===`section`?300:n===`technical`?200:100 } function $g(e,t){   let n=(Fg.get(zg(e.path))??99)-(Fg.get(zg(t.path))??99);   if(n)return n;   let r=Qg(t.path)-Qg(e.path);   if(r)return r;   let 
+
+========== PROBE default_effort|claude_bin|model_context_policies|data_dir|latex|python|export_dir|api_key|base_url|model_id  (Settings-D4EW1h0L.pretty.js) ==========
+--- Settings-D4EW1h0L.pretty.js:78 @2058
+9]*$/.test(r.account_id||``)||t!==void 0&&r.account_id!==t||r.mode_revision!==n||typeof r.model_id!=`string`||typeof r.effective_model!=`string`||!Array.isArray(r.models)||r.models.some(e=>!e||typeof e.id!=`string`||typeof e.name!=`string`||!Number.isFinite(
+--- Settings-D4EW1h0L.pretty.js:78 @2945
+.signal).then(r=>{       if(n.signal.aborted)return;       let a=T(r,e,t);       i(a),o(a.model_id),y(!1)     }).catch(e=>{       n.signal.aborted||m(e instanceof Error?e.message:`生图配置读取失败。`)     }).finally(()=>{       n.signal.aborted||c(!1)     }),()=>n.ab
+--- Settings-D4EW1h0L.pretty.js:78 @3462
+on`           },body:JSON.stringify({             account_id:n.account_id,mode_revision:t,model_id:a           })         });         if(!b.current)return;         let o=T(e,n.account_id,t);         if(o.model_id!==a)throw Error(`保存结果未能确认。`);         i(o),g(
+--- Settings-D4EW1h0L.pretty.js:78 @3576
+        });         if(!b.current)return;         let o=T(e,n.account_id,t);         if(o.model_id!==a)throw Error(`保存结果未能确认。`);         i(o),g(`已保存，下次启动的任务与新打开的编辑器生效。`)       }       catch{         b.current&&(y(!0),m(`保存结果未确认，请重新读取核对；没有自动重试。`))       }    
+--- Settings-D4EW1h0L.pretty.js:78 @4941
+ton`,{         type:`button`,className:`access-secondary`,disabled:s||l||!n||!C||v||a===n.model_id,onClick:()=>void S(),children:`保存生图设置`       }),(0,w.jsx)(`button`,{         type:`button`,className:`access-text-button`,disabled:s||l,onClick:()=>f(e=>e+1),c
+--- Settings-D4EW1h0L.pretty.js:176 @6045
+ow.setTimeout(()=>t.abort(),3e4);     s(!0),l(``);     try{       let n=await g({         api_key:e,agent:`gpt_image`,force_refresh:!0       },t.signal);       if(t.signal.aborted||u.current!==t)return;       a({         key:e,models:n.models.filter(e=>h(e.
+--- Settings-D4EW1h0L.pretty.js:219 @7965
+t-faint)] mt-1.5`,children:[`当前配置：`,t,`（未确认可用；不会自动替换）`]     })]   }) } var k={   executor_base_url:``,executor_api_key:``,executor_model_id:`claude-opus-4-8`,reviewer_base_url:``,reviewer_api_key:``,reviewer_model_id:`claude-opus-4-8`,minimax_api_key:``,mini
+--- Settings-D4EW1h0L.pretty.js:176 @7986
+ldren:[`当前配置：`,t,`（未确认可用；不会自动替换）`]     })]   }) } var k={   executor_base_url:``,executor_api_key:``,executor_model_id:`claude-opus-4-8`,reviewer_base_url:``,reviewer_api_key:``,reviewer_model_id:`claude-opus-4-8`,minimax_api_key:``,minimax_group_id:``,gemi
+--- Settings-D4EW1h0L.pretty.js:78 @8006
+确认可用；不会自动替换）`]     })]   }) } var k={   executor_base_url:``,executor_api_key:``,executor_model_id:`claude-opus-4-8`,reviewer_base_url:``,reviewer_api_key:``,reviewer_model_id:`claude-opus-4-8`,minimax_api_key:``,minimax_group_id:``,gemini_api_key:``,editor_
+--- Settings-D4EW1h0L.pretty.js:219 @8042
+{   executor_base_url:``,executor_api_key:``,executor_model_id:`claude-opus-4-8`,reviewer_base_url:``,reviewer_api_key:``,reviewer_model_id:`claude-opus-4-8`,minimax_api_key:``,minimax_group_id:``,gemini_api_key:``,editor_ai_base_url:``,editor_ai_api_key:``,
+--- Settings-D4EW1h0L.pretty.js:176 @8063
+:``,executor_api_key:``,executor_model_id:`claude-opus-4-8`,reviewer_base_url:``,reviewer_api_key:``,reviewer_model_id:`claude-opus-4-8`,minimax_api_key:``,minimax_group_id:``,gemini_api_key:``,editor_ai_base_url:``,editor_ai_api_key:``,editor_ai_model_id:`
+--- Settings-D4EW1h0L.pretty.js:78 @8083
+:``,executor_model_id:`claude-opus-4-8`,reviewer_base_url:``,reviewer_api_key:``,reviewer_model_id:`claude-opus-4-8`,minimax_api_key:``,minimax_group_id:``,gemini_api_key:``,editor_ai_base_url:``,editor_ai_api_key:``,editor_ai_model_id:`claude-opus-4-8`,gpt_
+--- Settings-D4EW1h0L.pretty.js:176 @8118
+4-8`,reviewer_base_url:``,reviewer_api_key:``,reviewer_model_id:`claude-opus-4-8`,minimax_api_key:``,minimax_group_id:``,gemini_api_key:``,editor_ai_base_url:``,editor_ai_api_key:``,editor_ai_model_id:`claude-opus-4-8`,gpt_image_api_key:``,gpt_image_base_ur
+--- Settings-D4EW1h0L.pretty.js:176 @8156
+_key:``,reviewer_model_id:`claude-opus-4-8`,minimax_api_key:``,minimax_group_id:``,gemini_api_key:``,editor_ai_base_url:``,editor_ai_api_key:``,editor_ai_model_id:`claude-opus-4-8`,gpt_image_api_key:``,gpt_image_base_url:``,gpt_image_model_id:`gpt-image-2`,
+--- Settings-D4EW1h0L.pretty.js:219 @8177
+l_id:`claude-opus-4-8`,minimax_api_key:``,minimax_group_id:``,gemini_api_key:``,editor_ai_base_url:``,editor_ai_api_key:``,editor_ai_model_id:`claude-opus-4-8`,gpt_image_api_key:``,gpt_image_base_url:``,gpt_image_model_id:`gpt-image-2`,claude_bin:`claude`,ex
+--- Settings-D4EW1h0L.pretty.js:176 @8199
+,minimax_api_key:``,minimax_group_id:``,gemini_api_key:``,editor_ai_base_url:``,editor_ai_api_key:``,editor_ai_model_id:`claude-opus-4-8`,gpt_image_api_key:``,gpt_image_base_url:``,gpt_image_model_id:`gpt-image-2`,claude_bin:`claude`,executor_preset_id:``,r
+--- Settings-D4EW1h0L.pretty.js:78 @8220
+inimax_group_id:``,gemini_api_key:``,editor_ai_base_url:``,editor_ai_api_key:``,editor_ai_model_id:`claude-opus-4-8`,gpt_image_api_key:``,gpt_image_base_url:``,gpt_image_model_id:`gpt-image-2`,claude_bin:`claude`,executor_preset_id:``,reviewer_preset_id:``,e
+--- Settings-D4EW1h0L.pretty.js:176 @8257
+editor_ai_base_url:``,editor_ai_api_key:``,editor_ai_model_id:`claude-opus-4-8`,gpt_image_api_key:``,gpt_image_base_url:``,gpt_image_model_id:`gpt-image-2`,claude_bin:`claude`,executor_preset_id:``,reviewer_preset_id:``,editor_ai_preset_id:``,default_effort
+--- Settings-D4EW1h0L.pretty.js:219 @8278
+,editor_ai_api_key:``,editor_ai_model_id:`claude-opus-4-8`,gpt_image_api_key:``,gpt_image_base_url:``,gpt_image_model_id:`gpt-image-2`,claude_bin:`claude`,executor_preset_id:``,reviewer_preset_id:``,editor_ai_preset_id:``,default_effort:``,model_context_poli
+--- Settings-D4EW1h0L.pretty.js:78 @8300
+editor_ai_model_id:`claude-opus-4-8`,gpt_image_api_key:``,gpt_image_base_url:``,gpt_image_model_id:`gpt-image-2`,claude_bin:`claude`,executor_preset_id:``,reviewer_preset_id:``,editor_ai_preset_id:``,default_effort:``,model_context_policies:`{}` },A=15e3,j=3
+--- Settings-D4EW1h0L.pretty.js:219 @8323
+ude-opus-4-8`,gpt_image_api_key:``,gpt_image_base_url:``,gpt_image_model_id:`gpt-image-2`,claude_bin:`claude`,executor_preset_id:``,reviewer_preset_id:``,editor_ai_preset_id:``,default_effort:``,model_context_policies:`{}` },A=15e3,j=3e4,M=class extends Error{
+--- Settings-D4EW1h0L.pretty.js:219 @8410
+2`,claude_bin:`claude`,executor_preset_id:``,reviewer_preset_id:``,editor_ai_preset_id:``,default_effort:``,model_context_policies:`{}` },A=15e3,j=3e4,M=class extends Error{ }; function N(e){   e&&(window.clearTimeout(e.timer),e.controller.abort()) } function P(){
+--- Settings-D4EW1h0L.pretty.js:219 @8428
+ude`,executor_preset_id:``,reviewer_preset_id:``,editor_ai_preset_id:``,default_effort:``,model_context_policies:`{}` },A=15e3,j=3e4,M=class extends Error{ }; function N(e){   e&&(window.clearTimeout(e.timer),e.controller.abort()) } function P(){   let e=i();   return(0,w
+--- Settings-D4EW1h0L.pretty.js:219 @10233
+eturn!1;       if(!Array.isArray(t.presets))throw Error(`预设列表格式异常`);       let n=typeof t.model_context_policies==`string`&&t.presets.every(e=>[`auto`,`200k`,`1m`,`legacy`].includes(e.context_mode||``));       if(Q.current&&G(n?`supported`:`unsupported`),Q.current&&Array.
+--- Settings-D4EW1h0L.pretty.js:219 @10826
+current=``,ye(``),W(`已重新读取预设，请核对当前列表；没有自动重复删除。`)       }       return Q.current&&typeof t.model_context_policies==`string`&&(me.current=!0,r(e=>({         ...e,model_context_policies:t.model_context_policies       }))),n     }).catch(()=>(Q.current&&e===H.current&&G(`unsu
+--- Settings-D4EW1h0L.pretty.js:219 @10896
+Q.current&&typeof t.model_context_policies==`string`&&(me.current=!0,r(e=>({         ...e,model_context_policies:t.model_context_policies       }))),n     }).catch(()=>(Q.current&&e===H.current&&G(`unsupported`),!1)).finally(()=>{       window.clearTimeout(n),U.current?.c
+--- Settings-D4EW1h0L.pretty.js:219 @10921
+_context_policies==`string`&&(me.current=!0,r(e=>({         ...e,model_context_policies:t.model_context_policies       }))),n     }).catch(()=>(Q.current&&e===H.current&&G(`unsupported`),!1)).finally(()=>{       window.clearTimeout(n),U.current?.controller===t&&(U.current
+--- Settings-D4EW1h0L.pretty.js:219 @11747
+       if(!Q.current||t!==g.current)return;       r(t=>{         let n=e?{           ...k,model_context_policies:t.model_context_policies         }         :{           ...t         };         if(e)for(let e of E.current)n[e]=t[e];         for(let[e,t]of Object.entries(a.
+--- Settings-D4EW1h0L.pretty.js:219 @11772
+=g.current)return;       r(t=>{         let n=e?{           ...k,model_context_policies:t.model_context_policies         }         :{           ...t         };         if(e)for(let e of E.current)n[e]=t[e];         for(let[e,t]of Object.entries(a.settings))!E.current.has(
+--- Settings-D4EW1h0L.pretty.js:219 @11965
+nt)n[e]=t[e];         for(let[e,t]of Object.entries(a.settings))!E.current.has(e)&&!(e===`model_context_policies`&&me.current)&&(n[e]=t);         return n       }),h.current=!0,m(`ready`),T(!1)     }     catch{       Q.current&&t===g.current&&m(`error`)     }     finally{
+
+========== PROBE orders|adjustments|requests|checkout|balance|quota|recharge|wallet|usage  (newApiWallet-BJVw6ude.pretty.js) ==========
+--- newApiWallet-BJVw6ude.pretty.js:90 @2534
+,a.useRef)(0);   async function b(t=1){     let n=++y.current;     l(!0),d(``);     try{       let r=await v(`orders?page=`+t);       if(!r||r.account_id!==e||!_(r.total)||!Array.isArray(r.items)||r.items.length>20||r.items.some(e=>!e||typeof e.trade_no!=`string`||!/^[A-Za-z0-9_-]{1,128}$/.test(e.trade_no)||!Number
+--- newApiWallet-BJVw6ude.pretty.js:172 @6011
+,total:r.total,busy:c||n,onPage:e=>void b(e)       })]     })]   }) } function E(e,t,n){   let r=e,i=e=>e&&[e.requests,e.quota,e.prompt_tokens,e.completion_tokens,e.prompt_tokens+e.completion_tokens].every(_);   if(!r||r.account_id!==t||!Array.isArray(r.items)||r.items.length>20||!_(r.total)||!i(r.summary)||r.summary
+--- newApiWallet-BJVw6ude.pretty.js:172 @6022
+tal,busy:c||n,onPage:e=>void b(e)       })]     })]   }) } function E(e,t,n){   let r=e,i=e=>e&&[e.requests,e.quota,e.prompt_tokens,e.completion_tokens,e.prompt_tokens+e.completion_tokens].every(_);   if(!r||r.account_id!==t||!Array.isArray(r.items)||r.items.length>20||!_(r.total)||!i(r.summary)||r.summary.request
+--- newApiWallet-BJVw6ude.pretty.js:172 @6220
+   if(!r||r.account_id!==t||!Array.isArray(r.items)||r.items.length>20||!_(r.total)||!i(r.summary)||r.summary.requests!==r.total||!Array.isArray(r.by_model)||r.by_model.length>500||r.by_model.some(e=>!i(e)||typeof e.model!=`string`)||new Set(r.by_model.map(e=>e.model)).size!==r.by_model.length||typeof r.next_cursor!=
+--- newApiWallet-BJVw6ude.pretty.js:172 @6608
+.start!==n.start||r.filters.end!==n.end||r.filters.model!==n.model||r.items.some(e=>!e||![e.id,e.created_at,e.quota,e.prompt_tokens,e.completion_tokens].every(_)||typeof e.model_name!=`string`))throw Error(`消费记录未能确认，请刷新账号状态。`);   let a=r.by_model.filter(e=>!n.model||e.model===n.model);   for(let e of[`requests`,`q
+--- newApiWallet-BJVw6ude.pretty.js:172 @6801
+)throw Error(`消费记录未能确认，请刷新账号状态。`);   let a=r.by_model.filter(e=>!n.model||e.model===n.model);   for(let e of[`requests`,`quota`,`prompt_tokens`,`completion_tokens`])if(a.reduce((t,n)=>t+n[e],0)!==r.summary[e])throw Error(`消费汇总未能确认，请重新查询。`);   return r } function D({   quotaPerPoint:e,accountId:t }){   let n=b(),i=y(n
+--- newApiWallet-BJVw6ude.pretty.js:172 @6812
+r(`消费记录未能确认，请刷新账号状态。`);   let a=r.by_model.filter(e=>!n.model||e.model===n.model);   for(let e of[`requests`,`quota`,`prompt_tokens`,`completion_tokens`])if(a.reduce((t,n)=>t+n[e],0)!==r.summary[e])throw Error(`消费汇总未能确认，请重新查询。`);   return r } function D({   quotaPerPoint:e,accountId:t }){   let n=b(),i=y(new Date(
+--- newApiWallet-BJVw6ude.pretty.js:172 @6960
+ens`])if(a.reduce((t,n)=>t+n[e],0)!==r.summary[e])throw Error(`消费汇总未能确认，请重新查询。`);   return r } function D({   quotaPerPoint:e,accountId:t }){   let n=b(),i=y(new Date(Date.now()-5184e5)),[o,s]=(0,a.useState)(i),[c,l]=(0,a.useState)(n),[_,v]=(0,a.useState)(``),[w,T]=(0,a.useState)(1),[D,O]=(0,a.useState)(null),[k,A
+--- newApiWallet-BJVw6ude.pretty.js:200 @7884
+);       let u=new URLSearchParams({         start:String(i),end:String(o),model:p.model,cursor:c       }),h=`usage:`+t+`:`+u,g=n||a?d(h):null,_=E(g??await r(`/api/account/native/usage?`+u,{ },l.signal),t,{         start:i,end:o,model:p.model       });       if(s===z.current){         if(n||(H.current=new Map([[1,
+--- newApiWallet-BJVw6ude.pretty.js:200 @7953
+ng(o),model:p.model,cursor:c       }),h=`usage:`+t+`:`+u,g=n||a?d(h):null,_=E(g??await r(`/api/account/native/usage?`+u,{ },l.signal),t,{         start:i,end:o,model:p.model       });       if(s===z.current){         if(n||(H.current=new Map([[1,``]]),I(1)),_.next_cursor&&H.current.set(e+1,_.next_cursor),H.current
+--- newApiWallet-BJVw6ude.pretty.js:200 @8685
+)-e*36e5)),n=b();     s(t),l(n),U(1,!1,{       start:t,end:n,model:_.trim()     })   }   function G(){     p(`usage:`+t+`:`),U(1,!1,B.current,!1)   }   let K=D?.by_model.filter(e=>!B.current.model||e.model===B.current.model)??[];   return(0,m.jsxs)(`section`,{     "aria-label":`消费明细列表`,"aria-busy":j,children:[(0,m
+--- newApiWallet-BJVw6ude.pretty.js:200 @9783
+     }),(0,m.jsx)(`button`,{           className:`access-text-button`,disabled:j,onClick:()=>{             p(`usage:`+t+`:`),R(`本地记录缓存已清除，服务端账单和待付款订单不受影响。`)           },children:`清除本地记录缓存`         })]       })]     }),L&&(0,m.jsx)(`p`,{       className:`native-cache-status`,role:`status`,children:L     }),(0,m.jsx
+--- newApiWallet-BJVw6ude.pretty.js:200 @10538
+)         })]       }),(0,m.jsxs)(`label`,{         children:[`模型`,(0,m.jsx)(`input`,{           list:`native-usage-models`,placeholder:`全部模型`,value:_,onChange:e=>v(e.target.value)         }),(0,m.jsx)(`datalist`,{           id:`native-usage-models`,children:D?.by_model.map(e=>(0,m.jsx)(`option`,{             valu
+--- newApiWallet-BJVw6ude.pretty.js:200 @10664
+aceholder:`全部模型`,value:_,onChange:e=>v(e.target.value)         }),(0,m.jsx)(`datalist`,{           id:`native-usage-models`,children:D?.by_model.map(e=>(0,m.jsx)(`option`,{             value:e.model           },e.model))         })]       }),(0,m.jsx)(`button`,{         className:`access-primary`,disabled:j,childr
+--- newApiWallet-BJVw6ude.pretty.js:200 @11184
+正在读取消费记录…`     }),D&&!k&&(0,m.jsxs)(m.Fragment,{       children:[(0,m.jsxs)(`div`,{         className:`native-usage-summary`,children:[(0,m.jsxs)(`div`,{           children:[(0,m.jsx)(`span`,{             children:`区间消费`           }),(0,m.jsxs)(`strong`,{             children:[h(D.summary.quota/e),` `,(0,m.jsx)(`s
+--- newApiWallet-BJVw6ude.pretty.js:172 @11364
+sx)(`span`,{             children:`区间消费`           }),(0,m.jsxs)(`strong`,{             children:[h(D.summary.quota/e),` `,(0,m.jsx)(`small`,{               children:`积分`             })]           })]         }),(0,m.jsxs)(`div`,{           children:[(0,m.jsx)(`span`,{             children:`调用次数`           }),(0,m
+--- newApiWallet-BJVw6ude.pretty.js:200 @12617
+n 按服务端原生用量字段汇总；生图按张计费，不换算为 Token。数据时间 `,g(D.as_of),`。`]       }),(0,m.jsxs)(`div`,{         className:`native-usage-tabs`,role:`group`,"aria-label":`消费视图`,children:[(0,m.jsx)(`button`,{           "aria-pressed":N===`details`,onClick:()=>P(`details`),children:`调用明细`         }),(0,m.jsx)(`button`,{           "aria-p
+--- newApiWallet-BJVw6ude.pretty.js:172 @13886
+x)(`td`,{                   children:t.model                 }),(0,m.jsx)(`td`,{                   children:t.requests.toLocaleString()                 }),(0,m.jsx)(`td`,{                   children:t.prompt_tokens.toLocaleString()                 }),(0,m.jsx)(`td`,{                   children:t.completion_tokens.toL
+--- newApiWallet-BJVw6ude.pretty.js:172 @14293
+kens+t.completion_tokens).toLocaleString()                 }),(0,m.jsx)(`td`,{                   children:h(t.quota/e)                 })]               },t.model))             })]           })         }),(0,m.jsx)(C,{           page:F,total:K.length,busy:j,onPage:I         })]       }):(0,m.jsxs)(m.Fragment,{    
+--- newApiWallet-BJVw6ude.pretty.js:172 @15958
+{                   className:`native-numeric`,children:(0,m.jsx)(`strong`,{                     children:h(t.quota/e)                   })                 })]               },t.id))             })]           })         }):(0,m.jsx)(`p`,{           className:`native-empty`,children:`这个时间段暂无消费`         }),(0,m.jsxs
+
+========== PROBE catalog_source|billing_kind|price_version|newapi-direct|native-messages-v2|unit_microcredits|context_window  (AccountModelCatalog-DdzyHjab.pretty.js) ==========
+--- AccountModelCatalog-DdzyHjab.pretty.js:59 @2223
+ },[n,t]);   let b=h.trim().toLocaleLowerCase(),x=(e?.models??[]).filter(e=>(d===`all`||e.billing_kind===`image`==(d===`image`))&&(!b||`${e.name} ${e.id}`.toLocaleLowerCase().includes(b))),S=Math.max(1,Math.ceil(x.length/6)),C=Math.min(_,S),w=JSON.stringify(e?.models.map(
+--- AccountModelCatalog-DdzyHjab.pretty.js:59 @4415
+?`文本与推理`:`图像生成`,(0,l.jsx)(`span`,{               children:e.models.filter(e=>t===`all`||e.billing_kind===`image`==(t===`image`)).length             })]           },t))         }),(0,l.jsxs)(`label`,{           className:`model-catalog-search`,children:[(0,l.jsx)(`span`,{ 
+--- AccountModelCatalog-DdzyHjab.pretty.js:59 @5071
+catalog-row`,children:[(0,l.jsx)(`span`,{             className:`model-catalog-symbol ${e.billing_kind===`image`?`is-image`:``}`,"aria-hidden":`true`,children:e.billing_kind===`image`?`▧`:e.name.slice(0,1).toUpperCase()           }),(0,l.jsxs)(`div`,{             classNam
+--- AccountModelCatalog-DdzyHjab.pretty.js:59 @5142
+catalog-symbol ${e.billing_kind===`image`?`is-image`:``}`,"aria-hidden":`true`,children:e.billing_kind===`image`?`▧`:e.name.slice(0,1).toUpperCase()           }),(0,l.jsxs)(`div`,{             className:`model-catalog-name`,children:[(0,l.jsx)(`h3`,{               childre
+--- AccountModelCatalog-DdzyHjab.pretty.js:59 @5559
+]           }),(0,l.jsx)(`div`,{             className:`model-catalog-context`,children:e.billing_kind===`image`?(0,l.jsxs)(l.Fragment,{               children:[(0,l.jsx)(`strong`,{                 children:`图像`               }),(0,l.jsx)(`small`,{                 childre
+--- AccountModelCatalog-DdzyHjab.pretty.js:127 @5881
+s)(l.Fragment,{               children:[(0,l.jsx)(`strong`,{                 children:D(e.context_window)               }),(0,l.jsx)(`small`,{                 children:`上下文`               })]             })           }),(0,l.jsx)(`div`,{             className:`model-catalog
+--- AccountModelCatalog-DdzyHjab.pretty.js:59 @6398
+`               })]             }):(0,l.jsx)(`strong`,{               children:e.native?e.billing_kind===`image`&&e.unit_price?e.unit_price+` 积分 / 张`:`动态计价`:e.max_reserved?`以任务报价为准`:`价格配置中，暂不可用`             })           }),(0,l.jsxs)(`button`,{             type:`button`,c
+--- AccountModelCatalog-DdzyHjab.pretty.js:127 @7820
+n:[(0,l.jsx)(`span`,{           className:`account-status-tag`,children:E(T)         }),T.context_window&&(0,l.jsxs)(`p`,{           className:`model-detail-context`,children:[`上下文上限 `,(0,l.jsxs)(`strong`,{             children:[T.context_window.toLocaleString(`zh-CN`),` To
+--- AccountModelCatalog-DdzyHjab.pretty.js:127 @7961
+e:`model-detail-context`,children:[`上下文上限 `,(0,l.jsxs)(`strong`,{             children:[T.context_window.toLocaleString(`zh-CN`),` Token`]           })]         }),T.pricing?(0,l.jsxs)(l.Fragment,{           children:[(0,l.jsx)(`p`,{             className:`access-hint`,chil
+--- AccountModelCatalog-DdzyHjab.pretty.js:59 @9480
+     })]         }):(0,l.jsx)(`p`,{           className:`access-hint`,children:T.native?T.billing_kind===`image`&&T.unit_price?T.unit_price+` 积分 / 张`:`动态计价，按请求时段与实际用量结算，可在消费明细查看。`:T.max_reserved?`单价明细暂未提供，以任务确认的报价为准。`:`价格配置中，暂不可用。`         }),T.max_reserved&&(0,l.jsxs)(`p
+
+========== PROBE markdown|latex|\.tex|\.pdf|\.docx  (ArtifactLibrary-BPEftl07.pretty.js) ==========
+--- ArtifactLibrary-BPEftl07.pretty.js:629 @32597
+ction vt(e){   let t=`&`+e+`;`;   _t.innerHTML=t;   let n=_t.textContent;   return n.charCodeAt(n.length-1)===59&&e!==`semi`?!1:n!==t&&n } function yt(e,t,n,r){   let i=e.length,a=0,o;
+--- ArtifactLibrary-BPEftl07.pretty.js:4114 @129890
+xmpp)$/i,po=[{   from:`astPlugins`,id:`remove-buggy-html-in-markdown-parser` },{   from:`allowDangerousHtml`,id:`remove-buggy-html-in-markdown-parser` },{   from:`allowNode`,id:`replace-al
+--- ArtifactLibrary-BPEftl07.pretty.js:4114 @129964
+r` },{   from:`allowDangerousHtml`,id:`remove-buggy-html-in-markdown-parser` },{   from:`allowNode`,id:`replace-allownode-allowedtypes-and-disallowedtypes`,to:`allowElement` },{   from:`al
+--- ArtifactLibrary-BPEftl07.pretty.js:4114 @130384
+dElements` },{   from:`escapeHtml`,id:`remove-buggy-html-in-markdown-parser` },{   from:`includeElementIndex`,id:`#remove-includeelementindex` },{   from:`includeNodeIndex`,id:`change-incl
+--- ArtifactLibrary-BPEftl07.pretty.js:629 @213541
+u;   else{     var r=t.style.isTight()?t.havingStyle(t.style.text()):t;     if(e.unit===`ex`)n=r.fontMetrics().xHeight;     else if(e.unit===`em`)n=r.fontMetrics().quad;     else throw
+--- ArtifactLibrary-BPEftl07.pretty.js:629 @216268
+,ì:`ı̀` },Nu=class{   constructor(e,t,n,r,i,a,o,s){     this.text=e,this.height=t||0,this.depth=n||0,this.italic=r||0,this.skew=i||0,this.width=a||0,this.classes=o||[],this.style=s||{ 
+--- ArtifactLibrary-BPEftl07.pretty.js:629 @216431
+||[],this.style=s||{ },this.maxFontSize=0;     var c=iu(this.text.charCodeAt(0));     c&&this.classes.push(c+`_fallback`),/[îïíì]/.test(this.text)&&(this.text=Mu[this.text])   }   hasC
+--- ArtifactLibrary-BPEftl07.pretty.js:629 @216511
+;     c&&this.classes.push(c+`_fallback`),/[îïíì]/.test(this.text)&&(this.text=Mu[this.text])   }   hasClass(e){     return this.classes.includes(e)   }   toNode(){     var e=document.
+--- ArtifactLibrary-BPEftl07.pretty.js:629 @216524
+.classes.push(c+`_fallback`),/[îïíì]/.test(this.text)&&(this.text=Mu[this.text])   }   hasClass(e){     return this.classes.includes(e)   }   toNode(){     var e=document.createTextNod
+--- ArtifactLibrary-BPEftl07.pretty.js:629 @216537
+(c+`_fallback`),/[îïíì]/.test(this.text)&&(this.text=Mu[this.text])   }   hasClass(e){     return this.classes.includes(e)   }   toNode(){     var e=document.createTextNode(this.text),
+
+========== PROBE recharts|echarts|d3\.|chart\.js  (ArtifactLibrary-BPEftl07.pretty.js) ==========
+(no match)
+
+========== PROBE idea_select|approve|feedback|checkpoint_type  (WorkflowDetail-bN89YgNS.pretty.js) ==========
+--- WorkflowDetail-bN89YgNS.pretty.js:491 @20853
+rrent=!0,_(!0),b(``);       try{         if(T&&ue&&se!==null&&t!==`stop`&&await ge(),!S.current)return;         let n={           feedback:f         };         E&&(n.conflict_resolution_strategy=M),await s(e,t,n,i.checkpoint_id)       }       catch(t){         let n=t instanceof Error?t.message:`操作失败，请刷新页面重试`;         S.current&&b(n),y.getState().current?.
+--- WorkflowDetail-bN89YgNS.pretty.js:514 @22094
+children:w.includes(`修改后`)?`已根据你上一次的建议修改产出，请复审：满意点「确认继续」，仍需调整可再次提交建议，或点「停止」`:(0,k.jsxs)(k.Fragment,{               children:[n===`idea_select`&&`请选择要继续深入的 Idea，或让系统自动选择`,n===`approve`&&T&&`请查看生成的大纲，可以直接编辑后继续`,n===`approve`&&!T&&`请确认当前步骤的结果，或提供修改意见`,n===`feedback`&&`请查看审稿结果，提供修改意见或停止循环`,E&&(ne?`资产之间检测到不一致, 请选择处理策略后继续`:`资产清点完成, 未检测到不一致, 可直接继续`)]             }) 
+--- WorkflowDetail-bN89YgNS.pretty.js:514 @22139
+审：满意点「确认继续」，仍需调整可再次提交建议，或点「停止」`:(0,k.jsxs)(k.Fragment,{               children:[n===`idea_select`&&`请选择要继续深入的 Idea，或让系统自动选择`,n===`approve`&&T&&`请查看生成的大纲，可以直接编辑后继续`,n===`approve`&&!T&&`请确认当前步骤的结果，或提供修改意见`,n===`feedback`&&`请查看审稿结果，提供修改意见或停止循环`,E&&(ne?`资产之间检测到不一致, 请选择处理策略后继续`:`资产清点完成, 未检测到不一致, 可直接继续`)]             })           })]         })]       }),(0,k.j
+--- WorkflowDetail-bN89YgNS.pretty.js:514 @22178
+xs)(k.Fragment,{               children:[n===`idea_select`&&`请选择要继续深入的 Idea，或让系统自动选择`,n===`approve`&&T&&`请查看生成的大纲，可以直接编辑后继续`,n===`approve`&&!T&&`请确认当前步骤的结果，或提供修改意见`,n===`feedback`&&`请查看审稿结果，提供修改意见或停止循环`,E&&(ne?`资产之间检测到不一致, 请选择处理策略后继续`:`资产清点完成, 未检测到不一致, 可直接继续`)]             })           })]         })]       }),(0,k.jsxs)(`div`,{         className:`flex-1 
+--- WorkflowDetail-bN89YgNS.pretty.js:491 @22218
+[n===`idea_select`&&`请选择要继续深入的 Idea，或让系统自动选择`,n===`approve`&&T&&`请查看生成的大纲，可以直接编辑后继续`,n===`approve`&&!T&&`请确认当前步骤的结果，或提供修改意见`,n===`feedback`&&`请查看审稿结果，提供修改意见或停止循环`,E&&(ne?`资产之间检测到不一致, 请选择处理策略后继续`:`资产清点完成, 未检测到不一致, 可直接继续`)]             })           })]         })]       }),(0,k.jsxs)(`div`,{         className:`flex-1 overflow-y-auto px-6`,children:[(0,k.jsxs
+--- WorkflowDetail-bN89YgNS.pretty.js:491 @23258
+              finally{                 S.current&&_(!1)               }             },children:`继续执行并恢复检查点`           }),i?.allow_feedback===!1&&(0,k.jsx)(`p`,{             className:`mt-1`,children:`恢复轮次仅支持确认或停止。如需修改，请先停止并编辑产物，避免修改意见被直接跳过。`           })]         }),E&&(0,k.jsxs)(`div`,{           className:`mb-4 space-y-3`,children:[A&&(0,k.jsxs)(`div`,{ 
+--- WorkflowDetail-bN89YgNS.pretty.js:514 @31380
+t-3 pb-6 shrink-0 border-t border-[var(--border)]/30 bg-[var(--bg-card)]`,children:[(0,k.jsx)(`button`,{           onClick:()=>F(`approve`),disabled:g||fe||!C,className:`flex-1 py-2.5 rounded-xl text-sm font-medium transition bg-[#34d399]/15 text-[#34d399] hover:bg-[#34d399]/25 disabled:opacity-40`,children:n===`idea_select`?`自动选择并继续`:ue?`保存并继续`:`确认继续`   
+--- WorkflowDetail-bN89YgNS.pretty.js:514 @31564
+rounded-xl text-sm font-medium transition bg-[#34d399]/15 text-[#34d399] hover:bg-[#34d399]/25 disabled:opacity-40`,children:n===`idea_select`?`自动选择并继续`:ue?`保存并继续`:`确认继续`         }),n!==`idea_select`&&n!==`assets_resolve`&&i?.allow_feedback!==!1&&(0,k.jsx)(`button`,{           onClick:()=>F(`feedback`),disabled:g||fe||!C||!f.trim(),title:f.trim()?`提交修改意见`:`请先
+--- WorkflowDetail-bN89YgNS.pretty.js:514 @31621
+ text-[#34d399] hover:bg-[#34d399]/25 disabled:opacity-40`,children:n===`idea_select`?`自动选择并继续`:ue?`保存并继续`:`确认继续`         }),n!==`idea_select`&&n!==`assets_resolve`&&i?.allow_feedback!==!1&&(0,k.jsx)(`button`,{           onClick:()=>F(`feedback`),disabled:g||fe||!C||!f.trim(),title:f.trim()?`提交修改意见`:`请先在上方输入修改意见`,className:`flex-1 py-2.5 rounded-xl text-sm fo
+--- WorkflowDetail-bN89YgNS.pretty.js:491 @31666
+d:opacity-40`,children:n===`idea_select`?`自动选择并继续`:ue?`保存并继续`:`确认继续`         }),n!==`idea_select`&&n!==`assets_resolve`&&i?.allow_feedback!==!1&&(0,k.jsx)(`button`,{           onClick:()=>F(`feedback`),disabled:g||fe||!C||!f.trim(),title:f.trim()?`提交修改意见`:`请先在上方输入修改意见`,className:`flex-1 py-2.5 rounded-xl text-sm font-medium transition bg-indigo-500/15 text
+--- WorkflowDetail-bN89YgNS.pretty.js:491 @31727
+:`确认继续`         }),n!==`idea_select`&&n!==`assets_resolve`&&i?.allow_feedback!==!1&&(0,k.jsx)(`button`,{           onClick:()=>F(`feedback`),disabled:g||fe||!C||!f.trim(),title:f.trim()?`提交修改意见`:`请先在上方输入修改意见`,className:`flex-1 py-2.5 rounded-xl text-sm font-medium transition bg-indigo-500/15 text-indigo-400 hover:bg-indigo-500/25 disabled:opacity-40 disabl
+--- WorkflowDetail-bN89YgNS.pretty.js:15098 @450784
+       },e)]         })]       })]     }),Be&&(0,k.jsx)(se,{       workflowId:t.id,stepName:ee||Be.display_name,checkpointType:Be.checkpoint_type||`approve`,stepSkillName:Be.skill_name     })]   }) } export{   AN as default }; 
+--- WorkflowDetail-bN89YgNS.pretty.js:514 @450802
+   })]       })]     }),Be&&(0,k.jsx)(se,{       workflowId:t.id,stepName:ee||Be.display_name,checkpointType:Be.checkpoint_type||`approve`,stepSkillName:Be.skill_name     })]   }) } export{   AN as default }; 
+
+========== PROBE compile|latexmk|xelatex|tectonic|bibtex|word_count|undo  (LatexEditor-I1nsgpA4.pretty.js) ==========
+--- LatexEditor-I1nsgpA4.pretty.js:148 @5082
+ll`);     return t&&typeof t.message==`string`&&typeof t.current_file==`string`&&typeof t.compile_log==`string`&&typeof t.request_id==`string`&&/^[A-Za-z0-9_-]{8,80}$/.test(t.request_id)?t:null   }   catch{     return null   } } function me(e,t){   try{    
+--- LatexEditor-I1nsgpA4.pretty.js:320 @9754
+urn t&&E.get(e)!==t?Promise.reject(Error(`另一版本的撤回仍在确认，请先等待其结果`)):n;   let r=`modex.editor.undo:${e}`,i=(async()=>{     let n=E.get(e)||``;     try{       n||=localStorage.getItem(r)||``     }     catch{ }     if(t&&n&&n!==t)throw Error(`另一次撤回结果尚未确认，请先重试那
+--- LatexEditor-I1nsgpA4.pretty.js:320 @10555
+  localStorage.setItem(r,n)       }       catch{ }       let t=await fetch(`${e}/ai-agent-undo?version_id=${n}`,{         method:`POST`,signal:i.signal       }),a=await t.json();       if(!t.ok)throw Error(typeof a.detail==`string`?a.detail:`撤回结果未确认，请重试同
+--- LatexEditor-I1nsgpA4.pretty.js:320 @15101
+ext-[var(--text-primary)]`,children:e.state===`stopping`?`正在安全停止`:m?`正在确认后台状态`:e.state===`undone`?`本次修改已撤回`:p?`正在处理本次请求`:re?`文件已变化，需要重新核对`:ne?`图表已更新 · 论文导出需处理`:oe?`配套内容尚未就绪`:ce?d?.success?`已答复`:`暂未能答复`:d?.success&&d.outcome===`verified_unchanged`?`已核对，现有
+--- LatexEditor-I1nsgpA4.pretty.js:320 @17355
+sx)(`div`,{         className:`rounded-lg bg-[var(--bg-overlay)] p-2`,children:e.state===`undone`?`此版本已撤回`:a?`当前内容请打开文件核对`:x?`新导出已检查`:f.length?`源文件已更新`:re?`未提交本轮草稿`:`正式文件未改变`       })]     }),!p&&!m&&d?.success&&d.summary&&(0,k.jsx)(`div`,{       classNa
+--- LatexEditor-I1nsgpA4.pretty.js:320 @19532
+ll py-2 text-[13px]`,children:`打开重新导出的论文`     }),!p&&!m&&f.length>0&&d?.version_id&&r&&![`undone`,`discarded`].includes(e.state)&&(0,k.jsx)(`button`,{       disabled:i,onClick:()=>r(d.version_id),className:`btn-ghost w-full py-2 text-[13px] border border
+--- LatexEditor-I1nsgpA4.pretty.js:320 @21492
+ds||0),`。其余时间用于准备、检查和保存。`]       })]     }),!p&&!m&&!d?.success&&!ie&&!oe&&n&&e.runId&&![`undone`,`discarded`].includes(e.state)&&(0,k.jsx)(`button`,{       disabled:i,onClick:()=>n(ne?`图表已保存，请保留图表和数据，只修复刚才论文导出的排版或编译问题并重新导出；不要重跑建模和图表。`:`继续`),className:`b
+--- LatexEditor-I1nsgpA4.pretty.js:320 @22978
+止中`,completed:`已完成`,needs_attention:`需要处理`,failed:`未完成`,interrupted:`已中断`,cancelled:`已停止`,undone:`已撤销`,discarded:`草稿已放弃` })[e]||`状态待核对`,Ne=e=>Number.isFinite(Date.parse(e))?new Date(e).toLocaleString():`未记录时间`; function A(e){   return e===`completed`?`su
+--- LatexEditor-I1nsgpA4.pretty.js:320 @26524
+r(--text-muted)]`,children:[Ne(e.created_at),` · `,e.state===`committed`?`已提交`:e.state===`undone`?`已撤回`:`未完成`]         }),(0,k.jsxs)(`p`,{           className:`mt-1 break-words`,children:[e.summary?.slice(0,130)||`文件变更`,e.summary?.length>130?`…`:``]     
+--- LatexEditor-I1nsgpA4.pretty.js:320 @31068
+rrent.mounted&&w(!1)       }     }   },ke=Pe(s,ce,T),Re=x?.version_id&&x.file_count>0&&![`undone`,`discarded`,`queued`,`running`,`checking`,`exporting`,`publishing`,`stopping`].includes(x.state);   return(0,k.jsxs)(`section`,{     "aria-label":`编辑器 Agent
+--- LatexEditor-I1nsgpA4.pretty.js:320 @38190
+0,k.jsxs)(`span`,{                     children:[`版本 `,x.version_id.slice(0,8),x.state===`undone`?` · 已回退`:``]                   }),(0,k.jsxs)(`div`,{                     children:[(0,k.jsx)(`button`,{                       onClick:()=>De(x.version_id),c
+--- LatexEditor-I1nsgpA4.pretty.js:320 @57382
+sage:`本轮任务已结束`                   })),Rr(n.result,!!n.diffs?.length).catch(()=>{ })),n.can_undo&&wn(!0)                 }               }               catch{                 r()&&q(e=>({                   ...e,runId:a,state:`unknown`,activity:`连接暂时中断，正在重
+--- LatexEditor-I1nsgpA4.pretty.js:320 @58194
+nning?void 0:`已恢复上次执行记录`         })),Rr(n.result,!!n.diffs?.length).catch(()=>{ })),n.can_undo&&(wn(!0),n.applied_files&&n.applied_files.length>0)){           let e=n.applied_files.map(e=>e.replace(/^(?:✏️|🆕|✏|🆕)\s*/u,``).replace(/^[\uFE0F\s]+/,``).tri
+--- LatexEditor-I1nsgpA4.pretty.js:148 @68608
+&&await vr(R===`markdown`?`导出`:`编译`)){       fe(!0),E(``),O(null),Te([]),ke([]),Me(!1),F(`compile`);       try{         let t=await fetch(`${P}/${e}/compile`,{           method:`POST`,headers:{             "Content-Type":`application/json`           },body:
+--- LatexEditor-I1nsgpA4.pretty.js:148 @68667
+(null),Te([]),ke([]),Me(!1),F(`compile`);       try{         let t=await fetch(`${P}/${e}/compile`,{           method:`POST`,headers:{             "Content-Type":`application/json`           },body:JSON.stringify({ })         });         if(!t.ok){         
+--- LatexEditor-I1nsgpA4.pretty.js:148 @81974
+l),an.current=``;       let t=pe(e),r=t?.message===n?t:{         message:n,current_file:g,compile_log:D===!1?_e:``,request_id:crypto.randomUUID(),permission_mode:`project`,...Dt.status?.mode===`account`&&Ot?{           account_model:Ot         }         :{ 

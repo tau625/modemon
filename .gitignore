@@ -1,0 +1,57 @@
+# ─────────────────────────────────────────────────────────────
+# 只提交「我们自己的产出」，不提交「从商业产品里提取的原始物」
+# ─────────────────────────────────────────────────────────────
+#
+# ⚠️ 下面这几个目录是**从蓝方商业产品（Modex-MH-Agent）里提取出来的原始内容**：
+#    - strings/       : 从 .pyd（Cython 编译）里提取的字符串
+#    - strings_cjk/   : 同上，中文串（12.9 MB / 313 文件）
+#    - pyc_dump/      : .pyc 反汇编
+#    - asar/          : Electron 包内解出的文件
+#    - beauty/        : 反混淆后的 minified JS
+#
+# 这些**不是我们的作品**，把它们推到 GitHub 等于转载该产品的内部实现。
+# 分析结论（reports/）保留，原始提取物排除。
+strings/
+strings_cjk/
+pyc_dump/
+asar/
+beauty/
+source/
+
+# 上游 ARIS 的 clone（第三方仓库本体，1.9 MB）。
+# 不作为嵌套仓库提交——我们需要的内容已按 MIT 许可复制到 modemon/skills/ 并附了许可文本。
+upstream-ARIS/
+upstream-ARIS-cache.json
+
+# 目标安装目录（如果误建在仓库内）
+Modex-MH-Agent/
+
+# ── 运行时 / 临时产物 ──
+__pycache__/
+*.py[cod]
+*.pyo
+.papercheck/
+*.log
+logs/
+*.aux
+*.out
+*.toc
+*.synctex.gz
+
+# 数据库（含真实运行记录）
+*.db
+*.db-journal
+*.db-wal
+*.sqlite
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 一次性探针产物（可再生成）
+.figspec-*
+.drawio-probe/
+modemon/backend/workspaces/

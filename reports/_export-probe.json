@@ -1,0 +1,55 @@
+{
+ "workspace": "C:\\Users\\SAKE\\AppData\\Local\\Temp\\modemon-full-_kmji5xj\\ws",
+ "template": "comp_cumcm",
+ "results": {
+  "latex": {
+   "ok": true,
+   "tex": "C:\\Users\\SAKE\\AppData\\Local\\Temp\\modemon-full-_kmji5xj\\ws\\paper\\main.tex",
+   "pdf": "C:\\Users\\SAKE\\AppData\\Local\\Temp\\modemon-full-_kmji5xj\\ws\\paper\\main.pdf",
+   "pages": 2,
+   "compile_error": "",
+   "log_tail": "\n\nPackage caption Warning: \\setcaptiontype\n(caption)                outside box or environment on input line 42.\nSee the caption package documentation for explanation.\n\n\nPackage caption Warning: The option `hypcap=true' will be ignored for this\n(caption)                particular \\caption on input line 42.\nSee the caption package documentation for explanation.\n\n(d:/04_IDEs/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd)\n(d:/04_IDEs/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd)\n\nPackage caption Warning: The option `hypcap=true' will be ignored for this\n(caption)                particular \\caption on input line 60.\nSee the caption package documentation for explanation.\n\n[2] (./main.aux)\n\nLaTeX Font Warning: Some font shapes were not available, defaults substituted.\n\n )\nOutput written on main.pdf (2 pages).\nTranscript written on main.log.",
+   "budget": {
+    "template": "comp_cumcm",
+    "limit": 30,
+    "mode": "advisory_max",
+    "body_chars": 0,
+    "language": "zh",
+    "chars_per_page": 800,
+    "estimated_pages": 0,
+    "over_limit": false,
+    "over_by": 0,
+    "advisory": true
+   },
+   "notes": [
+    "未找到正文（paper/sections/*.md 或 paper/main.md）"
+   ]
+  },
+  "docx": {
+   "ok": true,
+   "docx": "C:\\Users\\SAKE\\AppData\\Local\\Temp\\modemon-full-_kmji5xj\\ws\\paper\\main.docx",
+   "bytes": 37371,
+   "profile": "competition_zh",
+   "sections": 0,
+   "tables": 2,
+   "figures": 0,
+   "references": 0,
+   "budget": {
+    "template": "comp_cumcm",
+    "limit": 30,
+    "mode": "advisory_max",
+    "body_chars": 0,
+    "language": "zh",
+    "chars_per_page": 800,
+    "estimated_pages": 0,
+    "over_limit": false,
+    "over_by": 0,
+    "advisory": true
+   },
+   "notes": [
+    "未找到正文（paper/sections/*.md 或 paper/main.md）"
+   ]
+  }
+ },
+ "ok": true
+}

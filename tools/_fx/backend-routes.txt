@@ -1,0 +1,6 @@
+routers__project_preview	/api/editor
+routers__project_preview	/api/editor/{wf_id}/serve
+routers__project_preview	/api/editor/{wf_id}/serve/status
+routers__palette_preview	/api/palette-preview
+routers__chat_internal,services__chat_ticket	/api/settings
+routers__style_preview	/api/style-preview

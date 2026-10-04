@@ -1,0 +1,172 @@
+Account-CFNFyFpM.js	GET	-	/api/account/inference	,S=/^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/,C=[`RESERVED`,`DISPATCHED`,`UNKNOWN`,`SETTLED`,`CANCELLED`,`UNCONFIRMED`]
+Account-CFNFyFpM.js	POST	json	/api/account/native/	+e,t===void 0?{}:{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify(t)},n
+Account-CFNFyFpM.js	GET	-	/settings	,className:`access-secondary account-settings-link`,children:`管理模型预设 →`}
+Account-CFNFyFpM.js	GET	-	/account/history	,className:`access-secondary account-settings-link`,children:`消费记录与汇总 →`}
+AccountHistory-DV1tVxrt.js	GET	-	/api/account/native/wallet	,{},e.signal
+AccountHistory-DV1tVxrt.js	GET	-	/account	,children:`返回账号页`}
+AccountMessagesInference-C-hk-by7.js	GET	-	/api/account/messages	,l=/^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/,u=8380416,d=1056768
+AccountModelCatalog-DdzyHjab.js	GET	-	/api/account/models	,{},t.signal
+AccountModelCatalog-DdzyHjab.js	GET	-	/account	,className:`access-text-button`,children:`前往账户页 →`}
+ArtifactViewer-DS3mPR9-.js	GET	-	/api/workflows/${encodeURIComponent(e||``)}/artifacts/${K}?raw=true	
+ArtifactViewer-DS3mPR9-.js	GET	-	/api/workflows/${encodeURIComponent(e)}/artifacts	,{signal:t.signal}
+ArtifactViewer-DS3mPR9-.js	GET	-	/api/workflows/${encodeURIComponent(e)}/artifacts/${r}	,{signal:t.signal}
+ArtifactViewer-DS3mPR9-.js	GET	-	/api/workflows/${encodeURIComponent(e)}/artifacts/${r}#page=1&zoom=page-width&navpanes=0	
+ArtifactViewer-DS3mPR9-.js	GET	-	/api/workflows/${encodeURIComponent(e)}/artifact-context/inspect/${r}	,{signal:t.signal}
+ArtifactViewer-DS3mPR9-.js	GET	-	/workflow/${e}/chat	:`/workflow/${e}`,_e=q?`返回协同工作台`:`返回工作流`,J=E?.editable_targets?.[0]||``,ve=(0,d.useMemo)(()=>J?`/workflow/${e}/editor?file=${encodeURIComponent(J)}`:`
+ArtifactViewer-DS3mPR9-.js	GET	-	/workflow/${e}/editor?file=${encodeURIComponent(J)}	:`/workflow/${e}/editor`,[e,J]
+ArtifactViewer-DS3mPR9-.js	GET	-	/workflow/${e}/editor	,[e,J]
+ArtifactViewer-DS3mPR9-.js	POST	json	/api/workflows/${encodeURIComponent(e)}/artifact-context/prompt/build	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({path:m,instruction:t,action:A})}
+ArtifactViewer-DS3mPR9-.js	GET	-	/api/workflows/${encodeURIComponent(e||``)}/artifacts/${K}?preview=html	,sandbox:`allow-same-origin`,title:`文件预览`}
+ArtifactViewer-DS3mPR9-.js	GET	-	/api/workflows/${encodeURIComponent(e||``)}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}	}
+ChatWorkbench-B0gSrHl3.js	POST	json	/api/workflows/${u}/chat/messages/${e.id}/resume-draft	,{method:`POST`,headers:{"Content-Type":`application/json`},signal:AbortSignal.timeout(2e4),body:JSON.stringify({revision:e.proposal_revision||1,resol
+ChatWorkbench-B0gSrHl3.js	GET	-	/api/workflows/${u}/chat/messages/${e.id}/diff	
+ChatWorkbench-B0gSrHl3.js	GET	-	/workflow/${u}/editor?file=${encodeURIComponent(Qe)}	,title:Qe.endsWith(`.py`)?`打开源文件，明确点击运行后再生成图表或数据`:`打开 DrawIO 可视化编辑与导出`,children:Qe.endsWith(`.py`)?`运行并查看新结果`:`打开并导出流程图`}
+ChatWorkbench-B0gSrHl3.js	GET	-	/api/workflows/${encodeURIComponent(e)}/chat	,k=(0,T.useCallback)(async e=>{let t=C.current,n=t.start(`history`)
+ChatWorkbench-B0gSrHl3.js	GET	-	${O}/messages/${e.id}/diff	,n.signal
+ChatWorkbench-B0gSrHl3.js	GET	-	${O}/messages/${t.id}/diff	,r.signal
+ChatWorkbench-B0gSrHl3.js	GET	-	${O}/messages/${t.id}/rollback-preview	,r.signal
+ChatWorkbench-B0gSrHl3.js	GET	-	${O}/messages/${i.id}/rollback	,s.signal,`POST`,{expected_version_id:a}
+ChatWorkbench-B0gSrHl3.js	GET	-	/api/workflows/${encodeURIComponent(e)}/chat/materials	,k=(0,T.useRef)(async()=>{}),ae=(0,T.useRef)(async()=>{})
+ChatWorkbench-B0gSrHl3.js	POST	json	/api/workflows/${encodeURIComponent(e)}/chat/stages/${encodeURIComponent(t.skill)}/accept	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({snapshot:t.snapshot})},r,6e4
+ChatWorkbench-B0gSrHl3.js	GET	-	/settings	,children:`检查模型设置`}
+ChatWorkbench-B0gSrHl3.js	GET	-	/api/workflows/${encodeURIComponent(t)}/artifacts?view=overview&refresh=true	,{signal:e.signal}
+ChatWorkbench-B0gSrHl3.js	GET	-	/api/workflows/${encodeURIComponent(t)}/artifacts	,onOpen:e=>h(f(t,e.path),{state:{fromChat:!0}})},t
+Dashboard-2mxANXyi.js	GET	-	/api/workflows/${e[0]}/export	
+Dashboard-2mxANXyi.js	POST	json	/api/workflows/export-batch	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({ids:e})}
+Dashboard-2mxANXyi.js	POST	-	/api/workflows/import	,{method:`POST`,body:e}
+LatexEditor-I1nsgpA4.js	GET	-	${e}/docx?${n}	}function ie(e,t){let n=e?.runId===t.run_id?e:null
+LatexEditor-I1nsgpA4.js	POST	json	/api/editor/${encodeURIComponent(e)}/generate-image	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({...t,request_id:n})}
+LatexEditor-I1nsgpA4.js	GET	-	/api/editor/${encodeURIComponent(e)}/image-requests/${encodeURIComponent(t)}	
+LatexEditor-I1nsgpA4.js	GET	-	/api/editor/${encodeURIComponent(e)}/ai-agent-history	,e=>{if(!Array.isArray(e.versions))throw Error(`版本记录不完整，请重试`)
+LatexEditor-I1nsgpA4.js	GET	-	/api/editor/${encodeURIComponent(e)}/ai-agent-version/${t}	,e=>{if(e.version_id!==t||!Array.isArray(e.diffs))throw Error(`版本差异不完整，请重试`)
+LatexEditor-I1nsgpA4.js	GET	-	/api/editor/${encodeURIComponent(e)}	
+LatexEditor-I1nsgpA4.js	GET	-	/api/editor/${encodeURIComponent(e)}/model-options	,t.signal
+LatexEditor-I1nsgpA4.js	GET	-	/api/editor	
+LatexEditor-I1nsgpA4.js	GET	-	${P}/${e}/docx-status	,{cache:`no-store`}
+LatexEditor-I1nsgpA4.js	GET	-	${P}/${e}/files?view=overview	,{signal:a.signal}
+LatexEditor-I1nsgpA4.js	GET	-	${P}/${e}/serve/status	
+LatexEditor-I1nsgpA4.js	GET	-	${P}/${e}/chat-history	,i.signal
+LatexEditor-I1nsgpA4.js	GET	-	${P}/${e}/files?view=overview&refresh=true	
+LatexEditor-I1nsgpA4.js	POST	json	${P}/${e}/compile	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({})}
+LatexEditor-I1nsgpA4.js	POST	json	${P}/${e}/serve	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({mode:t})}
+LatexEditor-I1nsgpA4.js	GET	-	${P}/${e}/serve?kind=${t}	:`${P}/${e}/serve`
+LatexEditor-I1nsgpA4.js	GET	-	${P}/${e}/serve	
+LatexEditor-I1nsgpA4.js	GET	-	${P}/${n}/files?view=overview&refresh=true	
+LatexEditor-I1nsgpA4.js	DELETE	-	${P}/${e}/chat-history	,{method:`DELETE`,signal:t.signal}
+LatexEditor-I1nsgpA4.js	GET	-	${P}/${e}/files	,activePath:g,keepPaths:Yr,onOpen:e=>{sr(e.path)},renderStatus:e=>Yr.includes(e.path)?(0,k.jsx)(`span`,{className:`text-[var(--accent)] text-xs`,child
+LatexEditor-I1nsgpA4.js	GET	-	${z.backend.url}/docs	,target:`_blank`,rel:`noopener noreferrer`,className:`underline ml-1 text-[var(--text-muted)]`,children:`API文档`}
+NewWorkflow-Ld6TEJjT.js	POST	-	/api/workflows/${encodeURIComponent(e)}/artifacts/upload	,{method:`POST`,body:r},new AbortController,3e4
+NewWorkflow-Ld6TEJjT.js	POST	-	/api/templates/${encodeURIComponent(t)}/resolve-steps	,{method:`POST`,headers:{"Content-Type":`application/json`},body:d,signal:n.signal}
+NewWorkflow-Ld6TEJjT.js	GET	-	/api/account/messages/capabilities	,{},e.signal
+NewWorkflow-Ld6TEJjT.js	GET	-	/api/palette-preview?colors=${encodeURIComponent(m)}	,alt:`自定义配色预览`,onError:()=>te(!0),className:`w-full rounded-lg border border-[var(--border)]`}
+NewWorkflow-Ld6TEJjT.js	GET	-	/api/style-preview?frame=${d.frame}&grid=${d.grid}&lw=${d.lw}&font=${d.font}&legend=${d.legend}&bg=${d.bg}	,alt:`自定义版式预览`,className:`w-full rounded-lg border border-[var(--border)] shadow-sm bg-white`,loading:`lazy`}
+NewWorkflow-Ld6TEJjT.js	GET	-	/api/settings/presets	,{signal:t.signal}
+NewWorkflow-Ld6TEJjT.js	GET	-	/api/settings	,{signal:t.signal}
+NewWorkflow-Ld6TEJjT.js	POST	-	/api/workflows/${e}/artifacts/upload	,{method:`POST`,body:t}
+NewWorkflow-Ld6TEJjT.js	GET	-	/settings	
+NewWorkflow-Ld6TEJjT.js	POST	-	/api/workflows/${f}/artifacts/upload	,{method:`POST`,body:r}
+NewWorkflow-Ld6TEJjT.js	POST	-	/api/workflows/${f}/artifacts/custom-requirements	,{method:`POST`,body:e}
+NewWorkflow-Ld6TEJjT.js	GET	-	/workflow/${f}/chat	
+PatchReviewDialog-CE7kb4Sp.js	GET	-	/api/workflows/${encodeURIComponent(y)}/artifacts/${e.split(`/`).map(encodeURIComponent).join(`/`)}	:void 0
+Settings-D4EW1h0L.js	GET	-	/api/account/native/image-settings	,{},n.signal
+Settings-D4EW1h0L.js	PUT	json	/api/account/native/image-settings	,{method:`PUT`,headers:{"Content-Type":`application/json`},body:JSON.stringify({account_id:n.account_id,mode_revision:t,model_id:a})}
+Settings-D4EW1h0L.js	GET	-	/api/settings/presets	,{signal:t.signal}
+Settings-D4EW1h0L.js	GET	-	/api/settings	,{signal:n.signal}
+Settings-D4EW1h0L.js	GET	-	/api/settings/data-dir	
+Settings-D4EW1h0L.js	PUT	json	/api/settings/data-dir	,{method:`PUT`,headers:{"Content-Type":`application/json`},body:JSON.stringify({data_dir:t.path})}
+Settings-D4EW1h0L.js	PUT	json	/api/settings	,{method:`PUT`,signal:t.signal,headers:{"Content-Type":`application/json`},body:JSON.stringify({settings:o})}
+Settings-D4EW1h0L.js	POST	-	/api/settings/test/${e}	,{method:`POST`}
+Settings-D4EW1h0L.js	DELETE	-	/api/settings/presets/${e.id}	,{method:`DELETE`,signal:a.signal}
+Settings-D4EW1h0L.js	GET	-	/api/settings/detect-claude	
+Settings-D4EW1h0L.js	?	json	/api/settings/presets/${R.id}	:`/api/settings/presets`,o=await fetch(a,{method:i?`PUT`:`POST`,signal:n.signal,headers:{"Content-Type":`application/json`},body:JSON.stringify({name:
+Settings-D4EW1h0L.js	?	json	/api/settings/presets	,o=await fetch(a,{method:i?`PUT`:`POST`,signal:n.signal,headers:{"Content-Type":`application/json`},body:JSON.stringify({name:e,model_id:t,api_key:R.a
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/checkpoints/current	,{signal:o.signal}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts/ASSETS_INVENTORY.md	
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts/ASSETS_CONFLICTS.md	
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts/${encodeURIComponent(r)}	
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts/PAPER_PLAN.md	
+WorkflowDetail-bN89YgNS.js	PUT	json	/api/workflows/${e}/checkpoints/plan	,{method:`PUT`,headers:{"Content-Type":`application/json`},body:JSON.stringify({content:se,checkpoint_id:i.checkpoint_id}),signal:AbortSignal.timeout(
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}	}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${encodeURIComponent(e)}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}${n}	
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${n}/artifacts/${encodeURIComponent(e.path)}?raw=true	,download:!0,className:`text-xs text-[var(--text-muted)] hover:text-[var(--text-primary)] transition`,children:`下载`}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${n}/artifacts/${e.split(`/`).map(encodeURIComponent).join(`/`)}	}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${n}/artifacts/${encodeURIComponent(e.path)}	,alt:e.path,className:`max-w-full max-h-[60vh] rounded-lg mx-auto`}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${n}/artifacts/${encodeURIComponent(e.path)}?preview=html	,className:`w-full rounded-lg bg-white border-0`,style:{minHeight:`400px`,height:`70vh`},sandbox:`allow-same-origin`,title:`文件预览`}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/account/messages/capabilities	,{},e.signal
+WorkflowDetail-bN89YgNS.js	GET	-	/api/settings/presets	,{signal:e.signal}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/export?mode=${t}	
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/logs?limit=200&compact=true	,{signal:n.signal}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts?view=overview	,{signal:i.signal}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts/extract-status	,{signal:i.signal}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts/paper%2FPAPER_IMPROVEMENT_LOG.md	,{signal:i.signal}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts/${encodeURIComponent(t.path)}	
+WorkflowDetail-bN89YgNS.js	POST	-	/api/workflows/${e}/artifacts/upload	,{method:`POST`,body:n}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts?view=overview&refresh=true	
+WorkflowDetail-bN89YgNS.js	GET	-	/workflow/${t.id}/chat	,replace:!0}
+WorkflowDetail-bN89YgNS.js	GET	-	/workflow/${t.id}/editor	,className:`btn-ghost px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300`,title:`打开编辑器，手动修改并重新编译/导出`,children:`编辑器`}
+WorkflowDetail-bN89YgNS.js	PATCH	json	/api/workflows/${t.id}/steps/${e}/account-model	,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({model_id:n})}
+WorkflowDetail-bN89YgNS.js	PATCH	json	/api/workflows/${t.id}/steps/${e}/effort	,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({effort:n,rerun:i})}
+WorkflowDetail-bN89YgNS.js	GET	-	/api/workflows/${e}/artifacts	,renderStatus:e=>e.path.startsWith(`user_data/`)&&/\.(pdf|docx?)$/i.test(e.path)?(0,k.jsx)(ON,{status:Fe[xN(e.path)]}):null,renderActions:t=>(0,k.jsxs
+index-BeImsYqE.js	?	-	/api/client-config/refresh	:`/api/client-config`,{method:c?`POST`:`GET`,signal:m.signal,cache:`no-store`,credentials:`same-origin`}
+index-BeImsYqE.js	?	-	/api/client-config	,{method:c?`POST`:`GET`,signal:m.signal,cache:`no-store`,credentials:`same-origin`}
+index-BeImsYqE.js	POST	json	/api/account/${e}	,a?{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify(r||{})}:{},s.signal
+index-BeImsYqE.js	POST	json	/api/account/activate	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({license_id:e})},r.signal
+index-BeImsYqE.js	GET	-	/api/account/logout-all	&&(v(),n.current={...n.current,authenticated:!1,account:void 0,entitlements:[],inference_enabled:!1},t(n.current)),i}catch(e){throw _.current&&!a.sign
+index-BeImsYqE.js	GET	-	/api/account/status	,{},e.signal
+index-BeImsYqE.js	GET	-	/api/account/send-code	,{email:o.trim().toLowerCase(),purpose:e}
+index-BeImsYqE.js	GET	-	/api/account/${e===`register`?`register`:e===`reset`?`reset-password`:`bind-email`}	,h
+index-BeImsYqE.js	GET	-	/api/account/identity	
+index-BeImsYqE.js	GET	-	/api/account/identity/withdraw	
+index-BeImsYqE.js	GET	-	/api/account/licenses/claim	
+index-BeImsYqE.js	GET	-	/api/account/licenses/${e.id}/unbind	,title:`确认解除设备绑定？`,message:`此授权的设备将无法取得新的在线授权，运行中的受保护任务可能暂停。资料不会删除，之后可按授权规则重新绑定。`}
+index-BeImsYqE.js	GET	-	/api/account/native/software	+(n?`/consent`:``),n
+index-BeImsYqE.js	GET	-	/api/account/native/realname	
+index-BeImsYqE.js	GET	-	/api/account/native/	+t,n
+index-BeImsYqE.js	GET	-	/api/account/workbench-access	,{},n.signal
+index-BeImsYqE.js	POST	json	/api/license/verify	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({license_key:_.trim(),machine_id:`CLIENT-PLACEHOLDER`})},r.signal
+index-BeImsYqE.js	GET	-	/account	,children:`登录 Modex 账户 →`}
+index-BeImsYqE.js	GET	-	/account/history	].includes(r.replace(/\/$/,``))||e?.mode===`key`||e?.mode===`account`&&e.inference_enabled?null:(0,M.jsxs)(`div`,{className:`account-runtime-notice`,r
+index-BeImsYqE.js	GET	-	/settings	,children:`设置`}
+index-BeImsYqE.js	GET	-	/workflow/:id/editor	,element:(0,M.jsx)(Ze,{})}
+index-BeImsYqE.js	GET	-	/workflow/:id/chat	,element:(0,M.jsx)(Qe,{})}
+modelDiscovery-BRyakWgC.js	POST	json	/api/settings/models/discover	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify(e),signal:n}
+newApiWallet-BJVw6ude.js	GET	-	/api/account/native/	+e
+newApiWallet-BJVw6ude.js	GET	-	/api/account/native/usage?	+u,{},l.signal
+useAccessMode-CYwsqbbI.js	GET	-	/api/account/inference/operations	,o=r===`GET`&&/^\/api\/account\/messages\/(?:capabilities|operations(?:\/[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12})?)$/.test(e)||r===`POST`&&e===`/a
+useAccessMode-CYwsqbbI.js	GET	-	/api/account/messages/operations	,s=r===`PATCH`&&/^\/api\/workflows\/[A-Za-z0-9_-]{1,128}\/steps\/[A-Za-z0-9_-]{1,128}\/account-model$/.test(e),u=r===`PATCH`&&/^\/api\/workflows\/[A-Z
+useAccessMode-CYwsqbbI.js	GET	-	/api/account/native/image-settings	||r===`GET`&&/^\/api\/account\/native\/(?:realname|software|wallet|(?:orders|adjustments|requests)\?page=[1-9][0-9]{0,4}|history\?page=[1-9][0-9]{0,4}
+useAccessMode-CYwsqbbI.js	GET	-	/api/license/	
+useAccessMode-CYwsqbbI.js	POST	json	/api/account/access-mode	,e?{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({mode:e})}:o?{headers:{"X-Modex-Mode-Read":`identity`}}:{},r.signal
+useWebSocket-DhwRyw4C.js	POST	-	/api/workflows/${n}/chat/session	,{method:`POST`,signal:i.signal}
+useWebSocket-DhwRyw4C.js	GET	-	/api/workflows/${i}/chat/turns/${encodeURIComponent(e)}	
+useWebSocket-DhwRyw4C.js	POST	json	/api/workflows/${i}/chat/say	,{method:`POST`,signal:m.signal,headers:{"Content-Type":`application/json`},body:JSON.stringify(o)}
+useWebSocket-DhwRyw4C.js	DELETE	-	/api/workflows/${n}/chat/session	,{method:`DELETE`}
+useWebSocket-DhwRyw4C.js	POST	json	/api/workflows/${a}/chat/messages/${r}/confirm	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({force:!!i?.force,front:!!i?.front,revision:s?.proposal_revision??1})}
+useWebSocket-DhwRyw4C.js	PATCH	json	/api/workflows/${o}/chat/messages/${r}/proposal	,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({instruction:i.trim(),revision:s.proposal_revision??1,...a||{}})}
+useWebSocket-DhwRyw4C.js	GET	-	/api/workflows/${n}/chat/config	
+useWebSocket-DhwRyw4C.js	PATCH	json	/api/workflows/${r}/chat/config	,{method:`PATCH`,headers:{"Content-Type":`application/json`},signal:s.signal,body:JSON.stringify({interaction_mode:o.interaction_mode,model_preset_id:
+useWebSocket-DhwRyw4C.js	GET	-	/api/workflows/${n}/chat/queue	
+useWebSocket-DhwRyw4C.js	POST	-	/api/workflows/${r}/chat/queue/${n}/promote	,{method:`POST`}
+useWebSocket-DhwRyw4C.js	POST	-	/api/workflows/${i}/chat/messages/${r}/cancel	,{method:`POST`}
+useWebSocket-DhwRyw4C.js	POST	-	/api/workflows/${i}/chat/messages/${r}/rollback	,{method:`POST`}
+useWebSocket-DhwRyw4C.js	POST	-	/api/workflows/${i}/chat/messages/${r}/validation-proposal	,{method:`POST`}
+useWebSocket-DhwRyw4C.js	POST	json	/api/workflows/${r}/chat/decisions	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({topic:n.topic.trim(),choice:n.choice.trim(),rejected:(n.rejected||``)
+useWebSocket-DhwRyw4C.js	DELETE	-	/api/workflows/${r}/chat/decisions/${n}	,{method:`DELETE`}
+useWebSocket-DhwRyw4C.js	GET	-	/api/workflows/${n}/chat/forks?pending_only=false	
+useWebSocket-DhwRyw4C.js	POST	json	/api/workflows/${a}/chat/forks/${n}/choose	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({choice:r,action:i||(r?`select`:`defer`),expected_revision:s?.choice_r
+useWebSocket-DhwRyw4C.js	GET	-	/api/workflows/${i}/chat/messages${f}	
+useWebSocket-DhwRyw4C.js	GET	-	/api/workflows/${i}/chat/messages/${n}/events?after_sequence=${Math.max(0,r)}&limit=80	
+useWebSocket-DhwRyw4C.js	GET	-	/api/workflows/${n}/chat/state	
+workflowStore-DtYgz0OF.js	GET	-	${u}/workflows	
+workflowStore-DtYgz0OF.js	GET	-	${u}/workflows/${n}	,{signal:r.signal}
+workflowStore-DtYgz0OF.js	POST	json	${u}/workflows	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({template:e,title:t,params:n,enable_checkpoints:r})}
+workflowStore-DtYgz0OF.js	POST	-	${u}/workflows/${n}/start	,{method:`POST`}
+workflowStore-DtYgz0OF.js	POST	json	${u}/workflows/${n}/resume	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({strategy:r})}
+workflowStore-DtYgz0OF.js	POST	-	${u}/workflows/${t}/pause	,{method:`POST`}
+workflowStore-DtYgz0OF.js	POST	-	${u}/workflows/${t}/restart	,{method:`POST`}
+workflowStore-DtYgz0OF.js	DELETE	-	${u}/workflows/${t}	,{method:`DELETE`}
+workflowStore-DtYgz0OF.js	POST	-	${u}/workflows/${t}/steps/${n}/rerun	,{method:`POST`}
+workflowStore-DtYgz0OF.js	PATCH	json	${u}/workflows/${e}/mode	,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({chat_mode:n})}
+workflowStore-DtYgz0OF.js	PATCH	json	${u}/workflows/${t}/steps/${n}/model	,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({preset_id:r,rerun:i})}
+workflowStore-DtYgz0OF.js	PATCH	json	${u}/workflows/${t}/steps/${n}/effort	,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({effort:r,rerun:i})}
+workflowStore-DtYgz0OF.js	POST	json	${u}/workflows/${e}/checkpoints/resolve	,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({action:n,data:r,checkpoint_id:i}),signal:AbortSignal.timeout(12e3)}

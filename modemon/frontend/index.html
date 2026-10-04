@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>modemon · 数学建模竞赛智能体</title>
+<!--
+  刻意保持"无构建步骤"：原生 HTML + 原生 ES module，由后端同源托管
+  （`app.mount("/static", ...)`）。多页面用 **hash 路由** 实现——
+  切换页面不重新加载文档，WebSocket 连接与"当前工作流"选择得以保留。
+
+  这一页是**壳**：只负责顶栏、路由与全局状态；每个页面的视图在 /static/pages/*.js。
+-->
+<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<header>
+  <h1>modemon</h1>
+  <nav id="nav">
+    <a href="#/workflows" data-route="workflows">工作流</a>
+    <a href="#/detail" data-route="detail">执行详情</a>
+    <a href="#/paper" data-route="paper">成文预览</a>
+    <a href="#/typography" data-route="typography">排版规格</a>
+    <a href="#/runtime" data-route="runtime">运行时与工具</a>
+    <a href="/static/architecture.html" target="_blank" rel="noopener"
+       title="前端架构图（archify 生成，独立页面）">架构图 ↗</a>
+  </nav>
+  <span style="flex:1"></span>
+  <span class="badge" id="wsBadge">WebSocket 未连接</span>
+  <span class="badge" id="rtBadge">运行时检测中…</span>
+  <span class="badge" id="wfBadge">未选择工作流</span>
+</header>
+
+<main id="view"><div class="empty">正在加载…</div></main>
+
+<script type="module" src="/static/app.js"></script>
+</body>
+</html>

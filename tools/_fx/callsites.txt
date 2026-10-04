@@ -1,0 +1,1014 @@
+### Account-CFNFyFpM.js
+URL: /api/account/inference
+BEFORE: ...esInference-C-hk-by7.js";import{a as p,i as m,n as h,o as g,r as _,t as v}from"./newApiWallet-BJVw6ude.js";var y=e(t(),1),b=r(),x=
+AFTER: ,S=/^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/,C=[`RESERVED`,`DISPATCHED`,`UNKNOWN`,`SETTLED`,`CANCELLED`,`UNCONFIRMED`];function w(e){if(!e||typeof e!=`object`||Array.isArray(e))throw Error(`contract`);return e}function T(e,t){let n=w(e);if(n.schema_versi
+
+### Account-CFNFyFpM.js
+URL: /api/account/native/
+BEFORE: ...说明，不要发送密码、验证码或 API Key。`})]})]})]})}var V=e=>e.toLocaleString(`zh-CN`,{maximumFractionDigits:6});async function H(e,t,n){return i(
+AFTER: +e,t===void 0?{}:{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify(t)},n)}function U(e){let t=e;if(!t||!/^newapi:[1-9][0-9]*$/.test(t.account_id)||!Number.isSafeInteger(t.quota)||!Number.isSafeInteger(t.used_quota)||!Number.isFinit
+
+### Account-CFNFyFpM.js
+URL: /settings
+BEFORE: ...,{children:[(0,b.jsx)(`strong`,{children:`MHcoding 结算`}),(0,b.jsx)(`p`,{children:`余额与消费记录请在 MHcoding 查看。`})]})]}),(0,b.jsx)(n,{to:
+AFTER: ,className:`access-secondary account-settings-link`,children:`管理模型预设 →`}),(0,b.jsx)(`p`,{className:`access-hint`,children:`MHcoding Key 额度与 Modex 积分独立。`})]});let i=!e||e.connection_state!==`ready`,a=e?.mode===`account`&&!e.account_authenticated,o=e?.mode===`ac
+
+### Account-CFNFyFpM.js
+URL: /account/history
+BEFORE: ...ce-card`,"aria-label":`积分与模型`,children:[t&&(0,b.jsx)(`p`,{className:`sr-only`,role:`status`,children:`正在确认服务状态`}),(0,b.jsx)(n,{to:
+AFTER: ,className:`access-secondary account-settings-link`,children:`消费记录与汇总 →`}),!t&&(0,b.jsxs)(`details`,{className:`account-service-tools`,children:[(0,b.jsx)(`summary`,{children:`模型试用与任务恢复`}),(0,b.jsx)(f,{identityKey:`account:${e.revision}`}),(0,b.jsx)(k,{identit
+
+### AccountHistory-DV1tVxrt.js
+URL: /api/account/native/wallet
+BEFORE: ...c.useState)(null),[n,r]=(0,c.useState)(``),[a,o]=(0,c.useState)(``);return(0,c.useEffect)(()=>{let e=new AbortController;return i(
+AFTER: ,{},e.signal).then(n=>{let i=n;if(!i||!/^newapi:[1-9][0-9]*$/.test(i.account_id||``)||typeof i.quota_per_point!=`number`||!Number.isFinite(i.quota_per_point)||i.quota_per_point<=0)throw Error();e.signal.aborted||(t(i.quota_per_point),r(i.account_id))}).catch((
+
+### AccountHistory-DV1tVxrt.js
+URL: /account
+BEFORE: ...card history-empty`,role:`status`,children:[(0,l.jsx)(`p`,{children:`旧版账户账单入口已停用。请使用新版 New API 账户登录后查看余额和消费明细。`}),(0,l.jsx)(n,{to:
+AFTER: ,children:`返回账号页`})]})}function f(){let e=o(),t=a(),r=!e.busy&&!t.busy&&e.status.authenticated&&e.status.connection_state===`ready`&&t.status?.mode===`account`&&t.status.connection_state===`ready`,i=e.loading||t.loading;return(0,l.jsxs)(`div`,{className:`accou
+
+### AccountHistory-DV1tVxrt.js
+URL: /account
+BEFORE: ...e.loading||t.loading;return(0,l.jsxs)(`div`,{className:`account-history`,children:[(0,l.jsxs)(`header`,{children:[(0,l.jsx)(n,{to:
+AFTER: ,children:`← 我的账号`}),(0,l.jsx)(`h1`,{children:`消费记录`}),(0,l.jsx)(`p`,{children:`每笔积分，清晰可查。`})]}),r?(0,l.jsxs)(l.Fragment,{children:[i&&(0,l.jsx)(`p`,{role:`status`,children:`正在确认账号…`}),(0,l.jsx)(`div`,{hidden:i,children:e.status.provider===`newapi`?(0,l.jsx)(u
+
+### AccountHistory-DV1tVxrt.js
+URL: /account
+BEFORE: ...hildren:[(0,l.jsx)(`p`,{role:`status`,children:i?`正在确认账号…`:`请登录 Modex 账号后查看积分记录。MHcoding Key 消费请在 MHcoding 查询。`}),(0,l.jsx)(n,{to:
+AFTER: ,children:`返回账号页`})]})]})}export{f as default};
+
+### AccountMessagesInference-C-hk-by7.js
+URL: /api/account/messages
+BEFORE: ...mport{t as n}from"./jsx-runtime-DriIcras.js";import{C as r,c as i,d as a}from"./useAccessMode-CYwsqbbI.js";var o=e(t(),1),s=n(),c=
+AFTER: ,l=/^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/,u=8380416,d=1056768;function f(e){return e.billing_source===`newapi`?e.valid_until||0:e.quote?.expires_at||0}function p(e){if(!e||typeof e!=`object`||Array.isArray(e))throw Error(`contract`);return e}function 
+
+### AccountModelCatalog-DdzyHjab.js
+URL: /api/account/models
+BEFORE: ...gify([x,p,t]);if((0,c.useEffect)(()=>{let e=++_.current,t=new AbortController;return b?(v.current=Date.now(),y.current=!0,g(!0),i(
+AFTER: ,{},t.signal).then(n=>{t.signal.aborted||e!==_.current||f({key:x,catalog:s(n),error:``})}).catch(n=>{!t.signal.aborted&&e===_.current&&f({key:x,catalog:null,error:n instanceof Error?n.message:`模型目录暂不可用，请重试。`})}).finally(()=>{!t.signal.aborted&&e===_.current&&(
+
+### AccountModelCatalog-DdzyHjab.js
+URL: /account
+BEFORE: ...`card p-5`,children:[(0,l.jsx)(`h2`,{children:`账户模型`}),(0,l.jsx)(`p`,{className:`access-hint`,children:o(r)}),!e&&(0,l.jsx)(n,{to:
+AFTER: ,className:`access-text-button`,children:`前往账户页 →`})]});let C=u?.key===x?u:null;return(0,l.jsx)(d,{catalog:C?.catalog??null,error:C?.error??``,loading:!C||!r,refreshing:h,onRefresh:()=>m(e=>e+1),embedded:e},x)}export{u as n,f as t};
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /api/workflows/${encodeURIComponent(e||``)}/artifacts/${K}?raw=true
+BEFORE: ...),[pe,me]=(0,d.useState)(0),[H,U]=(0,d.useState)(!1),[W,G]=(0,d.useState)(!1),K=m.split(`/`).map(encodeURIComponent).join(`/`),he=
+AFTER: ;(0,d.useEffect)(()=>{if(!e)return;let t=new AbortController,n=!0;return Promise.resolve().then(()=>{n&&(z(!0),V(``))}),fetch(`/api/workflows/${encodeURIComponent(e)}/artifacts`,{signal:t.signal}).then(async e=>{if(!e.ok)throw Error(`读取成果目录失败（HTTP ${e.status}）
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /api/workflows/${encodeURIComponent(e)}/artifacts
+BEFORE: ...rue`;(0,d.useEffect)(()=>{if(!e)return;let t=new AbortController,n=!0;return Promise.resolve().then(()=>{n&&(z(!0),V(``))}),fetch(
+AFTER: ,{signal:t.signal}).then(async e=>{if(!e.ok)throw Error(`读取成果目录失败（HTTP ${e.status}）`);let t=await e.json();if(!Array.isArray(t))throw Error(`成果目录格式无效`);let r=t.filter(e=>{if(!e||typeof e!=`object`)return!1;let t=e;return typeof t.path==`string`&&typeof t.size=
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /api/workflows/${encodeURIComponent(e)}/artifacts/${r}
+BEFORE: ...0),w(``),g(null),v(``),D(null),k(``),N(``),j(`modify`),L(``))});let r=m.split(`/`).map(encodeURIComponent).join(`/`);return fetch(
+AFTER: ,{signal:t.signal}).then(async t=>{if(!t.ok)throw Error(`读取文件失败（HTTP ${t.status}）`);if(t.headers.get(`content-type`)?.includes(`application/pdf`))await t.body?.cancel().catch(()=>void 0),n&&(b(`pdf`),g(`/api/workflows/${encodeURIComponent(e)}/artifacts/${r}#pa
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /api/workflows/${encodeURIComponent(e)}/artifacts/${r}#page=1&zoom=page-width&navpanes=0
+BEFORE: ....status}）`);if(t.headers.get(`content-type`)?.includes(`application/pdf`))await t.body?.cancel().catch(()=>void 0),n&&(b(`pdf`),g(
+AFTER: ));else if(t.headers.get(`content-type`)?.startsWith(`image/`))await t.body?.cancel().catch(()=>void 0),n&&(b(`image`),g(`/api/workflows/${encodeURIComponent(e)}/artifacts/${r}`));else{let e=await t.json();if(typeof e.content!=`string`)throw Error(`文件预览数据格式无效`
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /api/workflows/${encodeURIComponent(e)}/artifacts/${r}
+BEFORE: ...vpanes=0`));else if(t.headers.get(`content-type`)?.startsWith(`image/`))await t.body?.cancel().catch(()=>void 0),n&&(b(`image`),g(
+AFTER: ));else{let e=await t.json();if(typeof e.content!=`string`)throw Error(`文件预览数据格式无效`);n&&(b(e.type||`text`),g(e.content),v(e.warning||(e.truncated?`大文件仅展示开头片段；下载原始文件可查看完整内容。`:``)))}}).catch(e=>{n&&!(e instanceof DOMException&&e.name===`AbortError`)&&w(e instanc
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /api/workflows/${encodeURIComponent(e)}/artifact-context/inspect/${r}
+BEFORE: ...{n&&!(e instanceof DOMException&&e.name===`AbortError`)&&w(e instanceof Error?e.message:`无法加载文件`)}).finally(()=>{n&&S(!1)}),fetch(
+AFTER: ,{signal:t.signal}).then(async e=>{let t=await e.json();if(!e.ok)throw Error(t.detail||`HTTP ${e.status}`);n&&D(t)}).catch(e=>{n&&!(e instanceof DOMException&&e.name===`AbortError`)&&k(e instanceof Error?e.message:`无法分析产物来源`)}),()=>{n=!1,t.abort()}},[e,m,ue]);
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /workflow/${e}/chat
+BEFORE: ...or`)&&k(e instanceof Error?e.message:`无法分析产物来源`)}),()=>{n=!1,t.abort()}},[e,m,ue]);let q=!!a.state?.fromChat||!!E?.chat_mode,ge=q?
+AFTER: :`/workflow/${e}`,_e=q?`返回协同工作台`:`返回工作流`,J=E?.editable_targets?.[0]||``,ve=(0,d.useMemo)(()=>J?`/workflow/${e}/editor?file=${encodeURIComponent(J)}`:`/workflow/${e}/editor`,[e,J]),Y=(0,d.useMemo)(()=>s(R),[R]),ye=(0,d.useMemo)(()=>new Map(Y.flatMap(e=>e.files.
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /workflow/${e}/editor?file=${encodeURIComponent(J)}
+BEFORE: ...hat_mode,ge=q?`/workflow/${e}/chat`:`/workflow/${e}`,_e=q?`返回协同工作台`:`返回工作流`,J=E?.editable_targets?.[0]||``,ve=(0,d.useMemo)(()=>J?
+AFTER: :`/workflow/${e}/editor`,[e,J]),Y=(0,d.useMemo)(()=>s(R),[R]),ye=(0,d.useMemo)(()=>new Map(Y.flatMap(e=>e.files.map(t=>[t.path,e]))),[Y]).get(m),X=(0,d.useMemo)(()=>ne(R,{keepPaths:[m]}).bundles,[R,m]),Z=X.findIndex(e=>e.key===ye?.key);(0,d.useEffect)(()=>{if(
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /workflow/${e}/editor
+BEFORE: ...e=q?`返回协同工作台`:`返回工作流`,J=E?.editable_targets?.[0]||``,ve=(0,d.useMemo)(()=>J?`/workflow/${e}/editor?file=${encodeURIComponent(J)}`:
+AFTER: ,[e,J]),Y=(0,d.useMemo)(()=>s(R),[R]),ye=(0,d.useMemo)(()=>new Map(Y.flatMap(e=>e.files.map(t=>[t.path,e]))),[Y]).get(m),X=(0,d.useMemo)(()=>ne(R,{keepPaths:[m]}).bundles,[R,m]),Z=X.findIndex(e=>e.key===ye?.key);(0,d.useEffect)(()=>{if(!W)return;let e=e=>{e.ke
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /api/workflows/${encodeURIComponent(e)}/artifact-context/prompt/build
+BEFORE: ...return;let t=M.trim()||(A===`validate`?`检查这个产物是否可以继续用于论文。`:``);if(!t){L(`请先写清楚你希望怎么修改。`);return}F(!0),L(``);try{let n=await fetch(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({path:m,instruction:t,action:A})}),r=await n.json();if(!n.ok||!r.prompt)throw Error(r.detail||`HTTP ${n.status}`);p(`/workflow/${e}/chat`,{state:{prefill:r.prompt,artifactPath:m,fr
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /workflow/${e}/chat
+BEFORE: ...SON.stringify({path:m,instruction:t,action:A})}),r=await n.json();if(!n.ok||!r.prompt)throw Error(r.detail||`HTTP ${n.status}`);p(
+AFTER: ,{state:{prefill:r.prompt,artifactPath:m,fromArtifact:!0}})}catch(e){L(e instanceof Error?e.message:`无法创建产物修改请求`)}finally{F(!1)}}return(0,f.jsxs)(`div`,{className:`artifact-workbench animate-fade-in`,children:[(0,f.jsxs)(`header`,{className:`artifact-workbench
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /api/workflows/${encodeURIComponent(e||``)}/artifacts/${K}?preview=html
+BEFORE: ...,title:`${m||`PDF`} 预览`}),y===`image`&&(0,f.jsx)(`img`,{src:h,alt:o(m)}),y===`binary`&&l(m)===`document`&&(0,f.jsx)(`iframe`,{src:
+AFTER: ,sandbox:`allow-same-origin`,title:`文件预览`}),y===`binary`&&l(m)!==`document`&&(0,f.jsx)(`p`,{children:`此格式不支持在线预览，请下载原始文件。`}),![`pdf`,`image`,`binary`].includes(y)&&(h===``?(0,f.jsx)(`p`,{children:`这是一个空文件。`}):(0,f.jsx)(te,{path:m,content:h,literal:!!_,resolveA
+
+### ArtifactViewer-DS3mPR9-.js
+URL: /api/workflows/${encodeURIComponent(e||``)}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}
+BEFORE: ...`binary`].includes(y)&&(h===``?(0,f.jsx)(`p`,{children:`这是一个空文件。`}):(0,f.jsx)(te,{path:m,content:h,literal:!!_,resolveAssetUrl:t=>
+AFTER: }))]})})]}),(0,f.jsxs)(`aside`,{className:`artifact-action-panel`,children:[(0,f.jsxs)(`div`,{className:`artifact-action-intro`,children:[(0,f.jsx)(`span`,{children:`围绕这个成果继续`}),(0,f.jsx)(`strong`,{children:E?.editable?`可以安全定位源文件`:`当前仅支持查看和检查`}),(0,f.jsx)(`p`,
+
+### ChatWorkbench-B0gSrHl3.js
+URL: /api/workflows/${u}/chat/messages/${e.id}/resume-draft
+BEFORE: ...hange&&e.public_artifact_path).map(e=>e.public_artifact_path)).size;async function Tt(){if(!ee){C(!0),w(``);try{let t=await fetch(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},signal:AbortSignal.timeout(2e4),body:JSON.stringify({revision:e.proposal_revision||1,resolution:x})}),n=await t.json();if(!t.ok)throw Error(n.detail||`HTTP ${t.status}`);let{useChatStore:i}=await r(as
+
+### ChatWorkbench-B0gSrHl3.js
+URL: /api/workflows/${u}/chat/messages/${e.id}/diff
+BEFORE: ...准备恢复卡失败，请刷新核对状态后重试`)}finally{C(!1)}}}async function Et(){if(O){k(!1);return}if(k(!0),!(j||ae)){A(!0),ce(``);try{let t=await fetch(
+AFTER: ),n=await t.json();if(!t.ok)throw Error(n.detail||`HTTP ${t.status}`);oe(n.diffs||[])}catch(e){ce(e instanceof Error?e.message:`读取差异失败`)}finally{A(!1)}}}let Dt=(0,T.useCallback)(()=>k(!1),[]);return(0,M.jsxs)(`div`,{id:`chat-task-${e.id}`,className:[`chat-card
+
+### ChatWorkbench-B0gSrHl3.js
+URL: /workflow/${u}/editor?file=${encodeURIComponent(Qe)}
+BEFORE: ...Name:`chat-card-foot`,children:[(z===`patch`||z===`focused_run`)&&Qe&&(0,M.jsx)(a,{className:`chat-action chat-action-primary`,to:
+AFTER: ,title:Qe.endsWith(`.py`)?`打开源文件，明确点击运行后再生成图表或数据`:`打开 DrawIO 可视化编辑与导出`,children:Qe.endsWith(`.py`)?`运行并查看新结果`:`打开并导出流程图`}),(z===`patch`||z===`focused_run`||z===`research`)&&e.rollback_available&&(0,M.jsx)(`button`,{type:`button`,className:`chat-action chat-act
+
+### ChatWorkbench-B0gSrHl3.js
+URL: /api/workflows/${encodeURIComponent(e)}/chat
+BEFORE: ...0,T.useState)(()=>Fe(e)),C=(0,T.useRef)(new He),ie=(0,T.useRef)(!1),w=(0,T.useRef)(!1),E=(0,T.useRef)(!1),D=(0,T.useRef)(Fe(e)),O=
+AFTER: ,k=(0,T.useCallback)(async e=>{let t=C.current,n=t.start(`history`);ie.current=!!e,u(e?`older`:`latest`),f(``);try{let r=je(await Ve(`${O}/history?limit=30${e?`&before=${e}`:``}`,n.signal));if(!t.current(`history`,n))return;if(e&&r.items.some(t=>t.id>=e))throw
+
+### ChatWorkbench-B0gSrHl3.js
+URL: ${O}/messages/${e.id}/diff
+BEFORE: ...,k()},[e,k,ae]);async function j(e){let t=C.current,n=t.start(`diff`);x({item:e,diffs:[],loading:!0,error:``});try{let r=await Ve(
+AFTER: ,n.signal);if(!t.current(`diff`,n))return;if(!Array.isArray(r.diffs)||!r.diffs.every(e=>e&&typeof e==`object`&&typeof e.path==`string`&&typeof e.added==`number`&&typeof e.removed==`number`&&(e.diff===void 0||e.diff===null||typeof e.diff==`string`)))throw Error
+
+### ChatWorkbench-B0gSrHl3.js
+URL: ${O}/messages/${t.id}/diff
+BEFORE: ...review`);v({item:t,loading:!0,error:``});try{if(D.current===t.id){let i=Ie(e);i&&(t={...t,version_id:i.versionId});let a=await Ve(
+AFTER: ,r.signal);if(!n.current(`preview`,r))return;if(a.rolled_back_at||a.artifact_state===`rolled_back`){A(t.id,a);return}}let i=Ne(await Ve(`${O}/messages/${t.id}/rollback-preview`,r.signal));if(!n.current(`preview`,r))return;if(i.reason_code===`already_rolled_bac
+
+### ChatWorkbench-B0gSrHl3.js
+URL: ${O}/messages/${t.id}/rollback-preview
+BEFORE: ...nal);if(!n.current(`preview`,r))return;if(a.rolled_back_at||a.artifact_state===`rolled_back`){A(t.id,a);return}}let i=Ne(await Ve(
+AFTER: ,r.signal));if(!n.current(`preview`,r))return;if(i.reason_code===`already_rolled_back`){A(t.id,{version_id:i.version_id});return}if(i.can_rollback&&t.version_id&&i.version_id!==t.version_id)throw Error(`这条记录的版本已经变化，请重新同步历史后再检查。`);v({item:{...t,version_id:i.ver
+
+### ChatWorkbench-B0gSrHl3.js
+URL: ${O}/messages/${i.id}/rollback
+BEFORE: ...请先核对上次操作的结果。`,preview:void 0});return}let o=C.current,s=o.start(`mutation`);E.current=!0,ee(!0),g(``);let c=!1;try{let e=await Ve(
+AFTER: ,s.signal,`POST`,{expected_version_id:a});if(!o.current(`mutation`,s))return;if(e.rolled_back!==!0||e.version_id!==a)throw Error(`撤销结果尚未确认，请同步状态。`);A(i.id,e)}catch(t){if(!o.current(`mutation`,s))return;t instanceof Pe&&t.status>=400&&t.status<500&&!n?(Be(e,i.i
+
+### ChatWorkbench-B0gSrHl3.js
+URL: /api/workflows/${encodeURIComponent(e)}/chat/materials
+BEFORE: ...{onUploaded:n,onBusy:r,onReadiness:i});(0,T.useLayoutEffect)(()=>{D.current={onUploaded:n,onBusy:r,onReadiness:i}},[n,r,i]);let O=
+AFTER: ,k=(0,T.useRef)(async()=>{}),ae=(0,T.useRef)(async()=>{});(0,T.useEffect)(()=>{w.current=!0;let e=!1,t=new AbortController,n,r=!1,i=!1,a=!1,o=!0,c=async()=>{if(e)return;if(i){a=!0;return}if(r){a=!0;return}r=!0;let l=C.current;n&&clearTimeout(n);try{let n=Ze((a
+
+### ChatWorkbench-B0gSrHl3.js
+URL: /api/workflows/${encodeURIComponent(e)}/chat/stages/${encodeURIComponent(t.skill)}/accept
+BEFORE: ...d`||t.state===`skipped`)return;let r=new AbortController;d.current=r,o(!0),u(``),c(`正在检查现有文件并确认完成状态；不会重新生成文件。`);try{let n=await S(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({snapshot:t.snapshot})},r,6e4),i=await n.json();if(!n.ok)throw Error(n.status===404?`当前服务暂不支持确认这一步完成，请更新服务；已有结果保留。`:typeof i.detail==`string`?i.detail:`检查未完成，请刷新状态后再查看。`);if(!p.cur
+
+### ChatWorkbench-B0gSrHl3.js
+URL: /settings
+BEFORE: ...)]}),(0,M.jsxs)(`div`,{className:`chat-recovery-actions`,children:[l&&(0,M.jsx)(a,{className:`chat-action chat-action-primary`,to:
+AFTER: ,children:`检查模型设置`}),d&&(0,M.jsx)(a,{className:`chat-action chat-action-secondary`,to:`/`,children:`返回工作流`}),!n&&!l&&!d&&(0,M.jsx)(`button`,{type:`button`,className:`chat-action chat-action-primary`,disabled:r,onClick:i,children:r?`重试中…`:`重新连接`}),(0,M.jsx)(`bu
+
+### ChatWorkbench-B0gSrHl3.js
+URL: /api/workflows/${encodeURIComponent(t)}/artifacts?view=overview&refresh=true
+BEFORE: ...)(()=>{let e=new AbortController,n=!0,r=setTimeout(()=>e.abort(),2e4);return Promise.resolve().then(()=>{n&&(c(!0),u(``))}),fetch(
+AFTER: ,{signal:e.signal}).then(async e=>{if(!e.ok)throw Error(`读取工作区失败（HTTP ${e.status}）`);let t=await e.json();if(!Array.isArray(t))throw Error(`工作区返回的文件清单格式无效`);let r=t.filter(e=>{if(!e||typeof e!=`object`)return!1;let t=e;return typeof t.path==`string`&&typeof t.
+
+### ChatWorkbench-B0gSrHl3.js
+URL: /api/workflows/${encodeURIComponent(t)}/artifacts
+BEFORE: ...p`,{className:`chat-side-empty`,children:`正在读取已有产物…`}):(0,M.jsx)(p,{artifacts:r,compact:!0,defaultCollapsed:!0,collectionEndpoint:
+AFTER: ,onOpen:e=>h(f(t,e.path),{state:{fromChat:!0}})},t)]})}function hn(){let e=y(e=>e.queue),t=y(e=>e.promote),n=y(e=>e.cancel);if(!e||!e.running&&e.waiting.length===0)return null;let r=e=>`${ue[e.source_skill||e.skill||``]||e.source_skill||e.skill||`任务`}`+(e.eta_
+
+### Dashboard-2mxANXyi.js
+URL: /api/workflows/${e[0]}/export
+BEFORE: ...i} 个工作流删除失败，文件将在下次启动时清理`),y(new Set),x(!1),t()},j=async()=>{if(v.size!==0){D(!0);try{let e=Array.from(v),t=v.size===1?await fetch(
+AFTER: ):await fetch(`/api/workflows/export-batch`,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({ids:e})});if(!t.ok){let e=await t.json().catch(()=>({detail:`导出失败`}));alert(e.detail||`导出失败 (HTTP ${t.status})`),D(!1);return}let n=awai
+
+### Dashboard-2mxANXyi.js
+URL: /api/workflows/export-batch
+BEFORE: ...)},j=async()=>{if(v.size!==0){D(!0);try{let e=Array.from(v),t=v.size===1?await fetch(`/api/workflows/${e[0]}/export`):await fetch(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({ids:e})});if(!t.ok){let e=await t.json().catch(()=>({detail:`导出失败`}));alert(e.detail||`导出失败 (HTTP ${t.status})`),D(!1);return}let n=await t.blob(),r=URL.createObjectURL(n),i=docum
+
+### Dashboard-2mxANXyi.js
+URL: /api/workflows/import
+BEFORE: ...ame.toLowerCase().endsWith(`.zip`)){alert(`请选择 .zip 文件`);return}T(!0);try{let e=new FormData;e.append(`file`,n);let r=await fetch(
+AFTER: ,{method:`POST`,body:e}),i=await r.json();if(!r.ok)alert(i.detail||`导入失败`);else{let e=i.count||0,n=(Array.isArray(i.imported)?i.imported:[]).map(e=>e&&typeof e==`object`&&`title`in e?String(e.title):``).filter(Boolean).join(`、`);alert(`成功导入 ${e} 个工作流：${n}`),t(
+
+### LatexEditor-I1nsgpA4.js
+URL: /api/editor/${encodeURIComponent(e)}/generate-image
+BEFORE: ...询结果。`);let n=crypto.randomUUID();if(localStorage.setItem(O(e),n),Se(e)!==n)throw Error(`无法保存生图恢复记录，未发起生成。`);return Te(await fetch(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({...t,request_id:n})}),e,n,!0)}async function De(e){let t=Se(e);if(!t)throw Error(`没有待确认的生图请求`);return Te(await fetch(`/api/editor/${encodeURIComponent(e)}/image-requests/${encodeU
+
+### LatexEditor-I1nsgpA4.js
+URL: /api/editor/${encodeURIComponent(e)}/image-requests/${encodeURIComponent(t)}
+BEFORE: ...N.stringify({...t,request_id:n})}),e,n,!0)}async function De(e){let t=Se(e);if(!t)throw Error(`没有待确认的生图请求`);return Te(await fetch(
+AFTER: ),e,t)}var k=i(),Oe={preparing:`准备工作副本`,reading:`定位与读取`,writing:`修改副本`,running:`运行工具`,checking:`核对结果`,exporting:`导出论文`,publishing:`保存与版本记录`,repairing:`自动返修`,waiting:`等待工具返回`},ke=(e,t)=>{let n=Math.max(0,Math.floor((t-Date.parse(e||``))/1e3));return Number.isFi
+
+### LatexEditor-I1nsgpA4.js
+URL: /api/editor/${encodeURIComponent(e)}/ai-agent-history
+BEFORE: ...},[e]);async function y(){let t=!n;if(r(t),!t){g.current.cancel(),_.current.cancel(),s(``);return}d(``),h(!0),await g.current.run(
+AFTER: ,e=>{if(!Array.isArray(e.versions))throw Error(`版本记录不完整，请重试`);a(e.versions.filter(e=>e&&/^[a-f0-9]{32}$/.test(e.version_id)&&Array.isArray(e.files)))},d,()=>h(!1))}async function ee(t){s(t),p(!0),d(``),l([]),await _.current.run(`/api/editor/${encodeURIComponen
+
+### LatexEditor-I1nsgpA4.js
+URL: /api/editor/${encodeURIComponent(e)}/ai-agent-version/${t}
+BEFORE: ...{32}$/.test(e.version_id)&&Array.isArray(e.files)))},d,()=>h(!1))}async function ee(t){s(t),p(!0),d(``),l([]),await _.current.run(
+AFTER: ,e=>{if(e.version_id!==t||!Array.isArray(e.diffs))throw Error(`版本差异不完整，请重试`);l(e.diffs)},d,()=>p(!1))}return(0,k.jsxs)(`div`,{className:`mt-2 text-[12px]`,children:[(0,k.jsx)(`button`,{onClick:y,className:`text-[var(--accent)] hover:underline`,children:n?`收起版本
+
+### LatexEditor-I1nsgpA4.js
+URL: /api/editor/${encodeURIComponent(e)}
+BEFORE: ...rent.open=a,D.current.selected=y;let xe=(0,b.useRef)(null),O=(0,b.useRef)(new M),Se=(0,b.useRef)(new M),Ce=(0,b.useRef)(new M),we=
+AFTER: ;_(xe,a&&!E);let Te=(0,b.useCallback)(e=>(ee(e),te(null),oe(``),re(``),S(!0),Se.current.run(`${we}/ai-agent-runs/${e}`,t=>{if(t.run_id!==e||j([t]).length!==1)throw Error(`历史详情不完整，请刷新后重试`);te(t)},re,()=>S(!1))),[we]),Ee=(0,b.useCallback)((e=``)=>(g(!0),f(``),O.
+
+### LatexEditor-I1nsgpA4.js
+URL: /api/editor/${encodeURIComponent(e)}/model-options
+BEFORE: ...seState)(0);return(0,b.useEffect)(()=>{if(n(null),s(null),l(``),i?.mode!==`account`||!e)return;let t=new AbortController;return T(
+AFTER: ,t.signal).then(e=>{if(!t.signal.aborted){if(e.mode!==`account`||e.mode_revision!==i.revision||!e.account_id||!Array.isArray(e.models))throw Error(`账户已变化，请刷新模型`);s(e),e.default_model&&e.models.some(t=>t.id===e.default_model)&&n({account_id:e.account_id,mode_re
+
+### LatexEditor-I1nsgpA4.js
+URL: /api/editor
+BEFORE: ...ext()).slice(0,500)}catch{return`HTTP ${e.status}`}}try{return(await e.text()).slice(0,500)}catch{return`HTTP ${e.status}`}}var P=
+AFTER: ;function $e(){let{id:e}=n();return(0,k.jsx)(et,{},e)}function et(){let{id:e}=n(),[t]=a(),r=t.get(`file`)||``,i=(0,b.useRef)(``),[s,c]=(0,b.useState)([]),[u,m]=(0,b.useState)(``),h=(0,b.useCallback)(e=>{let t=x(e);if(t===null){m(`文件列表加载失败：服务返回了无法识别的数据。请重新加载页面；
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview
+BEFORE: ...1;let t=!0,n=on.current,r=()=>t&&on.current===n,i=new AbortController,a=new AbortController,o=setTimeout(()=>a.abort(),2e4);fetch(
+AFTER: ,{signal:a.signal}).then(async e=>{if(!e.ok)throw Error(await Qe(e));let n=await e.json();t&&h(n)}).catch(e=>{t&&m(`文件列表加载失败：${a.signal.aborted?`请求超时`:e instanceof Error?e.message:`无法连接编辑器服务`}。请重新加载页面；你的工作区文件不会受影响。`)}).finally(()=>clearTimeout(o)),fetch(`${P}/
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/chat-history
+BEFORE: ...:null).then(e=>{e?.available&&t&&s===Lt.current&&(Pt(!0),It(e),e.path&&Bt(e.path+`?t=`+(e.sha256||Date.now())))}).catch(()=>{}),T(
+AFTER: ,i.signal).catch(()=>(t&&m(`聊天历史暂未加载成功；任务状态将独立恢复，不会重新执行。可刷新页面重新加载历史。`),[])).then(e=>{if(!t)return;let n=Array.isArray(e)&&e.length>0?e.filter(e=>e.role===`user`||e.role===`ai`||e.role===`system`).map(e=>({role:e.role===`system`?`ai`:e.role,content:e.role===`sy
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/chat-history
+BEFORE: ...me(e,null),Zn.current&&=(clearInterval(Zn.current),null),rn(!1),n.result&&q(e=>ie(e,{...n,message:`本轮任务已结束`}));try{{let t=await T(
+AFTER: ,i.signal);if(!r())return;let n=Array.isArray(t)&&t.length>0?t.filter(e=>e.role===`user`||e.role===`ai`||e.role===`system`).map(e=>({role:e.role===`system`?`ai`:e.role,content:e.role===`system`?`ℹ️ ${e.content}`:e.content,timestamp:Date.now(),run_id:e.run_id})
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: ...ent`,run_id:n.run_id,binary:!!e.binary,action:e.action}));e.length>0&&(yn(`agent`),Z(e),xn(0),J(e[0].content),Y(e[0].path))}fetch(
+AFTER: ).then(e=>e.json()).then(e=>{t&&h(e)}).catch(()=>{}),n.run_id&&(an.current=n.run_id),n.result&&(q(e=>ie(e,{...n,message:`本轮任务已结束`})),Rr(n.result,!!n.diffs?.length).catch(()=>{})),n.can_undo&&wn(!0)}}catch{r()&&q(e=>({...e,runId:a,state:`unknown`,activity:`连接暂时
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: ...son`},body:JSON.stringify({path:n,content:r})});if(!t.ok){let e=await t.json();alert(e.detail||`Failed`);return}let i=await fetch(
+AFTER: );h(await i.json()),sr(n),at(!1),st(``)}catch(e){alert(`Failed: ${e.message}`)}},br=t=>{if(!e)return;let n=document.createElement(`a`);n.href=`${P}/${e}/download?path=${encodeURIComponent(t)}`,n.download=t.split(`/`).pop()||`file`,n.click()},xr=async t=>{if(e&
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: ...th=${encodeURIComponent(t)}`,{method:`DELETE`});if(!n.ok){let e=await n.json();alert(e.detail||`Failed`);return}let r=await fetch(
+AFTER: );h(await r.json()),g===t&&(_(``),y(``))}catch(e){alert(`Failed: ${e.message}`)}},Sr=(t,n)=>{let r=()=>!Q.current&&$.current===e;Nn.current(`${P}/${e}`,t,n,r).then(e=>{e&&r()&&j(t=>[...t,{role:`ai`,content:e,timestamp:Date.now()}])})},Cr=async t=>{if(!e)return
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: ...s}ms ---`,n.changed_files?.length>0&&(r+=`\n\nGenerated:\n${n.changed_files.join(` `)}`),pt(r),n.exit_code===0){let t=await fetch(
+AFTER: );h(await t.json()),n.changed_files?.length>0&&(A(`${P}/${e}/file?path=${encodeURIComponent(n.changed_files[0])}&t=${Date.now()}`),F(`pdf`)),j(e=>[...e,{role:`ai`,content:`Script OK (${n.duration_ms}ms)${n.changed_files?.length?`\nFiles: ${n.changed_files.join
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: .....e,{role:`ai`,content:a,timestamp:Date.now()}]),A(`${P}/${e}/file?path=${encodeURIComponent(i)}&t=${Date.now()}`),F(`pdf`),fetch(
+AFTER: ).then(e=>e.json()).then(h).catch(()=>{})}catch(e){j(t=>[...t,{role:`ai`,content:`❌ 导出请求失败: ${e.message}`,timestamp:Date.now()}])}ar(!1)}},Lr=async(t=!1)=>{if(!e||Xn.current||!t&&(!In.trim()||!Wn))return;let n=e;Xn.current=!0,Vn(!0),t||(j(e=>[...e,{role:`user`
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${n}/files?view=overview&refresh=true
+BEFORE: ...h}\`\n📐 大小: ${(e.size/1024).toFixed(0)} KB\n\nLaTeX 引用代码:\n\`\`\`latex\n${e.include_code}\n\`\`\``,timestamp:Date.now()}]),fetch(
+AFTER: ).then(e=>e.json()).then(e=>{!Q.current&&$.current===n&&h(e)}).catch(()=>{}),A(`${P}/${n}/file?path=${encodeURIComponent(e.png_path)}&t=${Date.now()}`),F(`pdf`),Fn(!1),Ln(``)}catch(e){!Q.current&&$.current===n&&j(t=>[...t,{role:`ai`,content:`生图提示：${e.message||
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: ...!i())return;m(`任务结果已记录，但最新文件读取未完成。请重新打开该文件，不必再次执行修改；未保存的输入仍保留。`)}a.length&&(n||(Z([]),J(null),Y(``)),wn(!!t.version_id),En([])),T(
+AFTER: ).then(e=>{i()&&h(e)}).catch(()=>{}),se(t)&&t.export?(O(!0),E(t.export.log||``),t.export.docx_path?(Lt.current++,Pt(!0),It({available:!0,fresh:!0,path:t.export.docx_path,sha256:t.export.output_sha256}),Bt(t.export.docx_path+`?t=`+(t.export.output_sha256||Date.
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: ...s(t)&&t===tn.current&&(y(r),S(r),_(t)),!n.binary&&!U.current.has(t)&&(V.current[t]=r),U.current.has(t)||U.current.delete(t),fetch(
+AFTER: ).then(e=>e.json()).then(h).catch(()=>{}),Sn.current.includes(t)||Sn.current.push(t),!await Ur(`已保存 ${t}`)){let e=Sn.current,n=X.filter(t=>!e.includes(t.path)).map(e=>e.path),r=n.length?`\n未写入（已跳过）${n.length} 个：${n.join(`, `)}`:``,i=X.length>1?`已保存 ${e.length}
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: ...`+(i.length?`已成功写入 ${i.length} 个：${i.join(`, `)}\n`:``)+(a?`失败明细：\n${a}\n`:``)+` 沙盒已保留，可再点一次「全部应用」重试；若沙盒已过期请重新执行 Agent。`}]),fetch(
+AFTER: ).then(e=>e.json()).then(h).catch(()=>{});return}await Rr({...r,auto_applied:r.applied},!0)}catch(e){j(t=>[...t,{role:`ai`,timestamp:Date.now(),content:`❌ 应用失败（网络错误）：${e?.message||``}\n\n改动仍保留，可重试。`}]);return}}else{let t=[],r=[];for(let i of X)try{let a=await 
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: ...ole:`ai`,timestamp:Date.now(),content:`❌ ${t.length}/${X.length} 个文件保存失败：\n${t.join(` `)}\n\n其余已写入；待应用区只保留失败项，可修复冲突后重试。`}]),fetch(
+AFTER: ).then(e=>e.json()).then(h).catch(()=>{});return}}let r=X.find(e=>e.path===tn.current);if(vn===`lite`&&r&&!r.binary&&!U.current.has(r.path)){let e=n[r.path]??r.content;y(e),S(e),V.current[r.path]=e}fetch(`${P}/${e}/files?view=overview&refresh=true`).then(e=>e.
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: ...=tn.current);if(vn===`lite`&&r&&!r.binary&&!U.current.has(r.path)){let e=n[r.path]??r.content;y(e),S(e),V.current[r.path]=e}fetch(
+AFTER: ).then(e=>e.json()).then(h).catch(()=>{});let i=X.map(e=>e.path).join(`, `);J(null),Y(``),Z([]),xn(0),w(U.current.has(tn.current)),Sn.current=[],j(e=>[...e,{role:`ai`,content:`已保存全部 ${X.length} 个文件：${i}`,timestamp:Date.now()}])},Kr=async()=>{if(!e||pn.current|
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/chat-history
+BEFORE: ...务历史、文件版本和回退记录都会保留。`))return;pn.current=!0,hn(!0);let t=new AbortController,n=setTimeout(()=>t.abort(),15e3);try{let n=await fetch(
+AFTER: ,{method:`DELETE`,signal:t.signal});if(!n.ok)throw Error(await Qe(n));!Q.current&&$.current===e&&j([])}catch(n){!Q.current&&$.current===e&&j(e=>[...e,{role:`ai`,content:`清空对话未确认，当前显示已保留：${t.signal.aborted?`请求超时，请刷新核对`:n instanceof Error?n.message:`暂时不可用`}`,tim
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files
+BEFORE: ...fset-2`,children:`重新加载编辑器`})]}),(0,k.jsx)(p,{artifacts:Jr,editor:!0,compact:!0,defaultCollapsed:!0,mainFile:jt,collectionEndpoint:
+AFTER: ,activePath:g,keepPaths:Yr,onOpen:e=>{sr(e.path)},renderStatus:e=>Yr.includes(e.path)?(0,k.jsx)(`span`,{className:`text-[var(--accent)] text-xs`,children:`● 未保存`}):null,renderActions:t=>(0,k.jsxs)(`details`,{children:[(0,k.jsx)(`summary`,{"aria-label":`文件操作：${
+
+### LatexEditor-I1nsgpA4.js
+URL: ${P}/${e}/files?view=overview&refresh=true
+BEFORE: ...j(e=>[...e,{role:`ai`,content:`🏁 批量运行结束：✅ ${r} 成功 / ❌ ${n.length} 失败${n.length>0?`（按钮已保留供重试）`:``}`,timestamp:Date.now()}]),fetch(
+AFTER: ).then(e=>e.json()).then(h).catch(()=>{})},disabled:ct||Dn,className:`w-full btn-primary py-1.5 text-[11px] bg-emerald-600 hover:bg-emerald-500 flex items-center gap-1 justify-center disabled:opacity-50`,children:Dn?`⏳ 运行中 ${kn.current}/${kn.total}...`:`▶ 一键运行
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/workflows/${encodeURIComponent(e)}/artifacts/upload
+BEFORE: ...ta;r.append(`files`,new File([n],`PROBLEM_STATEMENT.md`,{type:`text/markdown`})),r.append(`target_dir`,`user_data`);let i=await f(
+AFTER: ,{method:`POST`,body:r},new AbortController,3e4).catch(()=>{throw Error(`赛题文字保存结果尚未确认，尚未启动任务。请先检查已创建的工作流，不要重复创建。`)});if(!i.ok)throw Error(`赛题文字保存失败（HTTP ${i.status}），尚未启动任务，请重试创建。`);let a=await i.json();if(a.count!==1||a.uploaded?.length!==1||a.fail_count||a.u
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/templates/${encodeURIComponent(t)}/resolve-steps
+BEFORE: ...let n=new AbortController,r,a=setTimeout(()=>{r=setTimeout(()=>{n.signal.aborted||(c(`读取步骤超时，请重试。`),o(!1),n.abort())},15e3),fetch(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:d,signal:n.signal}).then(async e=>{if(!e.ok)throw Error(`步骤列表暂时无法读取，请重试。`);let t=(await e.json())?.steps;if(!Array.isArray(t)||!t.length||t.length>128)throw Error(`步骤列表暂时无法读取，请重试。`);let r=new Set
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/account/messages/capabilities
+BEFORE: ...State)({}),[se,ce]=(0,g.useState)(Date.now);(0,g.useEffect)(()=>{let e=new AbortController;return ee(!0),ne(``),p(null),n(null),i(
+AFTER: ,{},e.signal).then(t=>{if(e.signal.aborted)return;let n=u(t);p(n),ee(!1),ce(Date.now()),d?.()}).catch(t=>{e.signal.aborted||(ee(!1),ne(t instanceof Error?t.message:`模型目录暂不可用，请稍后刷新。`))}),()=>e.abort()},[e,re,n,d]),(0,g.useEffect)(()=>{if(!f)return;let e=Math.mi
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/palette-preview?colors=${encodeURIComponent(m)}
+BEFORE: ...jsx)(`p`,{className:`text-[11px] text-[var(--text-muted)] mb-1.5`,children:`效果预览（真实 matplotlib 渲染）：`}),m&&!h?(0,v.jsx)(`img`,{src:
+AFTER: ,alt:`自定义配色预览`,onError:()=>te(!0),className:`w-full rounded-lg border border-[var(--border)]`}):(0,v.jsx)(Se,{colors:f})]})]}):_===`random`?(0,v.jsxs)(`div`,{className:`space-y-2`,children:[(0,v.jsx)(`p`,{className:`text-[12px] text-[var(--text-secondary)] fon
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/style-preview?frame=${d.frame}&grid=${d.grid}&lw=${d.lw}&font=${d.font}&legend=${d.legend}&bg=${d.bg}
+BEFORE: ...v.jsx)(`p`,{className:`text-[11px] text-[var(--text-muted)] mb-1.5`,children:`效果预览（真实 matplotlib 渲染，即改即出）`}),(0,v.jsx)(`img`,{src:
+AFTER: ,alt:`自定义版式预览`,className:`w-full rounded-lg border border-[var(--border)] shadow-sm bg-white`,loading:`lazy`}),(0,v.jsx)(`p`,{className:`text-[10px] text-[var(--text-faint)] mt-1`,children:`配色统一用示例色，实际配色由「数据图配色」决定。此预览与出图跑同一份代码。`}),(0,v.jsx)(`p`,{className:`tex
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/settings/presets
+BEFORE: ...State)(``);(0,g.useEffect)(()=>{let t=new AbortController;return Qn([]),er(``),ar({}),rr(!1),dr(``),e.status?.mode===`key`?(fetch(
+AFTER: ,{signal:t.signal}).then(e=>{if(!e.ok)throw Error(`模型列表暂不可用`);return e.json()}).then(e=>{!t.signal.aborted&&Array.isArray(e.presets)&&Qn(e.presets)}).catch(()=>{}),fetch(`/api/settings`,{signal:t.signal}).then(e=>{if(!e.ok)throw Error(`模型配置暂不可用`);return e.json
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/settings
+BEFORE: ...row Error(`模型列表暂不可用`);return e.json()}).then(e=>{!t.signal.aborted&&Array.isArray(e.presets)&&Qn(e.presets)}).catch(()=>{}),fetch(
+AFTER: ,{signal:t.signal}).then(e=>{if(!e.ok)throw Error(`模型配置暂不可用`);return e.json()}).then(e=>{if(t.signal.aborted)return;let n=e?.settings||{};dr(n.executor_model_id||``)}).catch(()=>{}),()=>t.abort()):()=>t.abort()},[e.status?.mode,e.status?.revision]);let fr=$n?Z
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/workflows/${e}/artifacts/upload
+BEFORE: ...(n.length>0){let t=new FormData;S&&t.append(`prepare_chat_materials`,`true`);for(let e of n)t.append(`files`,e);let r=await fetch(
+AFTER: ,{method:`POST`,body:t});if(!r.ok){let e=await r.text().catch(()=>`上传失败`);throw Error(`附件上传失败: ${e}`)}}if(t){let n=new FormData;n.append(`files`,t),n.append(`mark_as_problem`,`true`),S&&n.append(`prepare_chat_materials`,`true`);let r=await fetch(`/api/workflow
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/workflows/${e}/artifacts/upload
+BEFORE: ...ew FormData;n.append(`files`,t),n.append(`mark_as_problem`,`true`),S&&n.append(`prepare_chat_materials`,`true`);let r=await fetch(
+AFTER: ,{method:`POST`,body:n});if(!r.ok){let e=await r.text().catch(()=>`上传失败`);throw Error(`赛题文件上传失败: ${e}`)}let i=await r.json().catch(()=>null);if(i?.count!==1||i.problem_file!==`user_data/${t.name}`)throw Error(`赛题文件上传失败: 后端未确认视觉识别标记，请重试创建`)}},Pi=async n=>{if(n.
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/settings
+BEFORE: ...把 .tex 当成 markdown 处理, 公式格式可能不对。  建议:   · 选 PDF 输出 + 上传 .tex (推荐)   · 或重新上传 .docx / .md 主稿  仍然继续吗?`))return;try{let e=await fetch(
+AFTER: );if(e.ok){let t=await e.json(),n=(t?.settings??t??{})?.reviewer_api_key;if((typeof n!=`string`||n.trim()===``)&&!window.confirm(`⚠ 未配置外部审稿模型的 API key (Settings → reviewer_api_key)。  审稿循环会退化为 "Claude 自己审自己"——效果接近无, 因为同一模型很难真正挑出自己的毛病。  建议:   1. 取消这次创建   2. 去 Se
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /settings
+BEFORE: ...成 PDF，没有 LaTeX 会在「编译与合规检查」步失败、跑了大半天却出不来 PDF。  建议：先到「设置」页点一键安装 LaTeX，装好再来跑（几分钟）。    · 确定：仍然现在就跑（编译步可能失败）   · 取消：先去设置页安装 LaTeX`)){r(
+AFTER: );return}}}catch{}}let d=new Set(Zn.map(e=>e.id));if(t){if(!tr||tr.mode_revision!==e.status?.revision)throw Error(`请先选择当前账户的可用模型。`);n.account_models=tr}else if(J){let e=new Set(bi.map(e=>e.skill_name)),t={};for(let[n,r]of Object.entries(ir))r&&d.has(r)&&e.has(
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/workflows/${f}/artifacts/upload
+BEFORE: ...(n),!0)});for(let e=0;e<n.length;e+=10){let t=n.slice(e,e+10),r=new FormData;for(let e of t)r.append(`files`,e);let i=await fetch(
+AFTER: ,{method:`POST`,body:r});if(!i.ok){let t=await i.text().catch(()=>``);throw Error(`资产上传失败 (batch ${e/10+1}): ${i.status} ${t}`)}}}}if(Tr&&H.length>0)for(let e=0;e<H.length;e+=10){let t=H.slice(e,e+10),n=new FormData;for(let e of t){let t=(e.webkitRelativePath|
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/workflows/${f}/artifacts/upload
+BEFORE: ...n=new FormData;for(let e of t){let t=(e.webkitRelativePath||e.name).replace(/[\\/]/g,`_`);n.append(`files`,e,t)}let r=await fetch(
+AFTER: ,{method:`POST`,body:n});if(!r.ok){let t=await r.text().catch(()=>``);throw Error(`材料上传失败 (batch ${e/10+1}): ${r.status} ${t}`)}}if(mr){let e=null;if(z===`upload`&&ut?e=new File([ut],`PAPER_PLAN.md`,{type:ut.type}):z===`input`&&ft.trim()&&(e=new File([ft.trim(
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/workflows/${f}/artifacts/upload
+BEFORE: ...)],`PAPER_PLAN.md`,{type:`text/markdown`})),e){let t=new FormData;t.append(`files`,e),t.append(`target_dir`,``);let n=await fetch(
+AFTER: ,{method:`POST`,body:t});if(!n.ok){let e=await n.text().catch(()=>``);throw Error(`论文大纲上传失败: ${n.status} ${e}`)}}}if(Y&&nn){let e=new FormData,t=new File([nn],`CUSTOM_REQUIREMENTS.md`,{type:nn.type});e.append(`files`,t),e.append(`target_dir`,``);let n=await fe
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/workflows/${f}/artifacts/upload
+BEFORE: ...FormData,t=new File([nn],`CUSTOM_REQUIREMENTS.md`,{type:nn.type});e.append(`files`,t),e.append(`target_dir`,``);let n=await fetch(
+AFTER: ,{method:`POST`,body:e});if(!n.ok){let e=await n.text().catch(()=>``);throw Error(`竞赛要求上传失败: ${n.status} ${e}`)}}if(!Y&&W&&(mr||br||Dr||Or)){let e=new FormData;e.append(`file`,W);let t=await fetch(`/api/workflows/${f}/artifacts/custom-requirements`,{method:`PO
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/workflows/${f}/artifacts/custom-requirements
+BEFORE: ...`);throw Error(`竞赛要求上传失败: ${n.status} ${e}`)}}if(!Y&&W&&(mr||br||Dr||Or)){let e=new FormData;e.append(`file`,W);let t=await fetch(
+AFTER: ,{method:`POST`,body:e});if(!t.ok){let e=`未知错误`;try{e=(await t.json()).detail||e}catch{}alert(`自定义要求文档上传失败: ${e}\n工作流仍会继续，但 Claude 不会读到这份文档。`)}}if(Or&&Q){let e=new FormData;e.append(`files`,Q),e.append(`target_dir`,`user_data`),(await fetch(`/api/workflows/${f
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /api/workflows/${f}/artifacts/upload
+BEFORE: ...}\n工作流仍会继续，但 Claude 不会读到这份文档。`)}}if(Or&&Q){let e=new FormData;e.append(`files`,Q),e.append(`target_dir`,`user_data`),(await fetch(
+AFTER: ,{method:`POST`,body:e})).ok||alert(`Word 模板上传失败, 工作流仍会继续, 但导出 .docx 时不会按这个模板排版。`)}S?(s=!0,r(`/workflow/${f}/chat`)):(s=!0,await o(f),r(`/workflow/${f}`))}catch(e){let t=e instanceof Error?e.message:`创建失败，请检查后端服务是否正常运行`;Fe(await _({message:t,workflowId:a,launc
+
+### NewWorkflow-Ld6TEJjT.js
+URL: /workflow/${f}/chat
+BEFORE: .../api/workflows/${f}/artifacts/upload`,{method:`POST`,body:e})).ok||alert(`Word 模板上传失败, 工作流仍会继续, 但导出 .docx 时不会按这个模板排版。`)}S?(s=!0,r(
+AFTER: )):(s=!0,await o(f),r(`/workflow/${f}`))}catch(e){let t=e instanceof Error?e.message:`创建失败，请检查后端服务是否正常运行`;Fe(await _({message:t,workflowId:a,launchAttempted:s,deleteWorkflow:l}))}finally{Se(!1)}},$=e=>e<1024?`${e} B`:e<1048576?`${(e/1024).toFixed(1)} KB`:`${(e
+
+### PatchReviewDialog-CE7kb4Sp.js
+URL: /api/workflows/${encodeURIComponent(y)}/artifacts/${e.split(`/`).map(encodeURIComponent).join(`/`)}
+BEFORE: ...s||[])],z=t.reduce((e,t)=>e+(t.added||0),0),B=t.reduce((e,t)=>e+(t.removed||0),0),V={"--patch-review-scale":String(D/100)},H=y?e=>
+AFTER: :void 0;return e?(0,c.createPortal)((0,h.jsx)(`div`,{className:`patch-review-backdrop`,role:`presentation`,onMouseDown:e=>{e.target===e.currentTarget&&b()},children:(0,h.jsxs)(`section`,{ref:A,tabIndex:-1,className:`patch-review-dialog`,role:`dialog`,"aria-mod
+
+### Settings-D4EW1h0L.js
+URL: /api/account/native/image-settings
+BEFORE: ...fect)(()=>(b.current=!0,()=>{b.current=!1}),[]),(0,_.useEffect)(()=>{let n=new AbortController;return c(!0),i(null),m(``),g(``),r(
+AFTER: ,{},n.signal).then(r=>{if(n.signal.aborted)return;let a=T(r,e,t);i(a),o(a.model_id),y(!1)}).catch(e=>{n.signal.aborted||m(e instanceof Error?e.message:`生图配置读取失败。`)}).finally(()=>{n.signal.aborted||c(!1)}),()=>n.abort()},[e,t,d]);async function S(){if(!(!n||x.c
+
+### Settings-D4EW1h0L.js
+URL: /api/account/native/image-settings
+BEFORE: ...d||c(!1)}),()=>n.abort()},[e,t,d]);async function S(){if(!(!n||x.current||v||s)){x.current=!0,u(!0),m(``),g(``);try{let e=await r(
+AFTER: ,{method:`PUT`,headers:{"Content-Type":`application/json`},body:JSON.stringify({account_id:n.account_id,mode_revision:t,model_id:a})});if(!b.current)return;let o=T(e,n.account_id,t);if(o.model_id!==a)throw Error(`保存结果未能确认。`);i(o),g(`已保存，下次启动的任务与新打开的编辑器生效。`)}ca
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/presets
+BEFORE: ...current;N(U.current);let t=new AbortController,n=window.setTimeout(()=>t.abort(),A);return U.current={controller:t,timer:n},fetch(
+AFTER: ,{signal:t.signal}).then(async e=>{if(!e.ok)throw Error(`预设列表暂不可用`);return e.json()}).then(t=>{if(!Q.current||e!==H.current)return!1;if(!Array.isArray(t.presets))throw Error(`预设列表格式异常`);let n=typeof t.model_context_policies==`string`&&t.presets.every(e=>[`auto
+
+### Settings-D4EW1h0L.js
+URL: /api/settings
+BEFORE: ...tController,i=window.setTimeout(()=>n.abort(),A);b.current={controller:n,timer:i},h.current=!1,m(`loading`);try{let i=await fetch(
+AFTER: ,{signal:n.signal});if(!i.ok)throw Error(`配置读取失败`);let a=await i.json();if(!a.settings||typeof a.settings!=`object`||Array.isArray(a.settings)||Object.values(a.settings).some(e=>typeof e!=`string`))throw Error(`配置格式异常`);if(!Q.current||t!==g.current)return;r(t=
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/data-dir
+BEFORE: ...,_.useState)(!1),[je,Me]=(0,_.useState)(``),Q=(0,_.useRef)(!0),Ne=(0,_.useRef)(null);(0,_.useEffect)(()=>{Q.current=!0,we(),fetch(
+AFTER: ).then(e=>e.json()).then(e=>{Q.current&&Ee(e)}).catch(()=>{}),e||J();let t=window.electronAPI;return t?.latex?.getStatus&&t.latex.getStatus().then(e=>{Q.current&&ke(e)}).catch(()=>{}),()=>{Q.current=!1,++g.current,++H.current,N(b.current),N(U.current),N(x.curr
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/data-dir
+BEFORE: ...软件，把整个数据目录完整复制到新位置 · 必须包含 db、workspaces 和其他配置，不能只复制 workspaces · 系统不会自动删除原数据；重启核对成功前，请保留原目录  继续吗？`)){Oe(!0);try{let e=await fetch(
+AFTER: ,{method:`PUT`,headers:{"Content-Type":`application/json`},body:JSON.stringify({data_dir:t.path})}),n=await e.json();if(!e.ok){alert(`保存失败：${n.detail||e.status}`);return}alert(n.message||`已保存，重启后生效`),fetch(`/api/settings/data-dir`).then(e=>e.json()).then(Ee).c
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/data-dir
+BEFORE: ...fy({data_dir:t.path})}),n=await e.json();if(!e.ok){alert(`保存失败：${n.detail||e.status}`);return}alert(n.message||`已保存，重启后生效`),fetch(
+AFTER: ).then(e=>e.json()).then(Ee).catch(()=>{})}catch(e){alert(`保存失败：${e?.message||e}`)}finally{Oe(!1)}}},Ie=async()=>{if(window.confirm(`恢复默认数据存储位置？重启后生效。`)){Oe(!0);try{let e=await fetch(`/api/settings/data-dir`,{method:`PUT`,headers:{"Content-Type":`application/j
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/data-dir
+BEFORE: ...lert(`保存失败：${e?.message||e}`)}finally{Oe(!1)}}},Ie=async()=>{if(window.confirm(`恢复默认数据存储位置？重启后生效。`)){Oe(!0);try{let e=await fetch(
+AFTER: ,{method:`PUT`,headers:{"Content-Type":`application/json`},body:JSON.stringify({data_dir:``})}),t=await e.json();if(!e.ok){alert(`恢复失败：${t.detail||e.status}`);return}alert(t.message||`已恢复默认，重启后生效`),fetch(`/api/settings/data-dir`).then(e=>e.json()).then(Ee).cat
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/data-dir
+BEFORE: ...gify({data_dir:``})}),t=await e.json();if(!e.ok){alert(`恢复失败：${t.detail||e.status}`);return}alert(t.message||`已恢复默认，重启后生效`),fetch(
+AFTER: ).then(e=>e.json()).then(Ee).catch(()=>{})}catch(e){alert(`操作失败：${e?.message||e}`)}finally{Oe(!1)}}},Le=async()=>{if(!h.current||q.current||F.current||V.current)return;F.current=!0;let t=new AbortController,r=window.setTimeout(()=>t.abort(),j);x.current={contr
+
+### Settings-D4EW1h0L.js
+URL: /api/settings
+BEFORE: ...urrent={controller:t,timer:r};let i=P.current;l(!0),f(!1);let o=e?a(n):c(n);delete o.model_context_policies;try{let e=await fetch(
+AFTER: ,{method:`PUT`,signal:t.signal,headers:{"Content-Type":`application/json`},body:JSON.stringify({settings:o})});if(!e.ok){let t=await e.json().catch(()=>({})),n=typeof t.detail==`string`?t.detail:`HTTP ${e.status}`;throw e.status>=400&&e.status<500&&e.status!==
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/test/${e}
+BEFORE: ...?.controller===t&&(x.current=null),F.current=!1,Q.current&&l(!1)}},Re=async e=>{L(t=>({...t,[e]:!0}));try{let t=await(await fetch(
+AFTER: ,{method:`POST`})).json();ae(n=>({...n,[e]:t}))}catch(t){ae(n=>({...n,[e]:{ok:!1,message:t.message}}))}L(t=>({...t,[e]:!1}))},$=(e,t)=>{E.current.add(e),++P.current,f(!1),r(n=>({...n,[e]:t}))};return(0,w.jsxs)(`div`,{className:`w-full max-w-6xl mx-auto pb-12 a
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/presets/${e.id}
+BEFORE: ...B(!0),W(``);let a=new AbortController,o=window.setTimeout(()=>a.abort(),j);x.current={controller:a,timer:o};try{let t=await fetch(
+AFTER: ,{method:`DELETE`,signal:a.signal});if(!t.ok){let e=await t.json().catch(()=>({})),n=typeof e.detail==`string`?e.detail:`HTTP ${t.status}`;throw t.status>=400&&t.status<500&&t.status!==408?new M(n):Error(n)}if(!Q.current)return;ue(t=>t.filter(t=>t.id!==e.id)),
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/detect-claude
+BEFORE: ...ge:e=>$(`claude_bin`,e),placeholder:`默认 claude`}),(0,w.jsx)(`button`,{type:`button`,onClick:async()=>{try{let e=await(await fetch(
+AFTER: )).json();e.recommended?($(`claude_bin`,e.recommended),alert(`已找到 Claude CLI: ${e.recommended}`)):e.candidates?.length>0?alert(`找到候选路径但验证失败:\n${e.candidates.map(e=>`${e.path} - ${e.version}`).join(` `)}`):alert(`未找到 Claude CLI。请确认已安装: npm install -g @anthropic
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/presets/${R.id}
+BEFORE: ...fe(!0),W(``);let n=new AbortController,i=window.setTimeout(()=>n.abort(),j);x.current={controller:n,timer:i};try{let i=!!R.id,a=i?
+AFTER: :`/api/settings/presets`,o=await fetch(a,{method:i?`PUT`:`POST`,signal:n.signal,headers:{"Content-Type":`application/json`},body:JSON.stringify({name:e,model_id:t,api_key:R.api_key,...R.context_mode===`legacy`?{}:{context_mode:R.context_mode}})});if(!o.ok){let
+
+### Settings-D4EW1h0L.js
+URL: /api/settings/presets
+BEFORE: ...roller,i=window.setTimeout(()=>n.abort(),j);x.current={controller:n,timer:i};try{let i=!!R.id,a=i?`/api/settings/presets/${R.id}`:
+AFTER: ,o=await fetch(a,{method:i?`PUT`:`POST`,signal:n.signal,headers:{"Content-Type":`application/json`},body:JSON.stringify({name:e,model_id:t,api_key:R.api_key,...R.context_mode===`legacy`?{}:{context_mode:R.context_mode}})});if(!o.ok){let e=await o.json().catch(
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/checkpoints/current
+BEFORE: ...(null),s(``);let c=async()=>{if(n||i)return;i=!0,o=new AbortController;let c=setTimeout(()=>o?.abort(),8e3);try{let i=await fetch(
+AFTER: ,{signal:o.signal});if(!i.ok)throw Error(`无法同步检查点，未自动确认；请检查连接`);let c=await i.json();if(n)return;if(c.active&&(!c.checkpoint_id||typeof c.remaining_seconds!=`number`))throw Error(`后端仍是旧版检查点逻辑，需要更新并重启后端；此页面不会自动确认`);if(c.step_name&&t&&c.step_name!==t){r(null),y.
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/ASSETS_INVENTORY.md
+BEFORE: ...0,O.useState)(`use_user_results`),[ne,re]=(0,O.useState)(!1);(0,O.useEffect)(()=>{if(!E)return;let t=!1;return Promise.all([fetch(
+AFTER: ).then(e=>e.ok?e.json():null).catch(()=>null),fetch(`/api/workflows/${e}/artifacts/ASSETS_CONFLICTS.md`).then(e=>e.ok?e.json():null).catch(()=>null)]).then(([e,n])=>{if(t)return;let r=e&&typeof e.content==`string`?e.content:null,i=n&&typeof n.content==`string`
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/ASSETS_CONFLICTS.md
+BEFORE: ...;return Promise.all([fetch(`/api/workflows/${e}/artifacts/ASSETS_INVENTORY.md`).then(e=>e.ok?e.json():null).catch(()=>null),fetch(
+AFTER: ).then(e=>e.ok?e.json():null).catch(()=>null)]).then(([e,n])=>{if(t)return;let r=e&&typeof e.content==`string`?e.content:null,i=n&&typeof n.content==`string`?n.content:null;j(r),ee(i),re(!!i&&i.trim().length>100)}),()=>{t=!0}},[e,E]);let[N,ae]=(0,O.useState)(n
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/${encodeURIComponent(r)}
+BEFORE: ...n;let t=i?.primary_output_file?[i.primary_output_file]:[],n=!1;return(async()=>{for(let r of t){if(n)return;try{let t=await fetch(
+AFTER: );if(t.ok){let e=await t.json(),n=typeof e.content==`string`?e.content:``;if(n.length>100){ae({file:r,content:n});return}}}catch{}}})(),()=>{n=!0}},[e,T,u,i?.primary_output_file]),(0,O.useEffect)(()=>{if(!(typeof Notification>`u`||!i?.active)&&Notification.per
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/PAPER_PLAN.md
+BEFORE: ...useState)(!1),[fe,pe]=(0,O.useState)(!1),[me,he]=(0,O.useState)(!1);(0,O.useEffect)(()=>{if(!T)return;let t=!1;return P(!0),fetch(
+AFTER: ).then(e=>{if(e.ok)return e.json();throw Error(`not found`)}).then(e=>{let n=typeof e.content==`string`?e.content:``;t||ce(n)}).catch(()=>{t||ce(null)}).finally(()=>{t||P(!1)}),()=>{t=!0}},[e,T]);let ge=async()=>{if(!(se===null||!i?.checkpoint_id)){pe(!0);try{
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/checkpoints/plan
+BEFORE: ...l)}).finally(()=>{t||P(!1)}),()=>{t=!0}},[e,T]);let ge=async()=>{if(!(se===null||!i?.checkpoint_id)){pe(!0);try{let t=await fetch(
+AFTER: ,{method:`PUT`,headers:{"Content-Type":`application/json`},body:JSON.stringify({content:se,checkpoint_id:i.checkpoint_id}),signal:AbortSignal.timeout(12e3)});if(!t.ok){let e=await t.json().catch(()=>({}));throw Error(e.detail||`大纲保存失败，未确认继续，请重试`)}S.current&&de
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}
+BEFORE: ... p-4 bg-[var(--bg-base)] text-sm text-[var(--text-secondary)] leading-relaxed`,children:(0,k.jsx)(m,{content:A,resolveAssetUrl:t=>
+AFTER: })})]}),ne&&D&&(0,k.jsxs)(`div`,{className:`rounded-xl border border-[#fbbf24]/40 overflow-hidden`,children:[(0,k.jsxs)(`div`,{className:`flex items-center justify-between px-4 py-2 bg-[#fbbf24]/10`,children:[(0,k.jsx)(`span`,{className:`text-[12px] font-semib
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}
+BEFORE: ... p-4 bg-[var(--bg-base)] text-sm text-[var(--text-secondary)] leading-relaxed`,children:(0,k.jsx)(m,{content:D,resolveAssetUrl:t=>
+AFTER: })})]}),ne&&(0,k.jsxs)(`div`,{className:`rounded-xl border border-[var(--border)] p-4 bg-[var(--bg-overlay)]`,children:[(0,k.jsx)(`p`,{className:`text-[12px] font-semibold text-[var(--text-secondary)] mb-2`,children:`选择冲突处理策略`}),(0,k.jsx)(`div`,{className:`spa
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}
+BEFORE: ...ext-[var(--text-secondary)] leading-relaxed`,children:(0,k.jsx)(h,{path:(u||N).file||``,content:(u||N).content,resolveAssetUrl:t=>
+AFTER: })})]})}),(0,k.jsx)(`textarea`,{value:f,onChange:e=>p(e.target.value),placeholder:T?`对大纲的修改意见（可选，编辑大纲后可留空）...`:`输入你的修改意见（可选）...`,rows:T?2:4,className:`input w-full px-4 py-3 resize-none text-sm mb-4`}),v&&(0,k.jsx)(`div`,{className:`px-3 py-2 rounded-lg bg-[#f
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${encodeURIComponent(e)}/artifacts/${t.split(`/`).map(encodeURIComponent).join(`/`)}${n}
+BEFORE: ...d`};function TN(e){return e<1024?`${e} B`:e<1048576?`${(e/1024).toFixed(1)} KB`:`${(e/1048576).toFixed(1)} MB`}var EN=(e,t,n=``)=>
+AFTER: ;function DN({workflowId:e,artifact:t}){let n=`${EN(e,t.path)}#page=1&zoom=page-width&navpanes=0`,r=EN(e,t.path,`?raw=true`);return(0,k.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,k.jsx)(`iframe`,{src:n,className:`w-full h-[76vh] rounded-lg borde
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${n}/artifacts/${encodeURIComponent(e.path)}?raw=true
+BEFORE: ...n}/artifact/${e.path}`,className:`text-xs text-indigo-400 hover:text-indigo-300 transition`,children:`全屏查看`}),(0,k.jsx)(`a`,{href:
+AFTER: ,download:!0,className:`text-xs text-[var(--text-muted)] hover:text-[var(--text-primary)] transition`,children:`下载`}),(0,k.jsx)(`button`,{onClick:i,className:`text-[var(--text-muted)] hover:text-[var(--text-primary)] transition ml-1`,children:(0,k.jsx)(`svg`,{
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${n}/artifacts/${e.split(`/`).map(encodeURIComponent).join(`/`)}
+BEFORE: ...&(0,k.jsx)(`p`,{className:`patch-source-notice`,role:`note`,children:r}),a&&(0,k.jsx)(h,{path:e.path,content:t,resolveAssetUrl:e=>
+AFTER: }),l&&(0,k.jsx)(DN,{workflowId:n,artifact:e},e.path),c&&(0,k.jsx)(`img`,{src:`/api/workflows/${n}/artifacts/${encodeURIComponent(e.path)}`,alt:e.path,className:`max-w-full max-h-[60vh] rounded-lg mx-auto`}),o&&(0,k.jsx)(`pre`,{className:`text-xs text-[var(--te
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${n}/artifacts/${encodeURIComponent(e.path)}
+BEFORE: ...ts/${e.split(`/`).map(encodeURIComponent).join(`/`)}`}),l&&(0,k.jsx)(DN,{workflowId:n,artifact:e},e.path),c&&(0,k.jsx)(`img`,{src:
+AFTER: ,alt:e.path,className:`max-w-full max-h-[60vh] rounded-lg mx-auto`}),o&&(0,k.jsx)(`pre`,{className:`text-xs text-[var(--text-secondary)] whitespace-pre-wrap font-mono leading-relaxed\r             bg-[var(--bg-base)] rounded-lg p-3 border border-[var(--border)
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${n}/artifacts/${encodeURIComponent(e.path)}?preview=html
+BEFORE: ...g-relaxed\r             bg-[var(--bg-base)] rounded-lg p-3 border border-[var(--border)]`,children:t}),d&&(0,k.jsx)(`iframe`,{src:
+AFTER: ,className:`w-full rounded-lg bg-white border-0`,style:{minHeight:`400px`,height:`70vh`},sandbox:`allow-same-origin`,title:`文件预览`})]})]})}function AN(){let{id:e}=o(),{current:t,logs:n,fetchWorkflow:r,startWorkflow:c,resumeWorkflow:d,pauseWorkflow:m,restartWork
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/account/messages/capabilities
+BEFORE: ....useState)(!0),[le,P]=(0,O.useState)(0);(0,O.useEffect)(()=>{let e=new AbortController;return M([]),ae(``),ce(!0),ne.status&&(N?l(
+AFTER: ,{},e.signal).then(t=>{if(e.signal.aborted)return;let n=p(t),r=n.enabled?n.models.filter(e=>D(e)&&f(e)*1e3>Date.now()):[];M(r.map(e=>({id:e.id,model_id:e.id,name:(e.display_name||e.id)+` · 积分`}))),r.length||ae(`暂没有可选的积分模型。`)}).catch(t=>{e.signal.aborted||ae(SN
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/settings/presets
+BEFORE: ...),r.length||ae(`暂没有可选的积分模型。`)}).catch(t=>{e.signal.aborted||ae(SN(t,`模型目录暂不可用。`))}).finally(()=>{e.signal.aborted||ce(!1)}):fetch(
+AFTER: ,{signal:e.signal}).then(e=>e.json()).then(t=>{!e.signal.aborted&&Array.isArray(t.presets)&&M(t.presets)}).catch(()=>{}).finally(()=>{e.signal.aborted||ce(!1)})),()=>e.abort()},[N,ne.status?.revision,le]);let ue=async(e,t)=>{try{let n=await fetch(`/api/workflo
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/export?mode=${t}
+BEFORE: ...{}).finally(()=>{e.signal.aborted||ce(!1)})),()=>e.abort()},[N,ne.status?.revision,le]);let ue=async(e,t)=>{try{let n=await fetch(
+AFTER: );if(!n.ok){let e=await n.json().catch(()=>({detail:`导出失败`}));alert(e.detail||`导出失败 (HTTP ${n.status})`);return}let r=await n.blob(),i=URL.createObjectURL(r),a=document.createElement(`a`);a.href=i;let o=n.headers.get(`Content-Disposition`)||``,s=o.match(/filen
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/logs?limit=200&compact=true
+BEFORE: ...eEffect)(()=>{if(!e)return;let t=!0,n=new AbortController,r=setTimeout(()=>n.abort(),15e3);return(async()=>{try{let r=await fetch(
+AFTER: ,{signal:n.signal});if(r.ok){let n=await r.json();t&&Array.isArray(n)&&y.getState().addHistoryLogs(e,n.map(e=>`[${e.step||``}] ${e.message}`))}}catch{}finally{clearTimeout(r)}})(),()=>{t=!1,n.abort(),clearTimeout(r)}},[e]);let Le=t?.status;(0,O.useEffect)(()=>
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts?view=overview
+BEFORE: ...ync()=>{if(!t||n)return;n=!0;let i=new AbortController;r=i;let a=setTimeout(()=>i.abort(),2e4);try{let n=[];try{let r=await fetch(
+AFTER: ,{signal:i.signal});if(!r.ok)throw Error(`HTTP ${r.status}`);if(r.ok){let e=await r.json();if(!t)return;if(Array.isArray(e))n=e,_e(e),ye(``);else throw Error(`文件清单格式异常`)}}catch(e){t&&ye(i.signal.aborted?`文件清单加载超时，请重试。`:`文件清单加载失败：${e instanceof Error?e.message:
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/extract-status
+BEFORE: ...单格式异常`)}}catch(e){t&&ye(i.signal.aborted?`文件清单加载超时，请重试。`:`文件清单加载失败：${e instanceof Error?e.message:`网络异常`}`)}try{let n=await fetch(
+AFTER: ,{signal:i.signal});if(n.ok){let e=await n.json();if(!t)return;Ie(e.files||{})}}catch{}if(n.some(e=>e.path===`paper/PAPER_IMPROVEMENT_LOG.md`))try{let n=await fetch(`/api/workflows/${e}/artifacts/paper%2FPAPER_IMPROVEMENT_LOG.md`,{signal:i.signal});if(n.ok){le
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/paper%2FPAPER_IMPROVEMENT_LOG.md
+BEFORE: ...await n.json();if(!t)return;Ie(e.files||{})}}catch{}if(n.some(e=>e.path===`paper/PAPER_IMPROVEMENT_LOG.md`))try{let n=await fetch(
+AFTER: ,{signal:i.signal});if(n.ok){let e=await n.json();if(!t)return;let r=typeof e.content==`string`?e.content:``,i=[],a=r.split(` `);for(let e of a){let t=e.match(/Round\s*(\d+).*?\|\s*([\d.]+)\s*\/\s*10/);t&&i.push({round:parseInt(t[1]),score:parseFloat(t[2])})}i
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/${encodeURIComponent(t.path)}
+BEFORE: ...e=async t=>{if(!e)return;let n=++Oe.current;if(De(``),t.type===`image`||t.type===`pdf`){Ce(t),Te(``);return}try{let r=await fetch(
+AFTER: );if(!r.ok)return;let i=await r.json();if(n!==Oe.current)return;let a;a=i.type===`json`&&typeof i.content==`object`&&i.content!==null?JSON.stringify(i.content,null,2):typeof i.content==`string`?i.content:JSON.stringify(i,null,2),Ce(i.type?{...t,type:i.type}:t)
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts/upload
+BEFORE: ...||!t.target.files?.length)){Ne(!0);try{let n=new FormData;for(let e of Array.from(t.target.files))n.append(`files`,e);await fetch(
+AFTER: ,{method:`POST`,body:n});let r=await fetch(`/api/workflows/${e}/artifacts?view=overview&refresh=true`);r.ok&&_e(await r.json())}finally{Ne(!1),Pe.current&&(Pe.current.value=``)}}};if(!e||!t||t.id!==e)return A?(0,k.jsxs)(`div`,{className:`flex flex-col items-ce
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts?view=overview&refresh=true
+BEFORE: ...(t.target.files))n.append(`files`,e);await fetch(`/api/workflows/${e}/artifacts/upload`,{method:`POST`,body:n});let r=await fetch(
+AFTER: );r.ok&&_e(await r.json())}finally{Ne(!1),Pe.current&&(Pe.current.value=``)}}};if(!e||!t||t.id!==e)return A?(0,k.jsxs)(`div`,{className:`flex flex-col items-center justify-center gap-4 h-64`,role:`alert`,children:[(0,k.jsx)(`p`,{children:A}),(0,k.jsx)(`button`
+
+### WorkflowDetail-bN89YgNS.js
+URL: /workflow/${t.id}/chat
+BEFORE: ...&!!e.resume_session_id),Ge=F.filter(v).reduce((e,t)=>e+(t.collection_count||1),0);return t.params?.chat_mode===!0?(0,k.jsx)(a,{to:
+AFTER: ,replace:!0}):(0,k.jsxs)(`div`,{className:`workflow-auto-page animate-fade-in`,children:[(0,k.jsxs)(`div`,{className:`flex flex-wrap items-start justify-between gap-4 mb-6`,children:[(0,k.jsxs)(`div`,{children:[(0,k.jsxs)(`div`,{className:`flex items-center ga
+
+### WorkflowDetail-bN89YgNS.js
+URL: /workflow/${t.id}/chat
+BEFORE: ...nfirm(`切换到协同模式？  · 之后这个工作流走对话：你说一句话，每次干活前先给你一张卡片确认 · 流水线步骤视图会隐藏（已完成的产出都保留） · 不会自动开跑  随时可以再切回全自动。`)){he(!0);try{await w(t.id,!0),E(
+AFTER: )}catch(e){alert(SN(e,`切换失败`))}finally{he(!1)}}},disabled:me,className:`btn-ghost px-4 py-2 text-sm text-[var(--accent)] hover:opacity-80 disabled:opacity-50`,title:`改成协同模式：你说一句话，AI 判断该调哪个能力，每次干活前先给你一张提议卡片确认`,children:me?`切换中…`:`改用协同模式`}),(0,k.jsx)(s,{to:`/wor
+
+### WorkflowDetail-bN89YgNS.js
+URL: /workflow/${t.id}/editor
+BEFORE: ...r:opacity-80 disabled:opacity-50`,title:`改成协同模式：你说一句话，AI 判断该调哪个能力，每次干活前先给你一张提议卡片确认`,children:me?`切换中…`:`改用协同模式`}),(0,k.jsx)(s,{to:
+AFTER: ,className:`btn-ghost px-4 py-2 text-sm text-emerald-400 hover:text-emerald-300`,title:`打开编辑器，手动修改并重新编译/导出`,children:`编辑器`})]})]}),(0,k.jsxs)(`div`,{className:`mb-6`,children:[(0,k.jsxs)(`div`,{className:`flex justify-between text-sm text-[var(--text-muted)] m
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${t.id}/steps/${e}/account-model
+BEFORE: ...model_used,accountMode:N,modelLoading:oe,modelError:ie,onRefreshModels:N?()=>P(e=>e+1):void 0,onSetModel:async(e,n,i)=>{N?await l(
+AFTER: ,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({model_id:n})}):await S(t.id,e,n,i),await r(t.id)},stepEffort:d,onSetEffort:async(e,n,i)=>{N?await l(`/api/workflows/${t.id}/steps/${e}/effort`,{method:`PATCH`,headers:{"Content-T
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${t.id}/steps/${e}/effort
+BEFORE: ...n/json`},body:JSON.stringify({model_id:n})}):await S(t.id,e,n,i),await r(t.id)},stepEffort:d,onSetEffort:async(e,n,i)=>{N?await l(
+AFTER: ,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({effort:n,rerun:i})}):await C(t.id,e,n,i),await r(t.id)},onRerun:e=>{x(t.id,e).catch(e=>{console.error(`Rerun failed:`,e),alert(`重跑失败: ${e.message||`未知错误`}`),r(t.id)})}},e.skill_n
+
+### WorkflowDetail-bN89YgNS.js
+URL: /api/workflows/${e}/artifacts
+BEFORE: ...button`,onClick:()=>xe(e=>e+1),children:`重新加载文件清单`})]}),(0,k.jsx)(_,{artifacts:F,onOpen:Re,defaultCollapsed:!0,collectionEndpoint:
+AFTER: ,renderStatus:e=>e.path.startsWith(`user_data/`)&&/\.(pdf|docx?)$/i.test(e.path)?(0,k.jsx)(ON,{status:Fe[xN(e.path)]}):null,renderActions:t=>(0,k.jsxs)(k.Fragment,{children:[(0,k.jsx)(s,{to:g(e,t.path),children:`全屏查看`}),(0,k.jsx)(`a`,{href:EN(e,t.path,`?raw=tr
+
+### index-BeImsYqE.js
+URL: /api/client-config/refresh
+BEFORE: ...+i;return r={controller:m,timeout:h,previous:f},n=Promise.resolve().then(async()=>{try{if(m.signal.aborted)return;let t=await e(c?
+AFTER: :`/api/client-config`,{method:c?`POST`:`GET`,signal:m.signal,cache:`no-store`,credentials:`same-origin`}),n=t.ok?await t.json():null;if(a||g!==i)return;u(fe(n))}catch{!a&&g===i&&u(fe(null))}finally{clearTimeout(h),g===i&&(r=null,n=null,o=Date.now(),d(),p())}})
+
+### index-BeImsYqE.js
+URL: /api/client-config
+BEFORE: ...eout:h,previous:f},n=Promise.resolve().then(async()=>{try{if(m.signal.aborted)return;let t=await e(c?`/api/client-config/refresh`:
+AFTER: ,{method:c?`POST`:`GET`,signal:m.signal,cache:`no-store`,credentials:`same-origin`}),n=t.ok?await t.json():null;if(a||g!==i)return;u(fe(n))}catch{!a&&g===i&&u(fe(null))}finally{clearTimeout(h),g===i&&(r=null,n=null,o=Date.now(),d(),p())}}),n}return{getSnapshot
+
+### index-BeImsYqE.js
+URL: /api/account/${e}
+BEFORE: ...t a=e!==`status`;y.current=a,m.current?.abort();let s=new AbortController;m.current=s,c(``),d(``),a?o(!0):i(!0);try{let i=await u(
+AFTER: ,a?{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify(r||{})}:{},s.signal);if(a&&v(),!_.current||s.signal.aborted)return null;let o=e===`status`?f(n.current,w(i)):w(i);if(e===`login`&&!o.authenticated&&!o.pending_login)throw Error(`
+
+### index-BeImsYqE.js
+URL: /api/account/activate
+BEFORE: ...async e=>{if(y.current||!e)return!1;y.current=!0,m.current?.abort();let r=new AbortController;m.current=r,o(!0);try{let t=await u(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({license_id:e})},r.signal);if(!_.current||r.signal.aborted)return!1;if(t.valid!==!0||t.license_id!==e)throw Error(`账号已登录，但本机授权关联结果未确认，请刷新后重试。`);return!0}catch(e){throw _.current&&!
+
+### index-BeImsYqE.js
+URL: /api/account/logout-all
+BEFORE: ...n`},body:JSON.stringify(r)},a.signal);if(!_.current||a.signal.aborted)throw new g(`账号操作已取消。`,`ACCOUNT_SUPERSEDED`,409);return e===
+AFTER: &&(v(),n.current={...n.current,authenticated:!1,account:void 0,entitlements:[],inference_enabled:!1},t(n.current)),i}catch(e){throw _.current&&!a.signal.aborted&&e instanceof g&&[`ACCOUNT_SESSION_INVALID`,`ACCOUNT_ACCESS_NOT_ENABLED`,`ACCOUNT_REGISTRATION_UNAV
+
+### index-BeImsYqE.js
+URL: /api/account/status
+BEFORE: ...),o(!1)))}},[]);return(0,j.useEffect)(()=>{_.current=!0;let e=new AbortController;return m.current=e,(async()=>{try{let r=await u(
+AFTER: ,{},e.signal);_.current&&!e.signal.aborted&&(n.current=w(r),t(n.current))}catch(r){_.current&&!e.signal.aborted&&(c(r instanceof Error?r.message:`账号服务暂不可用，请稍后重试。`),n.current={...n.current,connection_state:`unavailable`,inference_enabled:!1},t(n.current))}final
+
+### index-BeImsYqE.js
+URL: /api/account/send-code
+BEFORE: ...ent||r||!P||D>0)){if(!be.test(o.trim())||o.length>254){b(`请先填写有效邮箱。`);return}te.current=!0,T(!0),b(``),S(``);try{let t=xe(await n(
+AFTER: ,{email:o.trim().toLowerCase(),purpose:e}));if(t.ok!==!0)throw Error(`验证码发送结果尚未确认，请稍后再试。`);O.current&&(ee(Math.max(1,C(t.retry_after_seconds)||60)),S(e===`register`?`验证码已发送，请查看邮箱及垃圾邮件。`:`若邮箱符合此操作条件，验证码将发送到邮箱，请查看垃圾邮件。`))}catch(e){O.current&&(b(e instanceof Erro
+
+### index-BeImsYqE.js
+URL: /api/account/${e===`register`?`register`:e===`reset`?`reset-password`:`bind-email`}
+BEFORE: ...ase(),code:c,...s,...e===`register`?{password:u,display_name:m.trim()||void 0}:e===`reset`?{new_password:u}:{}};try{if(xe(await n(
+AFTER: ,h)).ok!==!0)throw Error(`操作结果尚未确认，请检查邮箱或返回登录后核对。`);O.current&&a(o.trim(),e===`register`?`账号创建成功，请登录。`:e===`reset`?`密码已更新，请使用新密码登录。`:`邮箱验证完成，请重新登录。`)}catch(e){O.current&&b(e instanceof Error?e.message:`操作暂未完成，请稍后再试。`)}finally{te.current=!1,O.current&&(T(!1),d(
+
+### index-BeImsYqE.js
+URL: /api/account/identity
+BEFORE: ...e.current||=t.attempt?.request_id||null)};(0,j.useEffect)(()=>{k.current=!0;let e=!1;return Promise.resolve().then(()=>e?void 0:t(
+AFTER: )).then(t=>{!e&&t!==void 0&&(N(t),E(``))}).catch(t=>{e||E(t instanceof Error?t.message:`暂时无法读取认证状态。`)}).finally(()=>{e||l(!1)}),()=>{e=!0,k.current=!1}},[t,a]),(0,j.useEffect)(()=>{if(x<=0)return;let e=setTimeout(()=>S(e=>Math.max(0,e-1)),1e3);return()=>clearT
+
+### index-BeImsYqE.js
+URL: /api/account/identity
+BEFORE: ...(o,re),ae=!!o?.required&&!o.license_allowed,I=C||Te(o),L=async()=>{if(!(A.current||P)){A.current=!0,d(!0),E(``);try{let e=await t(
+AFTER: );k.current&&(N(e),await r())}catch(e){k.current&&E(e instanceof Error?e.message:`暂时无法确认结果。`)}finally{A.current=!1,k.current&&d(!1)}}},oe=async e=>{if(e.preventDefault(),!(A.current||P||C||Te(o)||x>0||!ie||y!==F)){if(!f.trim()||!/^\d{17}[\dXx]$/.test(m.trim())
+
+### index-BeImsYqE.js
+URL: /api/account/identity
+BEFORE: ...?.randomUUID){E(`安全请求编号不可用，请更新客户端后重试。`);return}A.current=!0,d(!0),E(``),ee(``),ne.current||=crypto.randomUUID();try{let e=await t(
+AFTER: ,{name:f.trim(),idcard:m.trim().toUpperCase(),mobile:_.trim(),consent:!0,consent_version:o.consent_version,idempotency_key:ne.current});k.current&&(N(e),we(e).license_allowed&&await r())}catch(e){k.current&&(E(e instanceof Error?e.message:`结果尚未确认，请先刷新认证状态。`),e
+
+### index-BeImsYqE.js
+URL: /api/account/identity/withdraw
+BEFORE: ...ith(`/claim`)&&(T||!je(e,o)))){A.current=!0,d(!0),E(``),ee(``);try{let e=await t(n,i?{confirm:!0}:{});if(!k.current)return;if(n===
+AFTER: )N(e),p(``),h(``),v(``),b(``),ne.current=null,w(!1);else if(xe(e).ok!==!0)throw Error(`操作结果尚未确认，请刷新账号状态后再检查。`);te(null),ee(n.endsWith(`/claim`)?xe(e).edition_matches===!1?`账号已有其他版本的软件授权，与当前客户端版别不匹配。请使用对应版本，或联系管理员核对；尚未关联本机。`:`软件使用权限已归属当前账号，请在上方关联本机。此操作不充值积分。`:n
+
+### index-BeImsYqE.js
+URL: /api/account/licenses/claim
+BEFORE: ...Name:`account-software-opening`,children:[(0,M.jsx)(`button`,{type:`button`,className:`access-primary`,disabled:P,onClick:()=>{se(
+AFTER: )},children:`开通软件使用权限`}),(0,M.jsx)(`p`,{className:`access-hint`,children:`将软件权限关联到当前账号，无需激活码；不是积分充值。`})]}),o?.verified?(0,M.jsxs)(`details`,{className:`account-center-details`,children:[(0,M.jsx)(`summary`,{children:`认证详情`}),(0,M.jsx)(`dl`,{className:`account-
+
+### index-BeImsYqE.js
+URL: /api/account/licenses/${e.id}/unbind
+BEFORE: ...)]}),(0,M.jsx)(`button`,{type:`button`,className:`access-secondary`,disabled:P||!/^[a-f0-9]{32}$/.test(e.id),onClick:()=>te({path:
+AFTER: ,title:`确认解除设备绑定？`,message:`此授权的设备将无法取得新的在线授权，运行中的受保护任务可能暂停。资料不会删除，之后可按授权规则重新绑定。`}),children:`解绑设备`})]},e.id)),(0,M.jsxs)(`div`,{className:`account-inline-actions`,children:[e.provider!==`newapi`&&(0,M.jsx)(`button`,{type:`button`,className:`access-text-button
+
+### index-BeImsYqE.js
+URL: /api/account/logout-all
+BEFORE: ...children:[e.provider!==`newapi`&&(0,M.jsx)(`button`,{type:`button`,className:`access-text-button`,disabled:P,onClick:()=>te({path:
+AFTER: ,title:`确认退出全部账号会话？`,message:`包括本机在内的账号登录将失效。依赖账号续租的运行任务可能暂停；MHcoding Key 和论文文件不被删除。`}),children:`退出全部账号会话`}),(0,M.jsx)(`button`,{type:`button`,className:`access-text-button`,disabled:P||!o,onClick:()=>te({path:`/api/account/identity/withdraw`,title:`确认撤回实名授权？
+
+### index-BeImsYqE.js
+URL: /api/account/identity/withdraw
+BEFORE: ...删除。`}),children:`退出全部账号会话`}),(0,M.jsx)(`button`,{type:`button`,className:`access-text-button`,disabled:P||!o,onClick:()=>te({path:
+AFTER: ,title:`确认撤回实名授权？`,message:`将清除本服务保存的实名资料并取消人工放行，停止依靠两者取得新的在线授权；原授权期限和设备绑定保留。已发送至供应商的请求不能撤回发送，可联系隐私渠道申请后续处理。`}),children:`撤回实名授权`})]})]}),O&&(0,M.jsxs)(`div`,{className:`account-confirmation`,role:`alertdialog`,"aria-modal":`false`,"aria-label":O.title,childre
+
+### index-BeImsYqE.js
+URL: /api/account/native/software
+BEFORE: ...y{let n=t&&s?.policy?{agreement_accepted:!0,agreement_version:s.policy.version,agreement_digest:s.policy.sha256}:void 0,r=await e(
+AFTER: +(n?`/consent`:``),n),i=w(r);x.current&&(c({...i,provider:`newapi`}),u(r.software_identity_ready===!0))}catch(e){x.current&&m(e instanceof Error?e.message:`软件权限读取失败。`)}finally{S.current=!1,x.current&&f(!1)}}}async function T(e){if(!S.current){S.current=!0,f(!0
+
+### index-BeImsYqE.js
+URL: /api/account/native/realname
+BEFORE: ...``),h=(0,j.useRef)(!1),g=(0,j.useRef)(!1),_=(0,j.useCallback)(async()=>{if(!g.current){g.current=!0,f(!0),u(``);try{let t=await e(
+AFTER: );if(!t||typeof t.allowed!=`boolean`||typeof t.required!=`boolean`||typeof t.verified!=`boolean`)throw Error(`实名状态尚未确认，请重新检查。`);h.current&&(o(t.allowed),c(!0),m(t.verified?`实名认证已通过`:t.manual_access?`人工审核已放行（不代表实名核验通过）`:`当前账户使用权限已确认`))}catch(e){h.current&&(o(!1
+
+### index-BeImsYqE.js
+URL: /api/account/native/
+BEFORE: ...?e.message:`操作未完成，请稍后重试。`)}finally{h.current=!1,m(!1)}}}let y=async(t,n)=>{if(!e.request)throw Error(`账号服务暂不可用`);return e.request(
+AFTER: +t,n)};async function b(){if(e.status.pending_login){await y(`login/verify`,{challenge_id:e.status.pending_login.id,code:s}),c(``),v(),(await e.refresh())?.authenticated&&e.onEnterWorkbench?.();return}if(t===`register`){await y(`register`,{email:r,password:a,c
+
+### index-BeImsYqE.js
+URL: /api/account/workbench-access
+BEFORE: ....aborted)return s.current;o.current?.abort();let n=new AbortController;o.current=n,r(!0),a(``);let i=(async()=>{try{let e=await u(
+AFTER: ,{},n.signal);if(!c.current||n.signal.aborted)return;let r=Be(e);return t(r),r.connection_state===`unavailable`&&a(`暂时无法确认账号服务状态。已打开的资料保留，请恢复网络后重新检查；模型调用不会改用 MHcoding Key。`),r}catch(e){c.current&&!n.signal.aborted&&(a(e instanceof Error?e.message:`暂时无法确认工作台接入状
+
+### index-BeImsYqE.js
+URL: /api/license/verify
+BEFORE: ..._.trim()){x(`请输入激活码。`);return}E.current=!0,w.current?.abort();let r=new AbortController;w.current=r,m(!0),x(``);try{let e=await u(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({license_key:_.trim(),machine_id:`CLIENT-PLACEHOLDER`})},r.signal);if(!T.current||r.signal.aborted)return;if(e.valid===!0){let e=await t.select(`key`);if(!T.current||r.signal.abort
+
+### index-BeImsYqE.js
+URL: /account
+BEFORE: ...`,type:`button`,disabled:d||m,onClick:()=>l(`account`),children:`切换为 Modex 账户积分`}):(0,M.jsx)(s,{className:`access-text-button`,to:
+AFTER: ,children:`登录 Modex 账户 →`}));return(0,M.jsxs)(`section`,{className:`access-mode-card${e?` access-mode-card-compact`:``}`,"aria-label":`当前接入与消费方式`,"aria-busy":d||m,children:[(0,M.jsxs)(`div`,{className:`account-section-row`,children:[(0,M.jsxs)(`div`,{children:
+
+### index-BeImsYqE.js
+URL: /account
+BEFORE: ...`account-inline-actions`,children:[h,u.mode===`account`&&!u.account_authenticated&&(0,M.jsx)(s,{className:`access-text-button`,to:
+AFTER: ,children:`重新登录账户 →`})]})]}),a&&a!==u.mode&&(0,M.jsxs)(`div`,{className:`account-confirmation account-mode-confirmation`,role:`group`,"aria-label":`确认切换消费方式`,children:[(0,M.jsxs)(`h3`,{children:[`切换为`,_(a),`？`]}),(0,M.jsx)(`p`,{children:`两种消费方式不会混用。请先停止模型任务并关闭
+
+### index-BeImsYqE.js
+URL: /account
+BEFORE: ...sabled:m,onClick:()=>o(null),children:`取消`})]})]})]})]})}function Ge(){let{status:e,loading:t,error:n}=y();return(0,M.jsxs)(s,{to:
+AFTER: ,className:`access-mode-indicator`,title:n||`查看接入方式与费用归属`,children:[(0,M.jsx)(`span`,{"aria-hidden":`true`,className:e?.mode===`account`?`account`:``}),t&&!e?`确认接入中`:e?_(e.mode):`接入待确认`]})}function Ke(){let{status:e,error:t,loading:n}=y(),{pathname:r}=c();retu
+
+### index-BeImsYqE.js
+URL: /account
+BEFORE: ...nt`?`account`:``}),t&&!e?`确认接入中`:e?_(e.mode):`接入待确认`]})}function Ke(){let{status:e,error:t,loading:n}=y(),{pathname:r}=c();return[
+AFTER: ,`/account/history`].includes(r.replace(/\/$/,``))||e?.mode===`key`||e?.mode===`account`&&e.inference_enabled?null:(0,M.jsxs)(`div`,{className:`account-runtime-notice`,role:`status`,children:[e?b(e):t||(n?`正在确认当前接入与消费方式…`:`接入方式尚未确认，模型调用暂不可用。`),!n&&(0,M.jsx)(s,
+
+### index-BeImsYqE.js
+URL: /account/history
+BEFORE: ...t`:``}),t&&!e?`确认接入中`:e?_(e.mode):`接入待确认`]})}function Ke(){let{status:e,error:t,loading:n}=y(),{pathname:r}=c();return[`/account`,
+AFTER: ].includes(r.replace(/\/$/,``))||e?.mode===`key`||e?.mode===`account`&&e.inference_enabled?null:(0,M.jsxs)(`div`,{className:`account-runtime-notice`,role:`status`,children:[e?b(e):t||(n?`正在确认当前接入与消费方式…`:`接入方式尚未确认，模型调用暂不可用。`),!n&&(0,M.jsx)(s,{to:`/account`,chil
+
+### index-BeImsYqE.js
+URL: /account
+BEFORE: ...lassName:`account-runtime-notice`,role:`status`,children:[e?b(e):t||(n?`正在确认当前接入与消费方式…`:`接入方式尚未确认，模型调用暂不可用。`),!n&&(0,M.jsx)(s,{to:
+AFTER: ,children:`查看账号与用量 →`})]})}var qe=z(`dashboard`,()=>i(()=>import(`./Dashboard-2mxANXyi.js`),__vite__mapDeps([0,1,2,3,4,5]))),Je=z(`new-workflow`,()=>i(()=>import(`./NewWorkflow-Ld6TEJjT.js`),__vite__mapDeps([6,1,2,3,7,4,8,9,10,11]))),Ye=z(`workflow-detail`,()=
+
+### index-BeImsYqE.js
+URL: /account
+BEFORE: ...] hover:bg-[var(--bg-overlay)] transition`,title:`访问 Modex 官网`,children:`官网`}),(0,M.jsx)(rt,{}),(0,M.jsx)(Ge,{}),(0,M.jsx)(nt,{to:
+AFTER: ,children:`账号`}),(0,M.jsx)(nt,{to:`/settings`,children:`设置`})]})})}function at({children:e}){let[t,n]=(0,j.useState)(()=>typeof window<`u`&&localStorage.getItem(`mhagent_disclaimer_accepted`)===`true`);return t?(0,M.jsx)(M.Fragment,{children:e}):(0,M.jsx)(`div
+
+### index-BeImsYqE.js
+URL: /settings
+BEFORE: ...itle:`访问 Modex 官网`,children:`官网`}),(0,M.jsx)(rt,{}),(0,M.jsx)(Ge,{}),(0,M.jsx)(nt,{to:`/account`,children:`账号`}),(0,M.jsx)(nt,{to:
+AFTER: ,children:`设置`})]})})}function at({children:e}){let[t,n]=(0,j.useState)(()=>typeof window<`u`&&localStorage.getItem(`mhagent_disclaimer_accepted`)===`true`);return t?(0,M.jsx)(M.Fragment,{children:e}):(0,M.jsx)(`div`,{className:`min-h-screen bg-[var(--bg-base)
+
+### index-BeImsYqE.js
+URL: /workflow/:id/editor
+BEFORE: ...orkflow/:id`,element:(0,M.jsx)(Ye,{})}),(0,M.jsx)(r,{path:`/workflow/:id/artifact/*`,element:(0,M.jsx)(Xe,{})}),(0,M.jsx)(r,{path:
+AFTER: ,element:(0,M.jsx)(Ze,{})}),(0,M.jsx)(r,{path:`/workflow/:id/chat`,element:(0,M.jsx)(Qe,{})}),(0,M.jsx)(r,{path:`/settings`,element:(0,M.jsx)($e,{})}),(0,M.jsx)(r,{path:`/account`,element:(0,M.jsx)(et,{})}),(0,M.jsx)(r,{path:`/account/history`,element:(0,M.jsx
+
+### index-BeImsYqE.js
+URL: /workflow/:id/chat
+BEFORE: .../:id/artifact/*`,element:(0,M.jsx)(Xe,{})}),(0,M.jsx)(r,{path:`/workflow/:id/editor`,element:(0,M.jsx)(Ze,{})}),(0,M.jsx)(r,{path:
+AFTER: ,element:(0,M.jsx)(Qe,{})}),(0,M.jsx)(r,{path:`/settings`,element:(0,M.jsx)($e,{})}),(0,M.jsx)(r,{path:`/account`,element:(0,M.jsx)(et,{})}),(0,M.jsx)(r,{path:`/account/history`,element:(0,M.jsx)(tt,{})})]})})},e)}),!t&&!n&&!i&&(0,M.jsxs)(`footer`,{className:`
+
+### index-BeImsYqE.js
+URL: /settings
+BEFORE: ...rkflow/:id/editor`,element:(0,M.jsx)(Ze,{})}),(0,M.jsx)(r,{path:`/workflow/:id/chat`,element:(0,M.jsx)(Qe,{})}),(0,M.jsx)(r,{path:
+AFTER: ,element:(0,M.jsx)($e,{})}),(0,M.jsx)(r,{path:`/account`,element:(0,M.jsx)(et,{})}),(0,M.jsx)(r,{path:`/account/history`,element:(0,M.jsx)(tt,{})})]})})},e)}),!t&&!n&&!i&&(0,M.jsxs)(`footer`,{className:`border-t border-[var(--border)] mt-12 py-6 text-center te
+
+### index-BeImsYqE.js
+URL: /account
+BEFORE: ...,{path:`/workflow/:id/chat`,element:(0,M.jsx)(Qe,{})}),(0,M.jsx)(r,{path:`/settings`,element:(0,M.jsx)($e,{})}),(0,M.jsx)(r,{path:
+AFTER: ,element:(0,M.jsx)(et,{})}),(0,M.jsx)(r,{path:`/account/history`,element:(0,M.jsx)(tt,{})})]})})},e)}),!t&&!n&&!i&&(0,M.jsxs)(`footer`,{className:`border-t border-[var(--border)] mt-12 py-6 text-center text-[12px] text-[var(--text-faint)]`,children:[(0,M.jsx)(
+
+### index-BeImsYqE.js
+URL: /account/history
+BEFORE: ...0,M.jsx)(r,{path:`/settings`,element:(0,M.jsx)($e,{})}),(0,M.jsx)(r,{path:`/account`,element:(0,M.jsx)(et,{})}),(0,M.jsx)(r,{path:
+AFTER: ,element:(0,M.jsx)(tt,{})})]})})},e)}),!t&&!n&&!i&&(0,M.jsxs)(`footer`,{className:`border-t border-[var(--border)] mt-12 py-6 text-center text-[12px] text-[var(--text-faint)]`,children:[(0,M.jsx)(`p`,{children:`© 2026 明珩科技（MHcoding）保留所有权利。`}),(0,M.jsx)(`p`,{cl
+
+### modelDiscovery-BRyakWgC.js
+URL: /api/settings/models/discover
+BEFORE: ...of e==`string`&&e.trim())return e}let i=n.message;return typeof i==`string`&&i.trim()?i:t}async function n(e,n){let r=await fetch(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify(e),signal:n}),i=await r.json().catch(()=>null);if(!r.ok)throw Error(t(i,`获取模型列表失败（HTTP ${r.status}）`));let a=i;if(!a||!Array.isArray(a.models))throw Error(`模型列表响应格式不正确`);return{mod
+
+### newApiWallet-BJVw6ude.js
+URL: /api/account/native/
+BEFORE: ...eString(`zh-CN`,{timeZone:`Asia/Shanghai`,hour12:!1}):`—`,_=e=>Number.isSafeInteger(e)&&Number(e)>=0;async function v(e){return r(
+AFTER: +e)}function y(e=new Date){return new Date(e.getTime()+288e5).toISOString().slice(0,13)+`:00`}function b(e=new Date){return y(new Date(e.getTime()+36e5))}function x(e,t){let n=e=>{if(!/^\d{4}-\d{2}-\d{2}T\d{2}:00$/.test(e))throw Error(`请选择整点时间。`);let t=new Dat
+
+### newApiWallet-BJVw6ude.js
+URL: /api/account/native/usage?
+BEFORE: ... u=new URLSearchParams({start:String(i),end:String(o),model:p.model,cursor:c}),h=`usage:`+t+`:`+u,g=n||a?d(h):null,_=E(g??await r(
+AFTER: +u,{},l.signal),t,{start:i,end:o,model:p.model});if(s===z.current){if(n||(H.current=new Map([[1,``]]),I(1)),_.next_cursor&&H.current.set(e+1,_.next_cursor),H.current.size>128)for(let t of H.current.keys())t!==1&&Math.abs(t-e)>60&&H.current.delete(t);g||f(h,_,3
+
+### useAccessMode-CYwsqbbI.js
+URL: /api/account/inference/operations
+BEFORE: ...api\/account\/inference\/(?:capabilities|operations(?:\/[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12})?)$/.test(e)||r===`POST`&&e===
+AFTER: ,o=r===`GET`&&/^\/api\/account\/messages\/(?:capabilities|operations(?:\/[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12})?)$/.test(e)||r===`POST`&&e===`/api/account/messages/operations`,s=r===`PATCH`&&/^\/api\/workflows\/[A-Za-z0-9_-]{1,128}\/steps\/[A-Za-z0-9_-]{
+
+### useAccessMode-CYwsqbbI.js
+URL: /api/account/messages/operations
+BEFORE: .../api\/account\/messages\/(?:capabilities|operations(?:\/[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12})?)$/.test(e)||r===`POST`&&e===
+AFTER: ,s=r===`PATCH`&&/^\/api\/workflows\/[A-Za-z0-9_-]{1,128}\/steps\/[A-Za-z0-9_-]{1,128}\/account-model$/.test(e),u=r===`PATCH`&&/^\/api\/workflows\/[A-Za-z0-9_-]{1,128}\/steps\/[A-Za-z0-9_-]{1,128}\/effort$/.test(e);if(!(r===`POST`&&/^\/api\/account\/native\/(?:
+
+### useAccessMode-CYwsqbbI.js
+URL: /api/account/native/image-settings
+BEFORE: ...d=[0-9]{1,12}&model=(?:[A-Za-z0-9_.-]|%[A-F0-9]{2}){0,384}&cursor=[A-Za-z0-9_.-]{0,512}$/.test(e)||[`GET`,`PUT`].includes(r)&&e===
+AFTER: ||r===`GET`&&/^\/api\/account\/native\/(?:realname|software|wallet|(?:orders|adjustments|requests)\?page=[1-9][0-9]{0,4}|history\?page=[1-9][0-9]{0,4}&start=[0-9]{1,12}&end=[0-9]{1,12}&model=(?:[A-Za-z0-9_.-]|%[A-F0-9]{2}){0,384})$/.test(e))&&!a&&!o&&!s&&!u&&!
+
+### useAccessMode-CYwsqbbI.js
+URL: /api/license/
+BEFORE: ...edirect:`error`}),r=await n.json().catch(()=>null);if(!n.ok){let t=c(r),a=l(t.code||c(t.detail).code,80);throw new i(e.startsWith(
+AFTER: )?`授权服务暂时未能完成验证，请检查网络或稍后重试。`:h(r,n.status),Object.prototype.hasOwnProperty.call(m,a)?a:``,n.status,_(t.retry_after_seconds??c(t.detail).retry_after_seconds??n.headers?.get(`Retry-After`)))}if(!r||typeof r!=`object`||Array.isArray(r))throw Error(`服务返回的数据不完整，请稍后
+
+### useAccessMode-CYwsqbbI.js
+URL: /api/account/access-mode
+BEFORE: ...ent=r,f.current=e!==void 0,a(m.current===null),s(e!==void 0),l(``);let i=!1,o=e===void 0&&m.current===null,c=!1;try{let t=await g(
+AFTER: ,e?{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({mode:e})}:o?{headers:{"X-Modex-Mode-Read":`identity`}}:{},r.signal);if(!d.current||r.signal.aborted)return null;let a=x(t);if(e&&a.mode!==e)throw Error(`接入方式的保存回执不一致，请重新读取后核对。`)
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${n}/chat/session
+BEFORE: ...ping:!1,stopUnconfirmed:!1}));let r=C,i=B(),a=setTimeout(()=>i.abort(),35e4);e({opening:!0,error:null});try{let a=await U(await R(
+AFTER: ,{method:`POST`,signal:i.signal}));if(!V(t,n,r))return;P+=1,e({sessionId:a.session_id,audit:a.audit??null,sessionAlive:!0}),a.opening?.length&&e(e=>({messages:[...e.messages.filter(e=>e.id!==-1),{id:-1,session_id:a.session_id,role:`assistant`,content:a.opening
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${i}/chat/turns/${encodeURIComponent(e)}
+BEFORE: ...&r.workflowId!==i||!i||!n.trim()||t().sending||t().stopping||t().stopUnconfirmed)return!1;let a=C,o=h(i),s=L,c=async e=>U(await R(
+AFTER: )),l=e=>[`failed`,`cancelled`,`interrupted`].includes(e||``);if(o){e({sending:!0});try{let r=await c(o.turn_id);if(!V(t,i,a))return!1;if(r.found){if(_(i,o.turn_id),o.text===n)return await t().fetchMessages({full:!0}),V(t,i,a)?(e({error:l(r.status)?r.error_mess
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${i}/chat/say
+BEFORE: ...d:e.sessionId||``,role:`user`,content:n,status:`pending`,turn_id:u,client_turn_id:u,item_kind:`user_message`}]}));try{let n=()=>R(
+AFTER: ,{method:`POST`,signal:m.signal,headers:{"Content-Type":`application/json`},body:JSON.stringify(o)}).then(e=>U(e)),r;try{r=await n()}catch(o){if(!(o instanceof f)||o.code!==`session_closed`||o.accepted!==!1||!V(t,i,a)||m.signal.aborted||t().stopping||t().stopU
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${n}/chat/session
+BEFORE: ...g&&!t().stopUnconfirmed)return;let r=C,i=D;L+=1,e({stopping:!0,error:`正在请求后端停止回答；任务卡中的执行任务需单独中断。`});try{if(typeof(await U(await R(
+AFTER: ,{method:`DELETE`}))).closed!=`boolean`)throw Error(`缺少停止回执`);if(!V(t,n,r))return;P+=1,i&&(O.add(i),i.abort()),e({sending:!1,sessionAlive:!1,stopUnconfirmed:!1,error:`后端已确认停止本轮回答；已确认的任务卡不受影响。可继续发送新消息。`})}catch(i){V(t,n,r)&&e({stopUnconfirmed:!0,error:`未确认停止：${
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${a}/chat/messages/${r}/confirm
+BEFORE: ...essageOps[r])return;let o=C,s=t().messages.find(e=>e.id===r);n(r,`confirm`),e({error:null,errorInfo:null});try{if(await U(await R(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({force:!!i?.force,front:!!i?.front,revision:s?.proposal_revision??1})})),!V(t,a,o))return;t().startPolling(),await Promise.all([t().fetchMessages({full:!0}),t().fetchQueue(),t().fe
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${o}/chat/messages/${r}/proposal
+BEFORE: ...d,s=t().messages.find(e=>e.id===r);if(!o||!s||t().messageOps[r]||!i.trim())return!1;let c=C;n(r,`edit`);try{let n=await U(await R(
+AFTER: ,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({instruction:i.trim(),revision:s.proposal_revision??1,...a||{}})}));return V(t,o,c)?(e(e=>({messages:e.messages.map(e=>e.id===r?{...e,instruction:n.instruction,proposal_revision:n
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${n}/chat/config
+BEFORE: ...,!1}finally{V(t,o,c)&&n(r,null)}},fetchConfig:async()=>{let n=t().workflowId;if(!n)return;let r=C,i=++N;try{let a=await U(await R(
+AFTER: ));V(t,n,r)&&i===N&&!t().configSaving&&e({config:a})}catch(a){V(t,n,r)&&i===N&&!t().configSaving&&e({error:H(a,`读取协同设置失败`)})}},patchConfig:async n=>{let r=t().workflowId,i=t().config;if(!r||!i||t().configSaving)return!1;let a=C,o={...i,...n};N+=1;let s=B(),c=s
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${r}/chat/config
+BEFORE: ...1;let a=C,o={...i,...n};N+=1;let s=B(),c=setTimeout(()=>s.abort(),2e4);e({configSaving:!0,error:null});try{return await U(await R(
+AFTER: ,{method:`PATCH`,headers:{"Content-Type":`application/json`},signal:s.signal,body:JSON.stringify({interaction_mode:o.interaction_mode,model_preset_id:o.model_preset_id,effort:o.effort,project_brief:o.project_brief})})),V(t,r,a)?(N+=1,e({config:o}),!0):!1}catch
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${n}/chat/queue
+BEFORE: ...V(t,r,a)&&e({configSaving:!1})}},fetchQueue:async()=>{let n=t().workflowId;if(!n)return!1;let r=C,i=++F;try{let a=await U(await R(
+AFTER: ));return!V(t,n,r)||i!==F?!1:(e({queue:a}),W(t())&&t().startPolling(),!0)}catch{return!1}},promote:async n=>{let r=t().workflowId;if(!r)return;let i=C;try{await U(await R(`/api/workflows/${r}/chat/queue/${n}/promote`,{method:`POST`})),V(t,r,i)&&await t().fetch
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${r}/chat/queue/${n}/promote
+BEFORE: ...),W(t())&&t().startPolling(),!0)}catch{return!1}},promote:async n=>{let r=t().workflowId;if(!r)return;let i=C;try{await U(await R(
+AFTER: ,{method:`POST`})),V(t,r,i)&&await t().fetchQueue()}catch(n){V(t,r,i)&&e({error:H(n,`调整队列失败`)})}},cancel:async r=>{let i=t().workflowId;if(!i||t().messageOps[r])return;let a=C;n(r,`cancel`);try{if(await U(await R(`/api/workflows/${i}/chat/messages/${r}/cancel`
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${i}/chat/messages/${r}/cancel
+BEFORE: ...,`调整队列失败`)})}},cancel:async r=>{let i=t().workflowId;if(!i||t().messageOps[r])return;let a=C;n(r,`cancel`);try{if(await U(await R(
+AFTER: ,{method:`POST`})),!V(t,i,a))return;await Promise.all([t().fetchMessages({full:!0}),t().fetchState(),t().fetchQueue()])}catch(n){V(t,i,a)&&e({error:H(n,`取消失败`)})}finally{V(t,i,a)&&n(r,null)}},rollbackPatch:async r=>{let i=t().workflowId;if(!i||t().messageOps[r
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${i}/chat/messages/${r}/rollback
+BEFORE: ...}},rollbackPatch:async r=>{let i=t().workflowId;if(!i||t().messageOps[r])return;let a=C;n(r,`rollback`);try{let n=await U(await R(
+AFTER: ,{method:`POST`}));if(!V(t,i,a))return;if(!n.rolled_back)throw Error(`未收到撤销成功回执；请刷新历史后核对`);let o=n.warnings?.length?n.warnings.join(`；`):null,s=()=>e(e=>({messages:e.messages.map(e=>e.id===r&&!(n.version_id&&e.version_id&&n.version_id!==e.version_id)?{...e,rol
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${i}/chat/messages/${r}/validation-proposal
+BEFORE: ...)}},validateOutputs:async r=>{let i=t().workflowId;if(!i||t().messageOps[r])return;let a=C;n(r,`validate`);try{if(await U(await R(
+AFTER: ,{method:`POST`})),!V(t,i,a))return;await t().fetchMessages({full:!0})}catch(n){V(t,i,a)&&e({error:H(n,`创建专项质检卡失败`)})}finally{V(t,i,a)&&n(r,null)}},addDecision:async n=>{let r=t().workflowId;if(!r)return;let i=C;try{await U(await R(`/api/workflows/${r}/chat/de
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${r}/chat/decisions
+BEFORE: ...,`创建专项质检卡失败`)})}finally{V(t,i,a)&&n(r,null)}},addDecision:async n=>{let r=t().workflowId;if(!r)return;let i=C;try{await U(await R(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({topic:n.topic.trim(),choice:n.choice.trim(),rejected:(n.rejected||``).trim()})})),V(t,r,i)&&await t().fetchState()}catch(n){V(t,r,i)&&e({error:H(n,`记录决定失败`)})}},revokeDecision:asy
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${r}/chat/decisions/${n}
+BEFORE: ...ch(n){V(t,r,i)&&e({error:H(n,`记录决定失败`)})}},revokeDecision:async n=>{let r=t().workflowId;if(!r)return;let i=C;try{await U(await R(
+AFTER: ,{method:`DELETE`})),V(t,r,i)&&await Promise.all([t().fetchState(),t().fetchForks()])}catch(n){V(t,r,i)&&e({error:H(n,`撤销失败`)})}},fetchForks:async()=>{let n=t().workflowId;if(!n)return;let r=C,i=++I;try{let a=await U(await R(`/api/workflows/${n}/chat/forks?pen
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${n}/chat/forks?pending_only=false
+BEFORE: ...V(t,r,i)&&e({error:H(n,`撤销失败`)})}},fetchForks:async()=>{let n=t().workflowId;if(!n)return;let r=C,i=++I;try{let a=await U(await R(
+AFTER: ));V(t,n,r)&&i===I&&e({forks:a.forks||[]})}catch{}},chooseFork:async(n,r,i)=>{let a=t().workflowId;if(!a||t().forkOps[n])return;let o=C,s=t().forks.find(e=>e.id===n);e(e=>({forkOps:{...e.forkOps,[n]:!0}}));try{await U(await R(`/api/workflows/${a}/chat/forks/${
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${a}/chat/forks/${n}/choose
+BEFORE: ...Id;if(!a||t().forkOps[n])return;let o=C,s=t().forks.find(e=>e.id===n);e(e=>({forkOps:{...e.forkOps,[n]:!0}}));try{await U(await R(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({choice:r,action:i||(r?`select`:`defer`),expected_revision:s?.choice_revision??0,expected_choice_label:r?s?.options.find(e=>e.key===r)?.label:void 0})})),V(t,a,o)&&await Promise.al
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${i}/chat/messages${f}
+BEFORE: ...{b}`:`?after=${s}&limit=${b}`,p=`${a}:${i}:${f}`;if(!k.has(p)){k.add(p),r&&(j??=d,e({loadingOlder:!0}));try{let o=await U(await R(
+AFTER: ));if(!V(t,i,a))return;let s=o.messages||[],c=M;if(c?.generation===a&&c.workflowId===i&&(e(e=>e.error===c.message?{error:null}:{}),M=null),e(e=>{if(n){let t=new Set(e.messages.filter(e=>e.id>0).map(e=>e.id)),n=s.reduce((e,t)=>t.id>0?Math.min(e,t.id):e,1/0),r=!
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${i}/chat/messages/${n}/events?after_sequence=${Math.max(0,r)}&limit=80
+BEFORE: ...)return;let a=C,o=`${a}:${i}:${n}:${t().messages.find(e=>e.id===n)?.run_id||``}`;if(!A.has(o)){A.add(o);try{let o=await U(await R(
+AFTER: ));if(!V(t,i,a)||!o.events?.length)return;e(e=>({messages:e.messages.map(e=>e.id===n?{...e,run_events:s(e.run_events,(o.events||[]).filter(t=>!e.run_id||t.run_id===e.run_id))}:e)}))}catch{}finally{A.delete(o)}}},loadOlder:async()=>{!t().hasMoreBefore||t().load
+
+### useWebSocket-DhwRyw4C.js
+URL: /api/workflows/${n}/chat/state
+BEFORE: ...t t().fetchMessages({older:!0})},fetchState:async()=>{let n=t().workflowId;if(!n)return!1;let r=C,i=++P;try{let a=await U(await R(
+AFTER: ));return!V(t,n,r)||i!==P?!1:(e({state:a,sessionAlive:!!a.session_alive}),!0)}catch{return!1}},handleChatEvent:n=>{let r=t().workflowId;if(!r||n.workflow_id&&n.workflow_id!==r)return;let i=n.type;if(i===`chat_reply_progress`){if(!t().sending||!n.turn_id||n.tur
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows
+BEFORE: ...ntPreview:null,checkpointDisplayName:null,checkpointId:null,fetchWorkflows:async(t=!1)=>{t||e({loading:!0});try{let n=await fetch(
+AFTER: );if(!n.ok)throw Error(`HTTP ${n.status}`);let r=await n.json();e(t?{workflows:r}:{workflows:r,loading:!1})}catch{t||e({loading:!1})}},fetchWorkflow:async n=>{if(f?.id===n)return;f?.controller.abort();let r=new AbortController;f={id:n,controller:r};let i=setTi
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${n}
+BEFORE: ....e.current?.id===n?{}:{current:null,checkpointPreview:null,checkpointDisplayName:null,checkpointId:null}}));try{let i=await fetch(
+AFTER: ,{signal:r.signal});if(!i.ok)throw Error(`HTTP ${i.status}`);let o=await i.json();if(a!==d)return;if(!o||o.id!==n)throw Error(`Workflow response id mismatch`);let s=t().logs;e({current:o,loading:!1,...Object.keys(s).length===0?{logs:{}}:{}})}catch(t){a===d&&e(
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows
+BEFORE: ...tanceof Error?t.message:`网络异常`}`})}finally{clearTimeout(i),a===d&&(f=null)}},createWorkflow:async(e,t,n,r=!1)=>{let i=await fetch(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({template:e,title:t,params:n,enable_checkpoints:r})});if(!i.ok){let e=await i.json().catch(()=>({detail:``})),t=typeof e.detail==`string`?e.detail:Array.isArray(e.detail)?e.detail.
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${n}/start
+BEFORE: ...throw Error(t?`创建失败: ${t}`:`创建失败: HTTP ${i.status}`)}let{id:a}=await i.json();return a},startWorkflow:async n=>{let r=await fetch(
+AFTER: ,{method:`POST`});if(!r.ok){let e=await r.json().catch(()=>({detail:`启动失败`}));throw Error(e.detail||`HTTP ${r.status}`)}e(e=>({workflows:e.workflows.map(e=>e.id===n?{...e,status:`running`}:e),current:e.current?.id===n?{...e.current,status:`running`,steps:e.cur
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${n}/resume
+BEFORE: ...very_phase:null,recovery_message:null}:e)}:e.current})),await t().fetchWorkflow(n)},resumeWorkflow:async(n,r)=>{let i=await fetch(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({strategy:r})});if(!i.ok){let e=await i.json().catch(()=>({detail:`恢复失败`})),t=typeof e.detail==`object`?e.detail?.message:e.detail;throw Error(t||`HTTP ${i.status}`)}e(e=>({workflo
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${t}/pause
+BEFORE: ...t:e.current?.id===n?{...e.current,status:`running`}:e.current})),await t().fetchWorkflow(n)},pauseWorkflow:async t=>{(await fetch(
+AFTER: ,{method:`POST`})).ok&&e(e=>({current:e.current?.id===t?{...e.current,status:`paused`}:e.current}))},restartWorkflow:async t=>{let n=await fetch(`${u}/workflows/${t}/restart`,{method:`POST`});if(!n.ok){let e=await n.json().catch(()=>({detail:`重启失败`}));throw Er
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${t}/restart
+BEFORE: ...})).ok&&e(e=>({current:e.current?.id===t?{...e.current,status:`paused`}:e.current}))},restartWorkflow:async t=>{let n=await fetch(
+AFTER: ,{method:`POST`});if(!n.ok){let e=await n.json().catch(()=>({detail:`重启失败`}));throw Error(e.detail||`HTTP ${n.status}`)}e(e=>({logs:{},workflows:e.workflows.map(e=>e.id===t?{...e,status:`running`}:e),current:e.current?.id===t?{...e.current,status:`running`,cur
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${t}
+BEFORE: ...overy_message:null,started_at:null,completed_at:null,output_files:[]}))}:e.current}))},deleteWorkflow:async t=>{let n=await fetch(
+AFTER: ,{method:`DELETE`});if(!n.ok){let e=await n.json().catch(()=>({detail:`删除失败`}));throw Error(e.detail||`HTTP ${n.status}`)}e(e=>({workflows:e.workflows.filter(e=>e.id!==t)}))},rerunStep:async(t,n)=>{let r=await fetch(`${u}/workflows/${t}/steps/${n}/rerun`,{meth
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${t}/steps/${n}/rerun
+BEFORE: ...Error(e.detail||`HTTP ${n.status}`)}e(e=>({workflows:e.workflows.filter(e=>e.id!==t)}))},rerunStep:async(t,n)=>{let r=await fetch(
+AFTER: ,{method:`POST`});if(!r.ok){let e=await r.json().catch(()=>({detail:`重跑失败`}));throw Error(e.detail||`HTTP ${r.status}`)}e(e=>({current:e.current?.id===t?{...e.current,status:`running`,steps:e.current.steps.map(e=>e.skill_name===n?{...e,status:`running`,error_m
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${e}/mode
+BEFORE: ...g`,error_message:null,recovery_phase:null,recovery_message:null}:e)}:e.current}))},setWorkflowMode:async(e,n)=>{let r=await fetch(
+AFTER: ,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({chat_mode:n})});if(!r.ok){let e=await r.json().catch(()=>({detail:`切换模式失败`}));throw Error(e.detail||`HTTP ${r.status}`)}await t().fetchWorkflow(e)},patchStepModel:async(t,n,r,i)=
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${t}/steps/${n}/model
+BEFORE: ...换模式失败`}));throw Error(e.detail||`HTTP ${r.status}`)}await t().fetchWorkflow(e)},patchStepModel:async(t,n,r,i)=>{let a=await fetch(
+AFTER: ,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({preset_id:r,rerun:i})});if(!a.ok){let e=await a.json().catch(()=>({detail:`修改模型失败`}));throw Error(e.detail||`HTTP ${a.status}`)}(await a.json().catch(()=>({}))).rerun&&e(e=>({cur
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${t}/steps/${n}/effort
+BEFORE: ...rror_message:null,recovery_phase:null,recovery_message:null}:e)}:e.current}))},patchStepEffort:async(t,n,r,i)=>{let a=await fetch(
+AFTER: ,{method:`PATCH`,headers:{"Content-Type":`application/json`},body:JSON.stringify({effort:r,rerun:i})});if(!a.ok){let e=await a.json().catch(()=>({detail:`修改思考强度失败`}));throw Error(e.detail||`HTTP ${a.status}`)}(await a.json().catch(()=>({}))).rerun&&e(e=>({curr
+
+### workflowStore-DtYgz0OF.js
+URL: ${u}/workflows/${e}/checkpoints/resolve
+BEFORE: ...message:null,recovery_phase:null,recovery_message:null}:e)}:e.current}))},resolveCheckpoint:async(e,n,r={},i)=>{let a=await fetch(
+AFTER: ,{method:`POST`,headers:{"Content-Type":`application/json`},body:JSON.stringify({action:n,data:r,checkpoint_id:i}),signal:AbortSignal.timeout(12e3)});if(!a.ok){let e=await a.json().catch(()=>({detail:`操作失败`}));throw Error(e.detail||`HTTP ${a.status}`)}let o=aw

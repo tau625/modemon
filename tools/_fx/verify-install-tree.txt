@@ -1,0 +1,23 @@
+manifest.files.length      = 1498
+actual files on disk       = 1498
+signed but MISSING on disk  = 0
+on disk but UNSIGNED        = 0
+hash re-verified            = 1498 files, mismatches = 0
+runtime_files present+size  = 27752/27752, anomalies = 0
+--- critical runtime hashes ---
+  resources/app.asar: MATCH (disk 889727 / manifest 889727)
+  runtime/python/python.exe: MATCH (disk 103192 / manifest 103192)
+  runtime/python/python311.dll: MATCH (disk 5800216 / manifest 5800216)
+  runtime/python/python311.zip: MATCH (disk 4285636 / manifest 4285636)
+  runtime/python/python311._pth: MATCH (disk 100 / manifest 100)
+  runtime/python/libcrypto-3.dll: MATCH (disk 5191960 / manifest 5191960)
+  runtime/python/libssl-3.dll: MATCH (disk 787224 / manifest 787224)
+  runtime/python/_hashlib.pyd: MATCH (disk 65304 / manifest 65304)
+  runtime/python/_ssl.pyd: MATCH (disk 178456 / manifest 178456)
+  runtime/node/node.exe: MATCH (disk 89953280 / manifest 89953280)
+  runtime/node/node_modules/@anthropic-ai/claude-code/bin/claude.exe: MATCH (disk 255705248 / manifest 255705248)
+  runtime/git/bin/bash.exe: MATCH (disk 47008 / manifest 47008)
+  runtime/pandoc/pandoc.exe: MATCH (disk 226245632 / manifest 226245632)
+
+signature: key_id=intl-update-2026-08-a algorithm=Ed25519 key_id_matches_manifest=true
+manifest.runtime_files count = 27752

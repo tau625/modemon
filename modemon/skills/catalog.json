@@ -1,0 +1,429 @@
+{
+  "source": {
+    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
+    "project": "ARIS (Auto-Research-In-Sleep)",
+    "license": "MIT",
+    "license_file": "LICENSE-ARIS.txt",
+    "copyright": "Copyright (c) 2026 wanshuiyin",
+    "fetched_via": "GitHub API (api.github.com/repos/.../git/trees/main?recursive=1)",
+    "default_branch": "main"
+  },
+  "note": "MIT 许可：允许复用/修改/分发/再授权/出售，条件是保留版权声明与许可全文。",
+  "skills": [
+    {
+      "name": "ablation-planner",
+      "path": "skills/ablation-planner/SKILL.md",
+      "bytes": 5137
+    },
+    {
+      "name": "alphaxiv",
+      "path": "skills/alphaxiv/SKILL.md",
+      "bytes": 9161
+    },
+    {
+      "name": "analyze-results",
+      "path": "skills/analyze-results/SKILL.md",
+      "bytes": 1660
+    },
+    {
+      "name": "arxiv",
+      "path": "skills/arxiv/SKILL.md",
+      "bytes": 9289
+    },
+    {
+      "name": "auto-paper-improvement-loop",
+      "path": "skills/auto-paper-improvement-loop/SKILL.md",
+      "bytes": 41176
+    },
+    {
+      "name": "auto-review-loop",
+      "path": "skills/auto-review-loop/SKILL.md",
+      "bytes": 70309
+    },
+    {
+      "name": "auto-review-loop-llm",
+      "path": "skills/auto-review-loop-llm/SKILL.md",
+      "bytes": 8178
+    },
+    {
+      "name": "auto-review-loop-minimax",
+      "path": "skills/auto-review-loop-minimax/SKILL.md",
+      "bytes": 13037
+    },
+    {
+      "name": "citation-audit",
+      "path": "skills/citation-audit/SKILL.md",
+      "bytes": 31067
+    },
+    {
+      "name": "claims-drafting",
+      "path": "skills/claims-drafting/SKILL.md",
+      "bytes": 10148
+    },
+    {
+      "name": "comm-lit-review",
+      "path": "skills/comm-lit-review/SKILL.md",
+      "bytes": 8683
+    },
+    {
+      "name": "deepxiv",
+      "path": "skills/deepxiv/SKILL.md",
+      "bytes": 8235
+    },
+    {
+      "name": "dse-loop",
+      "path": "skills/dse-loop/SKILL.md",
+      "bytes": 14175
+    },
+    {
+      "name": "embodiment-description",
+      "path": "skills/embodiment-description/SKILL.md",
+      "bytes": 6732
+    },
+    {
+      "name": "exa-search",
+      "path": "skills/exa-search/SKILL.md",
+      "bytes": 8672
+    },
+    {
+      "name": "experiment-audit",
+      "path": "skills/experiment-audit/SKILL.md",
+      "bytes": 12732
+    },
+    {
+      "name": "experiment-bridge",
+      "path": "skills/experiment-bridge/SKILL.md",
+      "bytes": 18600
+    },
+    {
+      "name": "experiment-plan",
+      "path": "skills/experiment-plan/SKILL.md",
+      "bytes": 9728
+    },
+    {
+      "name": "experiment-queue",
+      "path": "skills/experiment-queue/SKILL.md",
+      "bytes": 20108
+    },
+    {
+      "name": "feishu-notify",
+      "path": "skills/feishu-notify/SKILL.md",
+      "bytes": 6172
+    },
+    {
+      "name": "figure-description",
+      "path": "skills/figure-description/SKILL.md",
+      "bytes": 5000
+    },
+    {
+      "name": "figure-spec",
+      "path": "skills/figure-spec/SKILL.md",
+      "bytes": 10979
+    },
+    {
+      "name": "formula-derivation",
+      "path": "skills/formula-derivation/SKILL.md",
+      "bytes": 9261
+    },
+    {
+      "name": "gemini-search",
+      "path": "skills/gemini-search/SKILL.md",
+      "bytes": 9051
+    },
+    {
+      "name": "grant-proposal",
+      "path": "skills/grant-proposal/SKILL.md",
+      "bytes": 35026
+    },
+    {
+      "name": "idea-creator",
+      "path": "skills/idea-creator/SKILL.md",
+      "bytes": 33326
+    },
+    {
+      "name": "idea-discovery",
+      "path": "skills/idea-discovery/SKILL.md",
+      "bytes": 27649
+    },
+    {
+      "name": "idea-discovery-robot",
+      "path": "skills/idea-discovery-robot/SKILL.md",
+      "bytes": 15232
+    },
+    {
+      "name": "integrity-forensics",
+      "path": "skills/integrity-forensics/SKILL.md",
+      "bytes": 17170
+    },
+    {
+      "name": "interview-cheatsheet",
+      "path": "skills/interview-cheatsheet/SKILL.md",
+      "bytes": 13568
+    },
+    {
+      "name": "invention-structuring",
+      "path": "skills/invention-structuring/SKILL.md",
+      "bytes": 6754
+    },
+    {
+      "name": "jurisdiction-format",
+      "path": "skills/jurisdiction-format/SKILL.md",
+      "bytes": 6816
+    },
+    {
+      "name": "kill-argument",
+      "path": "skills/kill-argument/SKILL.md",
+      "bytes": 24876
+    },
+    {
+      "name": "mermaid-diagram",
+      "path": "skills/mermaid-diagram/SKILL.md",
+      "bytes": 16321
+    },
+    {
+      "name": "meta-apply",
+      "path": "skills/meta-apply/SKILL.md",
+      "bytes": 7912
+    },
+    {
+      "name": "meta-optimize",
+      "path": "skills/meta-optimize/SKILL.md",
+      "bytes": 23816
+    },
+    {
+      "name": "monitor-experiment",
+      "path": "skills/monitor-experiment/SKILL.md",
+      "bytes": 5050
+    },
+    {
+      "name": "novelty-check",
+      "path": "skills/novelty-check/SKILL.md",
+      "bytes": 7205
+    },
+    {
+      "name": "openalex",
+      "path": "skills/openalex/SKILL.md",
+      "bytes": 9771
+    },
+    {
+      "name": "overleaf-sync",
+      "path": "skills/overleaf-sync/SKILL.md",
+      "bytes": 11122
+    },
+    {
+      "name": "paper-claim-audit",
+      "path": "skills/paper-claim-audit/SKILL.md",
+      "bytes": 14255
+    },
+    {
+      "name": "paper-compile",
+      "path": "skills/paper-compile/SKILL.md",
+      "bytes": 10070
+    },
+    {
+      "name": "paper-figure",
+      "path": "skills/paper-figure/SKILL.md",
+      "bytes": 13677
+    },
+    {
+      "name": "paper-illustration",
+      "path": "skills/paper-illustration/SKILL.md",
+      "bytes": 33241
+    },
+    {
+      "name": "paper-illustration-image2",
+      "path": "skills/paper-illustration-image2/SKILL.md",
+      "bytes": 18777
+    },
+    {
+      "name": "paper-plan",
+      "path": "skills/paper-plan/SKILL.md",
+      "bytes": 20630
+    },
+    {
+      "name": "paper-poster",
+      "path": "skills/paper-poster/SKILL.md",
+      "bytes": 828
+    },
+    {
+      "name": "paper-poster-html",
+      "path": "skills/paper-poster-html/SKILL.md",
+      "bytes": 18468
+    },
+    {
+      "name": "paper-slides",
+      "path": "skills/paper-slides/SKILL.md",
+      "bytes": 22974
+    },
+    {
+      "name": "paper-talk",
+      "path": "skills/paper-talk/SKILL.md",
+      "bytes": 20937
+    },
+    {
+      "name": "paper-write",
+      "path": "skills/paper-write/SKILL.md",
+      "bytes": 38112
+    },
+    {
+      "name": "paper-writing",
+      "path": "skills/paper-writing/SKILL.md",
+      "bytes": 50774
+    },
+    {
+      "name": "patent-novelty-check",
+      "path": "skills/patent-novelty-check/SKILL.md",
+      "bytes": 5789
+    },
+    {
+      "name": "patent-pipeline",
+      "path": "skills/patent-pipeline/SKILL.md",
+      "bytes": 14542
+    },
+    {
+      "name": "patent-review",
+      "path": "skills/patent-review/SKILL.md",
+      "bytes": 6720
+    },
+    {
+      "name": "pixel-art",
+      "path": "skills/pixel-art/SKILL.md",
+      "bytes": 5342
+    },
+    {
+      "name": "prior-art-search",
+      "path": "skills/prior-art-search/SKILL.md",
+      "bytes": 5538
+    },
+    {
+      "name": "proof-checker",
+      "path": "skills/proof-checker/SKILL.md",
+      "bytes": 54345
+    },
+    {
+      "name": "proof-orchestrator",
+      "path": "skills/proof-orchestrator/SKILL.md",
+      "bytes": 18556
+    },
+    {
+      "name": "proof-writer",
+      "path": "skills/proof-writer/SKILL.md",
+      "bytes": 7596
+    },
+    {
+      "name": "qzcli",
+      "path": "skills/qzcli/SKILL.md",
+      "bytes": 7947
+    },
+    {
+      "name": "rebuttal",
+      "path": "skills/rebuttal/SKILL.md",
+      "bytes": 24627
+    },
+    {
+      "name": "render-html",
+      "path": "skills/render-html/SKILL.md",
+      "bytes": 21841
+    },
+    {
+      "name": "research-implement-feature",
+      "path": "skills/research-implement-feature/SKILL.md",
+      "bytes": 31619
+    },
+    {
+      "name": "research-lit",
+      "path": "skills/research-lit/SKILL.md",
+      "bytes": 43992
+    },
+    {
+      "name": "research-pipeline",
+      "path": "skills/research-pipeline/SKILL.md",
+      "bytes": 22866
+    },
+    {
+      "name": "research-refine",
+      "path": "skills/research-refine/SKILL.md",
+      "bytes": 33480
+    },
+    {
+      "name": "research-refine-pipeline",
+      "path": "skills/research-refine-pipeline/SKILL.md",
+      "bytes": 6281
+    },
+    {
+      "name": "research-review",
+      "path": "skills/research-review/SKILL.md",
+      "bytes": 12447
+    },
+    {
+      "name": "research-wiki",
+      "path": "skills/research-wiki/SKILL.md",
+      "bytes": 20511
+    },
+    {
+      "name": "resubmit-pipeline",
+      "path": "skills/resubmit-pipeline/SKILL.md",
+      "bytes": 33464
+    },
+    {
+      "name": "result-to-claim",
+      "path": "skills/result-to-claim/SKILL.md",
+      "bytes": 16705
+    },
+    {
+      "name": "run-experiment",
+      "path": "skills/run-experiment/SKILL.md",
+      "bytes": 12848
+    },
+    {
+      "name": "semantic-scholar",
+      "path": "skills/semantic-scholar/SKILL.md",
+      "bytes": 10943
+    },
+    {
+      "name": "serverless-modal",
+      "path": "skills/serverless-modal/SKILL.md",
+      "bytes": 13161
+    },
+    {
+      "name": "slides-polish",
+      "path": "skills/slides-polish/SKILL.md",
+      "bytes": 28429
+    },
+    {
+      "name": "specification-writing",
+      "path": "skills/specification-writing/SKILL.md",
+      "bytes": 8565
+    },
+    {
+      "name": "system-profile",
+      "path": "skills/system-profile/SKILL.md",
+      "bytes": 4473
+    },
+    {
+      "name": "training-check",
+      "path": "skills/training-check/SKILL.md",
+      "bytes": 5770
+    },
+    {
+      "name": "vast-gpu",
+      "path": "skills/vast-gpu/SKILL.md",
+      "bytes": 15737
+    },
+    {
+      "name": "web-debug-search",
+      "path": "skills/web-debug-search/SKILL.md",
+      "bytes": 15068
+    },
+    {
+      "name": "wiki-enrich",
+      "path": "skills/wiki-enrich/SKILL.md",
+      "bytes": 16607
+    },
+    {
+      "name": "writing-systems-papers",
+      "path": "skills/writing-systems-papers/SKILL.md",
+      "bytes": 6903
+    }
+  ]
+}

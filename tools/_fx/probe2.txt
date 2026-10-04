@@ -1,0 +1,399 @@
+
+========== markdown pipeline libs (ArtifactLibrary) ==========
+--- [remark] ArtifactLibrary-BPEftl07.pretty.js @130639
+index-to-includeelementindex` },{   from:`linkTarget`,id:`remove-linktarget` },{   from:`plugins`,id:`change-plugins-to-remarkplugins`,to:`remarkPlugins` },{   from:`rawSourcePos`,id:`#remove-rawsourcepos` },{   from:`renderers`,id:`change-renderers-to-components`,to:`components` },{   from:`source`,id:`change-source-to-chil
+--- [remark] ArtifactLibrary-BPEftl07.pretty.js @130658
+mentindex` },{   from:`linkTarget`,id:`remove-linktarget` },{   from:`plugins`,id:`change-plugins-to-remarkplugins`,to:`remarkPlugins` },{   from:`rawSourcePos`,id:`#remove-rawsourcepos` },{   from:`renderers`,id:`change-renderers-to-components`,to:`components` },{   from:`source`,id:`change-source-to-children`,to:`children`
+--- [remark] ArtifactLibrary-BPEftl07.pretty.js @131186
+ mo(e){   let t=ho(e),n=go(e);   return _o(t.runSync(t.parse(n),n),e) } function ho(e){   let t=e.rehypePlugins||lo,n=e.remarkPlugins||lo,r=e.remarkRehypeOptions?{     ...e.remarkRehypeOptions,...uo   }   :uo;   return Qa().use(ui).use(n).use(Ta,r).use(t) } function go(e){   let t=e.children||``,n=new Ga;   return typeof t==
+--- [rehype] ArtifactLibrary-BPEftl07.pretty.js @131164
+ransform` }]; function mo(e){   let t=ho(e),n=go(e);   return _o(t.runSync(t.parse(n),n),e) } function ho(e){   let t=e.rehypePlugins||lo,n=e.remarkPlugins||lo,r=e.remarkRehypeOptions?{     ...e.remarkRehypeOptions,...uo   }   :uo;   return Qa().use(ui).use(n).use(Ta,r).use(t) } function go(e){   let t=e.children||``,n=new G
+--- [rehype] ArtifactLibrary-BPEftl07.pretty.js @468238
+  n.message(`Could not render math with KaTeX`,{           ancestors:[...r,e],cause:a,place:e.position,ruleId:o,source:`rehype-katex`         });         try{           f=fh.renderToString(d,{             ...t,displayMode:c,strict:`ignore`,throwOnError:!1           })         }         catch{           f=[{             type:
+--- [rehype] ArtifactLibrary-BPEftl07.pretty.js @479962
+ssName:`markdown-document prose prose-invert prose-sm max-w-none`,children:(0,M.jsx)(mo,{         remarkPlugins:[vl,mh],rehypePlugins:[[pg,{           throwOnError:!1,errorColor:`#888888`,strict:!1,maxExpand:100         }]],components:{           a:({             href:e,children:t,...n           })=>(0,M.jsx)(`a`,{          
+--- [micromark] ArtifactLibrary-BPEftl07.pretty.js @97066
+(e){   let t=this;   t.parser=n;   function n(n){     return ii(n,{       ...t.data(`settings`),...e,extensions:t.data(`micromarkExtensions`)||[],mdastExtensions:t.data(`fromMarkdownExtensions`)||[]     })   } } function di(e,t){   let n={     type:`element`,tagName:`blockquote`,properties:{ },children:e.wrap(e.all(t),!0)   }; 
+--- [micromark] ArtifactLibrary-BPEftl07.pretty.js @175961
+ction gl(e){   return St([Mc(),Jc(),nl(e),ol(),pl()]) } var _l={ }; function vl(e){   let t=this,n=e||_l,r=t.data(),i=r.micromarkExtensions||=[],a=r.fromMarkdownExtensions||=[],o=r.toMarkdownExtensions||=[];   i.push(gl(n)),a.push(xc()),o.push(Sc(n)) } function yl(){   return{     enter:{       mathFlow:e,mathFlowFenceMeta:t,ma
+--- [micromark] ArtifactLibrary-BPEftl07.pretty.js @458473
+r:Au,SymbolNode:Nu,SvgNode:Pu,PathNode:Fu,LineNode:Iu   } },ph={ }; function mh(e){   let t=this,n=e||ph,r=t.data(),i=r.micromarkExtensions||=[],a=r.fromMarkdownExtensions||=[],o=r.toMarkdownExtensions||=[];   i.push(Ol(n)),a.push(yl()),o.push(bl(n)) } var hh=/[#.]/g; function gh(e,t){   let n=e||``,r={ },i=0,a,o;   for(;   i<n
+--- [mdast] ArtifactLibrary-BPEftl07.pretty.js @86838
+extHeading:c(w),setextHeadingLineSequence:C,setextHeadingText:S,strong:c(),thematicBreak:c()     }   };   si(t,(e||{ }).mdastExtensions||[]);   let n={ };   return r;   function r(e){     let r={       type:`root`,children:[]     },a={       stack:[r],tokenStack:[],config:t,enter:s,exit:l,buffer:o,resume:u,data:n     },c=[]
+--- [mdast] ArtifactLibrary-BPEftl07.pretty.js @97092
+ser=n;   function n(n){     return ii(n,{       ...t.data(`settings`),...e,extensions:t.data(`micromarkExtensions`)||[],mdastExtensions:t.data(`fromMarkdownExtensions`)||[]     })   } } function di(e,t){   let n={     type:`element`,tagName:`blockquote`,properties:{ },children:e.wrap(e.all(t),!0)   };   return e.patch(t,n),
+--- [hast-util] ArtifactLibrary-BPEftl07.pretty.js @25158
+=/[A-Z]/g,Be=new Set([`table`,`tbody`,`thead`,`tfoot`,`tr`]),Ve=new Set([`td`,`th`]),He=`https://github.com/syntax-tree/hast-util-to-jsx-runtime`; function Ue(e,t){   if(!t||t.Fragment===void 0)throw TypeError("Expected `Fragment` in options");   let n=t.filePath||void 0,r;   if(t.development){     if(typeof t.jsxDEV!=`function
+--- [hast-util] ArtifactLibrary-BPEftl07.pretty.js @30321
+{ };     let n=t,r=new Fe("Cannot parse `style` attribute",{       ancestors:e.ancestors,cause:n,ruleId:`style`,source:`hast-util-to-jsx-runtime`     });     throw r.file=e.filePath||void 0,r.url=He+`#cannot-parse-style-attribute`,r   } } function ot(e,t,n){   let r;   if(!n)r={     type:`Literal`,value:t   };   else if(t.inclu
+--- [hast-util] ArtifactLibrary-BPEftl07.pretty.js @31298
+e("Cannot handle MDX estrees without `createEvaluater`",{     ancestors:e.ancestors,place:t,ruleId:`mdx-estree`,source:`hast-util-to-jsx-runtime`   });   throw n.file=e.filePath||void 0,n.url=He+`#cannot-handle-mdx-estrees-without-createevaluater`,n } function ct(e){   let t={ },n;   for(n in e)Le.call(e,n)&&(t[lt(n)]=e[n]);   
+--- [rehype-katex] ArtifactLibrary-BPEftl07.pretty.js @468238
+  n.message(`Could not render math with KaTeX`,{           ancestors:[...r,e],cause:a,place:e.position,ruleId:o,source:`rehype-katex`         });         try{           f=fh.renderToString(d,{             ...t,displayMode:c,strict:`ignore`,throwOnError:!1           })         }         catch{           f=[{             type:`eleme
+
+========== recharts / chart lib (WorkflowDetail) ==========
+--- [recharts] WorkflowDetail-bN89YgNS.pretty.js @40261
+className:o,style:s,title:c,desc:l   }   =e,u=be(e,ve),d=a||{     width:r,height:i,x:0,y:0   },f=P(`recharts-surface`,o);   return O.createElement(`svg`,ye({ },F(u),{     className:f,width:r,height:i,style:s,viewBox:`${d.x} ${d.y} ${d.width} ${d.height}`,ref:t   }),O.
+--- [recharts] WorkflowDetail-bN89YgNS.pretty.js @41330
+ return n } var De=O.forwardRef((e,t)=>{   var{     children:n,className:r   }   =e,i=Te(e,Ce),a=P(`recharts-layer`,r);   return O.createElement(`g`,we({     className:a   },F(i),{     ref:t   }),n) }),Oe=(0,O.createContext)(null); function I(e){   return function(){ 
+--- [recharts] WorkflowDetail-bN89YgNS.pretty.js @66432
+,cy:l   }   =i,u=F(i);   return R(c)&&R(l)&&R(n)?O.createElement(`path`,Cn({ },u,{     className:P(`recharts-symbols`,s),transform:`translate(${c}, ${l})`,d:o()   })):null }; In.registerSymbol=Fn; var Ln=e=>`radius`in e&&`startAngle`in e&&`endAngle`in e,Rn=(e,t)=>{   
+--- [BarChart] WorkflowDetail-bN89YgNS.pretty.js @305428
+==`axis`)return null;   var p,m,h;   if(l===`ScatterChart`)p=u,m=$u,h=hp.cursorLine;   else if(l===`BarChart`)p=ed(o,u,i,a),m=uf,h=hp.cursorRectangle;   else if(o===`radial`&&Ln(u)){     var{       cx:g,cy:_,radius:v,startAngle:y,endAngle:b     }     =Tf(u);     p={  
+--- [LineChart] WorkflowDetail-bN89YgNS.pretty.js @265572
+    var{       scale:r,type:i     }     =e;     if(r===`auto`)return i===`category`&&n&&(n.indexOf(`LineChart`)>=0||n.indexOf(`AreaChart`)>=0||n.indexOf(`ComposedChart`)>=0&&!t)?`point`:i===`category`?`band`:`linear`;     if(typeof r==`string`)return Ay(r)?r:`point`   
+--- [LineChart] WorkflowDetail-bN89YgNS.pretty.js @427428
+ },n,{     ref:t   }))) }),gN=[`axis`],_N=(0,O.forwardRef)((e,t)=>O.createElement(hN,{   chartName:`LineChart`,defaultTooltipEventType:`axis`,validateTooltipEventTypes:gN,tooltipPayloadSearcher:Ew,categoricalChartProps:e,ref:t })); function vN({   scores:e }){   return
+
+========== artifact category table (ArtifactLibrary) ==========
+--- [beginnerHint:`需要时再查看`] ArtifactLibrary-BPEftl07.pretty.js @486239
+ren:`没有匹配的记录。`         }),(0,M.jsxs)(`div`,{           className:`artifact-library-view`,children:[(0,M.jsx)(`button`,{             type:`button`,disabled:o===0,onClick:()=>s(e=>Math.max(0,e-40)),children:`上一页`           }),(0,M.jsx)(`span`,{             children:f?`${o+1}–${Math.min(o+40,f)} / ${f}`:`0 / 0`           }),(0,M.jsx)(`button`,{             type:`button`,disabled:o+40>=f,onClick:()=>s(e=>e+40),children:`下一页`           })]         })]       })     })]   }) } function Ng(e){   return e.questionScope===`shared`?`跨问题 · ${(e.questionIndices||[]).map(Hg).join(`、`)}`:e.questionScope===`general`?`全文通用`:Hg(e.questionIndex) } var Pg=[{   key:`final`,label:`最终成果`,shortLabel:`成果`,hint:`可以直接预览、下载或用于交付`,beginnerHint:`建议优先查看` },{   key:`report`,label:`分析与报告`,shortLabel:`报告`,hint:`智能体在各阶段形成的分析依据`,beginnerHint:`想了解过程时查看` },{   key:`figure`,label:`论文图表`,shortLabel:`图表`,hint:`论文中使用的图、流程图和可视化结果`,beginnerHint:`可预览并发起局部修改` },{   key:`result`,label:`结果数据与表格`,shortLabel:`结果数据`,hint:`可用于核对或提交的计算结果`,beginnerHint:`查看导出的结果表` },{   key:`section`,label:`论文分章节稿`,shortLabel:`章节`,hint:`最终论文的分章节源稿`,beginnerHint:`普通使用通常无需逐个打开` },{   key:`input`,label:`题目与原始数据`,shortLabel:`题目/数据`,hint:`你上传的赛题、数据和参考资料`,beginnerHint:`用于核对输入材料` },{   key:`technical`,label:`代码与计算文件`,shortLabel:`代码/数据`,hint:`用于复现计算、生成图表或记录中间结果`,beginnerHint:`普通使用通常无需查看` },{   key:`other`,label:`其他文件`,shortLabel:`其他`,hint:`暂未归入以上类别的工作区文件`,beginnerHint:`需要时再查看` }],Fg=new Map(Pg.map((e,t)=>[e.key,t])),Ig={   "problem_statement.md":`赛题原文与补充说明`,"problem_analysis.md":`赛题分析报告`,"modeling_report.md":`建模方案报告`,"modeling_precheck.json":`建模预检查结果`,"code_report.md":`代码实现报告`,"result_analysis.md":`结果分析报告`,"paper_outline.md":`论文结构大纲`,"review_report.md":`论文审阅报告`,"delivery
+
+========== chat interaction_mode / progress phases (useWebSocket + ChatWorkbench) ==========
+--- [interaction_mode] ChatWorkbench-B0gSrHl3.pretty.js @145309
+ate)(`plan`),[pt,mt]=(0,T.useState)(),ht=(0,T.useCallback)(()=>mt(void 0),[]),[W,gt]=(0,T.useState)(!1),_t=m?.interaction_mode??`auto`,G=e=>{ft(e),ut(!1),Ze(!0),gt(!1)};(0,T.useEffect)(()=>{if(!W)return;let e=e=>{e.key===`Escape`&&gt(!1)},t=e=>{e.target instanceof Element&&!e.target.closest(`[aria-controls="chat-pending-pane
+--- [interaction_mode] ChatWorkbench-B0gSrHl3.pretty.js @148842
+随步骤模型`,jn=m?.effort?`${             m.effort           }           强度`:`跟随步骤强度`,Mn=ne(m?.effort||``,kn),Nn=m?.interaction_mode===`conversation`?`只聊天`:m?.interaction_mode===`focused`?`小范围任务`:m?.interaction_mode===`full`?`完整步骤`:`智能判断`,Pn=N({...P?.params,template:P?.template}),$=H(P),Fn=ct(P),In=Pn.slice(0,2).map(e=>e.value).jo
+--- [interaction_mode] ChatWorkbench-B0gSrHl3.pretty.js @148885
+t           }           强度`:`跟随步骤强度`,Mn=ne(m?.effort||``,kn),Nn=m?.interaction_mode===`conversation`?`只聊天`:m?.interaction_mode===`focused`?`小范围任务`:m?.interaction_mode===`full`?`完整步骤`:`智能判断`,Pn=N({...P?.params,template:P?.template}),$=H(P),Fn=ct(P),In=Pn.slice(0,2).map(e=>e.value).join(` · `),Ln=(0,T.useMemo)(()=>At({draft:F,
+--- [interaction_mode] ChatWorkbench-B0gSrHl3.pretty.js @148925
+ne(m?.effort||``,kn),Nn=m?.interaction_mode===`conversation`?`只聊天`:m?.interaction_mode===`focused`?`小范围任务`:m?.interaction_mode===`full`?`完整步骤`:`智能判断`,Pn=N({...P?.params,template:P?.template}),$=H(P),Fn=ct(P),In=Pn.slice(0,2).map(e=>e.value).join(` · `),Ln=(0,T.useMemo)(()=>At({draft:F,sessionAlive:A,opening:_,sending:v||S||t
+--- [interaction_mode] ChatWorkbench-B0gSrHl3.pretty.js @171066
+`button`,{type:`button`,className:`chat-control-chip chat-control-summary chat-control-mode-${             m?.interaction_mode||`auto`           }           `,"aria-haspopup":`dialog`,"aria-expanded":Ct,"aria-label":`运行设置：${             Nn           }           ；${             An           }           ；${             jn     
+--- [interaction_mode] ChatWorkbench-B0gSrHl3.pretty.js @172777
+}),(0,M.jsx)(`div`,{className:`chat-mode-grid`,role:`group`,"aria-label":`交互方式`,children:on.map(e=>{let t=(m?.interaction_mode||`auto`)===e.value;return(0,M.jsxs)(`button`,{type:`button`,className:t?`chat-mode-option chat-mode-option-active`:`chat-mode-option`,"aria-pressed":t,disabled:!m||g||v,onClick:()=>void ye({interacti
+--- [progress_phase] ChatWorkbench-B0gSrHl3.pretty.js @27967
+在做`:`本次执行记录`               }),(0,M.jsx)(`strong`,{                 children:G?.title||pe[e.progress?.phase||e.progress_phase||`preparing`]||`模型处理中`               })]             })]           }),(0,M.jsxs)(`span`,{             className:`chat-live-elapsed`,children:[B===`running`?`已运行`:`总用时`,` `,` `,be(e.started_at,B===`ru
+--- [item_kind] ChatWorkbench-B0gSrHl3.pretty.js @2579
+/60);   return i<60?`${i} 分钟`:`${Math.floor(i/60)} 小时 ${i%60} 分钟` } function se(e,t,n){   let r=e.filter(e=>e.item_kind===`task`||e.intent===`call_skill`||e.skill_name),i=new Map(r.map(e=>[e.id,e])),a=new Set([`done`,`failed`,`cancelled`,`interrupted`,`stale`]),o=e=>!a.has(i.get(e.message_id)?.status||``),s=new Set([.
+--- [item_kind] ChatWorkbench-B0gSrHl3.pretty.js @148234
+]);let bn=p?.busy||u?.busy||!1,xn=j.filter(e=>!e.chosen&&!e.skipped),Sn=l.filter(e=>e.status===`proposed`&&(e.item_kind===`task`||!!e.skill_name||e.intent===`call_skill`)),Cn=xn.length+Sn.length,wn=l.map(e=>`${             e.id           }           :${             e.status           }           :${             e.vers
+--- [item_kind] ChatWorkbench-B0gSrHl3.pretty.js @177737
+gth>1800||e.content.split(``).length>28,[i,a]=(0,T.useState)(!r||t),o=cn(e.created_at),s=e.role===`system`||e.item_kind===`notice`,c=e.message_phase===`commentary`?`过程更新`:e.message_phase===`partial_answer`?`回复发生截断`:e.message_phase===`status_summary`?`项目进度快照`:`完整答复`,l=n?an[n.status]||n.status:``,d=n?ue[n.source_skill||
+--- [execution_scope] ChatWorkbench-B0gSrHl3.pretty.js @11038
+,T.useState)(``),[le,P]=(0,T.useState)(!1),[Te,Ee]=(0,T.useState)(e.instruction||``),[De,Oe]=(0,T.useState)(e.execution_scope||`full`),[F,I]=(0,T.useState)(e.focus_target||``),[ke,Ae]=(0,T.useState)(e.model_preset_id||``),[L,R]=(0,T.useState)(e.effort||``),[je,Me]=(0,T.useState)(()=>Date.now()),Ne=e.source_skill||e.skill_na
+--- [execution_scope] ChatWorkbench-B0gSrHl3.pretty.js @11297
+e,Me]=(0,T.useState)(()=>Date.now()),Ne=e.source_skill||e.skill_name||``,Pe=ue[Ne]||Ne,z=e.operation_kind||(e.execution_scope===`focused`?`research`:`run_step`),Fe=z===`patch`?`局部修改`:z===`focused_run`?`聚焦执行`:z===`research`?`聚焦研究`:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repair`,Le=z===`focuse
+--- [execution_scope] ChatWorkbench-B0gSrHl3.pretty.js @20866
+=`focused_run`)&&De===`focused`&&!F.trim(),onClick:async()=>{               await s(e.id,Te,{                 execution_scope:De,focus_target:De===`focused`?F.trim():``,model_preset_id:ke,effort:L,target_paths:e.target_paths,target_sections:e.target_sections               })&&P(!1)             },children:l===`edit`?`保存中…`:`
+--- [execution_scope] ChatWorkbench-B0gSrHl3.pretty.js @21245
+pe:`button`,className:`chat-quick`,disabled:l===`edit`,onClick:()=>{               Ee(e.instruction||``),Oe(e.execution_scope||`full`),I(e.focus_target||``),Ae(e.model_preset_id||``),R(e.effort||``),P(!1)             },children:`取消编辑`           })]         })]       }):(0,M.jsxs)(`div`,{         className:`chat-instr-wrap`,
+--- [execution_scope] ChatWorkbench-B0gSrHl3.pretty.js @21791
+   type:`button`,className:`chat-edit-link`,disabled:!!l,onClick:()=>{             Ee(e.instruction||``),Oe(e.execution_scope||`full`),I(e.focus_target||``),Ae(e.model_preset_id||``),R(e.effort||``),P(!0)           },children:`修改后再运行`         })]       })),E&&e.content&&e.content!==e.instruction&&(0,M.jsxs)(`div`,{         
+--- [interaction_mode] useWebSocket-DhwRyw4C.pretty.js @9378
+|t().stopping||t().stopUnconfirmed)return!1;       o||={         text:n,turn_id:G(),mode:r?.mode||t().config?.interaction_mode||`auto`,focus_target:r?.focusTarget||``       };       let u=o.turn_id;       g(i,o);       let p=-Date.now(),m=B();       D=m,e(e=>({         sending:!0,error:null,errorInfo:null,replyTurnId:u,reply
+--- [interaction_mode] useWebSocket-DhwRyw4C.pretty.js @15994
+{             "Content-Type":`application/json`           },signal:s.signal,body:JSON.stringify({             interaction_mode:o.interaction_mode,model_preset_id:o.model_preset_id,effort:o.effort,project_brief:o.project_brief           })         })),V(t,r,a)?(N+=1,e({           config:o         }),!0):!1       }       catch
+--- [interaction_mode] useWebSocket-DhwRyw4C.pretty.js @16013
+ent-Type":`application/json`           },signal:s.signal,body:JSON.stringify({             interaction_mode:o.interaction_mode,model_preset_id:o.model_preset_id,effort:o.effort,project_brief:o.project_brief           })         })),V(t,r,a)?(N+=1,e({           config:o         }),!0):!1       }       catch(n){         let i=
+--- [progress_phase] useWebSocket-DhwRyw4C.pretty.js @28116
+??e.diffs,version_id:n.version_id??e.version_id,rollback_available:n.rollback_available??e.rollback_available,progress_phase:n.progress_phase??e.progress_phase,progress_message:n.progress_message??e.progress_message,progress:n.progress??e.progress,started_at:i===`chat_started`?e.started_at||new Date().toISOString():e.start
+--- [progress_phase] useWebSocket-DhwRyw4C.pretty.js @28133
+_id:n.version_id??e.version_id,rollback_available:n.rollback_available??e.rollback_available,progress_phase:n.progress_phase??e.progress_phase,progress_message:n.progress_message??e.progress_message,progress:n.progress??e.progress,started_at:i===`chat_started`?e.started_at||new Date().toISOString():e.started_at,completed_a
+--- [progress_phase] useWebSocket-DhwRyw4C.pretty.js @28151
+e.version_id,rollback_available:n.rollback_available??e.rollback_available,progress_phase:n.progress_phase??e.progress_phase,progress_message:n.progress_message??e.progress_message,progress:n.progress??e.progress,started_at:i===`chat_started`?e.started_at||new Date().toISOString():e.started_at,completed_at:n.completed_at??
+--- [progress_phase] useWebSocket-DhwRyw4C.pretty.js @29998
+tus)||n.run_id&&i.run_id&&n.run_id!==i.run_id)return;         let a=n.progress||{           version:1,phase:n.progress_phase||`reasoning`,message:n.progress_message||`正在处理当前任务`,health:`active`,last_activity_at:new Date().toISOString(),recent:[]         };         T.set(r,{           progress:a,runId:n.run_id??i.run_id??nul
+--- [progress_phase] useWebSocket-DhwRyw4C.pretty.js @30530
+ess:void 0;               return r&&[`queued`,`running`].includes(e.status)?{                 ...e,progress:r,progress_phase:r.phase??e.progress_phase,progress_message:r.message??e.progress_message,last_progress_at:r.last_activity_at??e.last_progress_at               }               :e             })           }))         
+--- [progress_phase] useWebSocket-DhwRyw4C.pretty.js @30556
+return r&&[`queued`,`running`].includes(e.status)?{                 ...e,progress:r,progress_phase:r.phase??e.progress_phase,progress_message:r.message??e.progress_message,last_progress_at:r.last_activity_at??e.last_progress_at               }               :e             })           }))         },100)       }     },start
+--- [item_kind] useWebSocket-DhwRyw4C.pretty.js @9791
+{           id:p,session_id:e.sessionId||``,role:`user`,content:n,status:`pending`,turn_id:u,client_turn_id:u,item_kind:`user_message`         }]       }));       try{         let n=()=>R(`/api/workflows/${i}/chat/say`,{           method:`POST`,signal:m.signal,headers:{             "Content-Type":`application/json`   
+--- [item_kind] useWebSocket-DhwRyw4C.pretty.js @26261
+d;         if(typeof t!=`number`)return;         e(e=>{           let r={             turn_id:n.turn_id??null,item_kind:n.item_kind||`task`,skill_name:n.skill??null,instruction:n.instruction??null,source_skill:n.source_skill??null,operation_kind:n.operation_kind||`run_step`,eta_minutes:n.eta_minutes??null,outputs:n.ou
+--- [item_kind] useWebSocket-DhwRyw4C.pretty.js @26273
+f(typeof t!=`number`)return;         e(e=>{           let r={             turn_id:n.turn_id??null,item_kind:n.item_kind||`task`,skill_name:n.skill??null,instruction:n.instruction??null,source_skill:n.source_skill??null,operation_kind:n.operation_kind||`run_step`,eta_minutes:n.eta_minutes??null,outputs:n.outputs||[],mi
+--- [execution_scope] useWebSocket-DhwRyw4C.pretty.js @14617
+.id===r?{             ...e,instruction:n.instruction,proposal_revision:n.revision,missing_deps:n.missing_deps,execution_scope:n.execution_scope,focus_target:n.focus_target,model_preset_id:n.model_preset_id,effort:n.effort,eta_minutes:n.eta_minutes,outputs:n.outputs,operation_kind:n.operation_kind??e.operation_kind,target_pa
+--- [execution_scope] useWebSocket-DhwRyw4C.pretty.js @14635
+    ...e,instruction:n.instruction,proposal_revision:n.revision,missing_deps:n.missing_deps,execution_scope:n.execution_scope,focus_target:n.focus_target,model_preset_id:n.model_preset_id,effort:n.effort,eta_minutes:n.eta_minutes,outputs:n.outputs,operation_kind:n.operation_kind??e.operation_kind,target_paths:n.target_paths
+--- [execution_scope] useWebSocket-DhwRyw4C.pretty.js @26532
+ep`,eta_minutes:n.eta_minutes??null,outputs:n.outputs||[],missing_deps:n.missing_deps||[],proposal_revision:1,execution_scope:n.execution_scope||`full`,focus_target:n.focus_target||null,model_preset_id:n.model_preset_id??null,effort:n.effort??null,target_paths:n.target_paths||[],input_paths:n.input_paths||[],target_sections
+--- [execution_scope] useWebSocket-DhwRyw4C.pretty.js @26550
+eta_minutes??null,outputs:n.outputs||[],missing_deps:n.missing_deps||[],proposal_revision:1,execution_scope:n.execution_scope||`full`,focus_target:n.focus_target||null,model_preset_id:n.model_preset_id??null,effort:n.effort??null,target_paths:n.target_paths||[],input_paths:n.input_paths||[],target_sections:n.target_sections
+
+========== chat stage / skill display (ChatWorkbench) ==========
+--- [run_step] ChatWorkbench-B0gSrHl3.pretty.js @11337
+ill_name||``,Pe=ue[Ne]||Ne,z=e.operation_kind||(e.execution_scope===`focused`?`research`:`run_step`),Fe=z===`patch`?`局部修改`:z===`focused_run`?`聚焦执行`:z===`research`?`聚焦研究`:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repair`,Le=z===
+--- [run_step] ChatWorkbench-B0gSrHl3.pretty.js @11474
+un`?`聚焦执行`:z===`research`?`聚焦研究`:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repair`,Le=z===`focused_run`&&!e.input_paths?.length?[]:e.missing_deps||[],Re=e.outputs||[],ze=e.target_paths?.length?e.target_paths:Re,Be=z===`focused_
+--- [run_step] ChatWorkbench-B0gSrHl3.pretty.js @52554
+this.requests.clear()   } },Ue={   patch:`修改指定内容`,focused_run:`生成指定成果`,research:`查证与资料整理`,run_step:`执行流程阶段`,repair:`检查与修复`,validate:`检查现有结果` }; function B(e){   let t=e.request_text?.trim().split(/\n|[。！？!?]/)[0]?.trim();   return t?t.length>32?`${t.slice(0,
+--- [run_step] ChatWorkbench-B0gSrHl3.pretty.js @55011
+hildren:e               })             },e))           })]         }),e.operation_kind===`run_step`&&(0,M.jsx)(`p`,{           className:`chat-history-scope-note`,children:`流程执行记录 · 不支持在此撤销整个阶段`         }),e.artifact_state===`unavailable`&&!F(e)&&(0,M.jsx)(`
+--- [focused_run] ChatWorkbench-B0gSrHl3.pretty.js @1702
+urn(t?.runs||[]).filter(t=>t.skill===e.skill_name&&t.status===`done`&&t.operation_kind===`focused_run`).length } function A(e,t){   let n=t?.stage_progress?.stages.find(t=>t.skill===e.skill_name);   if(n)return n.summary;   switch(e.status){     case`completed`
+--- [focused_run] ChatWorkbench-B0gSrHl3.pretty.js @11375
+on_kind||(e.execution_scope===`focused`?`research`:`run_step`),Fe=z===`patch`?`局部修改`:z===`focused_run`?`聚焦执行`:z===`research`?`聚焦研究`:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repair`,Le=z===`focused_run`&&!e.input_paths?.length?[]:
+--- [focused_run] ChatWorkbench-B0gSrHl3.pretty.js @11506
+:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repair`,Le=z===`focused_run`&&!e.input_paths?.length?[]:e.missing_deps||[],Re=e.outputs||[],ze=e.target_paths?.length?e.target_paths:Re,Be=z===`focused_run`?ze.filter(e=>!we.test(e)):[],V
+--- [focused_run] ChatWorkbench-B0gSrHl3.pretty.js @11634
+]:e.missing_deps||[],Re=e.outputs||[],ze=e.target_paths?.length?e.target_paths:Re,Be=z===`focused_run`?ze.filter(e=>!we.test(e)):[],Ve=z===`focused_run`?ze.filter(e=>we.test(e)):[],He=Ie?e.eta_minutes:void 0,Ue=ze.some(e=>{     let t=e.replace(/\\/g,`/`);     r
+--- [focused_run] ChatWorkbench-B0gSrHl3.pretty.js @11684
+paths?.length?e.target_paths:Re,Be=z===`focused_run`?ze.filter(e=>!we.test(e)):[],Ve=z===`focused_run`?ze.filter(e=>we.test(e)):[],He=Ie?e.eta_minutes:void 0,Ue=ze.some(e=>{     let t=e.replace(/\\/g,`/`);     return/\.pdf$/i.test(t)&&(t.startsWith(`figures/`)|
+--- [focused_run] ChatWorkbench-B0gSrHl3.pretty.js @18047
+`       })     }),(0,M.jsxs)(`div`,{       className:`chat-card-body`,children:[(Ie||z===`focused_run`)&&V&&(0,M.jsx)(`p`,{         className:`chat-local-quality-note`,children:`确认后会执行并检查。内容检查失败时，在同一范围内最多自动返修 3 轮；返修预算 120 分钟。 连续无进展、版本冲突或检查工具不可用时停止，不会自动扩大任务或执行下一
+--- [patch] ChatWorkbench-B0gSrHl3.pretty.js @11356
+Ne]||Ne,z=e.operation_kind||(e.execution_scope===`focused`?`research`:`run_step`),Fe=z===`patch`?`局部修改`:z===`focused_run`?`聚焦执行`:z===`research`?`聚焦研究`:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repair`,Le=z===`focused_run`&&!
+--- [patch] ChatWorkbench-B0gSrHl3.pretty.js @12914
+  `:``}；实际新增 ${it} 行、删除 ${at} 行，可逐行审阅${e.rollback_available?`；撤销时会再次检查文件版本`:``}。`,st=z===`patch`&&$e.length&&(!e.result_summary||/^已局部修改\s*\d+\s*个文件/.test(e.result_summary))?ot:e.result_summary||`任务已正常完成。可从下方实际产物继续查看、审阅或发起局部修改。`;   (0,T.useEffect)(()=>{  
+--- [patch] ChatWorkbench-B0gSrHl3.pretty.js @23448
+roup`,children:[(0,M.jsx)(`span`,{             className:`chat-field-label`,children:z===`patch`?`只改这些文件`:z===`validate`?`检查目标`:`预计产物`           }),((z===`patch`||z===`validate`)&&e.target_paths||Re).map(e=>(0,M.jsx)(`code`,{             className:`chat-o
+--- [patch] ChatWorkbench-B0gSrHl3.pretty.js @23513
+eld-label`,children:z===`patch`?`只改这些文件`:z===`validate`?`检查目标`:`预计产物`           }),((z===`patch`||z===`validate`)&&e.target_paths||Re).map(e=>(0,M.jsx)(`code`,{             className:`chat-output-chip`,children:e           },e))]         }),z===`patch`&&O
+--- [patch] ChatWorkbench-B0gSrHl3.pretty.js @23669
+e`,{             className:`chat-output-chip`,children:e           },e))]         }),z===`patch`&&Object.entries(e.target_sections||{ }).map(([e,t])=>(0,M.jsxs)(`span`,{           className:`chat-card-meta-group chat-card-meta-wide`,children:[(0,M.jsx)(`s
+--- [patch] ChatWorkbench-B0gSrHl3.pretty.js @38793
+,M.jsxs)(`span`,{             children:[(0,M.jsx)(`strong`,{               children:(z===`patch`||z===`focused_run`)&&e.diffs?.length?e.diffs.length:`✓`             }),(0,M.jsx)(`small`,{               children:z===`patch`||z===`focused_run`?`变更文件`:`执行闭环`
+--- [research] ChatWorkbench-B0gSrHl3.pretty.js @11326
+skill||e.skill_name||``,Pe=ue[Ne]||Ne,z=e.operation_kind||(e.execution_scope===`focused`?`research`:`run_step`),Fe=z===`patch`?`局部修改`:z===`focused_run`?`聚焦执行`:z===`research`?`聚焦研究`:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repa
+--- [research] ChatWorkbench-B0gSrHl3.pretty.js @11400
+pe===`focused`?`research`:`run_step`),Fe=z===`patch`?`局部修改`:z===`focused_run`?`聚焦执行`:z===`research`?`聚焦研究`:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repair`,Le=z===`focused_run`&&!e.input_paths?.length?[]:e.missing_deps||[],Re=
+--- [research] ChatWorkbench-B0gSrHl3.pretty.js @19990
+   value:e,children:e               },e))]             })]           })]         }),(z===`research`||z===`focused_run`)&&De===`focused`&&(0,M.jsxs)(`label`,{           className:`chat-focus-field`,children:[(0,M.jsx)(`span`,{             children:`唯一目标`     
+--- [research] ChatWorkbench-B0gSrHl3.pretty.js @20742
+{             type:`button`,className:`chat-quick`,disabled:l===`edit`||!Te.trim()||(z===`research`||z===`focused_run`)&&De===`focused`&&!F.trim(),onClick:async()=>{               await s(e.id,Te,{                 execution_scope:De,focus_target:De===`focuse
+--- [research] ChatWorkbench-B0gSrHl3.pretty.js @22285
+       })]       }),(0,M.jsxs)(`div`,{         className:`chat-card-meta`,children:[(z===`research`||z===`focused_run`)&&e.focus_target&&(0,M.jsxs)(`span`,{           className:`chat-card-meta-group chat-card-meta-wide`,children:[(0,M.jsx)(`span`,{          
+--- [research] ChatWorkbench-B0gSrHl3.pretty.js @39244
+       className:`chat-text`,children:st           })]         }),[`patch`,`focused_run`,`research`,`validate`].includes(z)&&(0,M.jsx)(`p`,{           className:`chat-local-quality-note`,children:`本次仅覆盖确认范围，不代表整阶段或整篇论文已经完成。 文件与语法检查不等同于模型正确、数值可靠或可直接提交。`      
+--- [validate] ChatWorkbench-B0gSrHl3.pretty.js @11422
+ch`:`run_step`),Fe=z===`patch`?`局部修改`:z===`focused_run`?`聚焦执行`:z===`research`?`聚焦研究`:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repair`,Le=z===`focused_run`&&!e.input_paths?.length?[]:e.missing_deps||[],Re=e.outputs||[],ze=e.tar
+--- [validate] ChatWorkbench-B0gSrHl3.pretty.js @12038
+Ge=ye(e.started_at),Ke=We!==null&&Ge!==null&&We>=Ge?be(e.started_at,We):`未记录完整时间`,qe=z===`validate`&&B===`done`&&e.quality_status===`issues`,Je=z===`validate`&&B===`done`&&![`passed`,`issues`].includes(e.quality_status||``),Ye=N(p),Xe=m?.waiting.findIndex(t=
+--- [validate] ChatWorkbench-B0gSrHl3.pretty.js @12097
+arted_at,We):`未记录完整时间`,qe=z===`validate`&&B===`done`&&e.quality_status===`issues`,Je=z===`validate`&&B===`done`&&![`passed`,`issues`].includes(e.quality_status||``),Ye=N(p),Xe=m?.waiting.findIndex(t=>t.message_id===e.id)??-1,Ze=e.result_outputs?.length?e.res
+--- [validate] ChatWorkbench-B0gSrHl3.pretty.js @19135
+        }),(0,M.jsxs)(`div`,{           className:`chat-proposal-settings`,children:[z!==`validate`&&(0,M.jsxs)(`label`,{             children:[(0,M.jsx)(`span`,{               children:`执行模型`             }),(0,M.jsxs)(`select`,{               value:ke,onCha
+--- [validate] ChatWorkbench-B0gSrHl3.pretty.js @19572
+ldren:[e.name,` · `,e.model_id]               },e.id))]             })]           }),z!==`validate`&&(0,M.jsxs)(`label`,{             children:[(0,M.jsx)(`span`,{               children:`思考强度`             }),(0,M.jsxs)(`select`,{               value:L,onChan
+--- [validate] ChatWorkbench-B0gSrHl3.pretty.js @20313
+aceholder:`例如：只分析问题一，不展开其他问题`,onChange:e=>I(e.target.value)           })]         }),z!==`validate`&&pt&&(0,M.jsxs)(`div`,{           className:`chat-warn`,children:[(0,M.jsx)(`span`,{             className:`chat-warn-icon`,"aria-hidden":`true`,children:`▲` 
+--- [repair] ChatWorkbench-B0gSrHl3.pretty.js @11444
+=`patch`?`局部修改`:z===`focused_run`?`聚焦执行`:z===`research`?`聚焦研究`:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repair`,Le=z===`focused_run`&&!e.input_paths?.length?[]:e.missing_deps||[],Re=e.outputs||[],ze=e.target_paths?.length?e.
+--- [repair] ChatWorkbench-B0gSrHl3.pretty.js @11490
+research`?`聚焦研究`:z===`validate`?`只读检查`:z===`repair`?`质量修复`:`完整步骤`,Ie=z===`run_step`||z===`repair`,Le=z===`focused_run`&&!e.input_paths?.length?[]:e.missing_deps||[],Re=e.outputs||[],ze=e.target_paths?.length?e.target_paths:Re,Be=z===`focused_run`?ze.filter
+--- [repair] ChatWorkbench-B0gSrHl3.pretty.js @44660
+=>t(e.id,{           force:dt         }),children:[dt?`仍然执行`:z===`validate`?`开始只读检查`:z===`repair`?`确认并修复`:z===`focused_run`?`生成并质检局部产物`:`运行这一步`,typeof He==`number`&&He>0?` · 约 ${He} 分钟`:``]       }),!ut&&d&&(0,M.jsx)(`button`,{         type:`button`,classN
+--- [repair] ChatWorkbench-B0gSrHl3.pretty.js @52572
+r()   } },Ue={   patch:`修改指定内容`,focused_run:`生成指定成果`,research:`查证与资料整理`,run_step:`执行流程阶段`,repair:`检查与修复`,validate:`检查现有结果` }; function B(e){   let t=e.request_text?.trim().split(/\n|[。！？!?]/)[0]?.trim();   return t?t.length>32?`${t.slice(0,32)}…`:t:ue[e.so
+
+========== Dashboard workflow card fields (Dashboard) ==========
+--- [status===] Dashboard-2mxANXyi.pretty.js @2930
+n=new Set(t);     return n.has(e)?n.delete(e):n.add(e),n   }),A=async()=>{     let n=e.some(e=>v.has(e.id)&&e.status===`running`)?`选中的 ${v.size} 个工作流中有正在运行的，删除将立即中止！确认删除？`:`确认删除 ${v.size} 个工作流？`;     if(!confirm(n))return;     x(!0);     let r=Array.from(v),i=(await Promise.allSettled(r.map(e=>g(e)
+--- [status===] Dashboard-2mxANXyi.pretty.js @3135
+onfirm(n))return;     x(!0);     let r=Array.from(v),i=(await Promise.allSettled(r.map(e=>g(e)))).filter(e=>e.status===`rejected`).length;     i>0&&alert(`${i} 个工作流删除失败，文件将在下次启动时清理`),y(new Set),x(!1),t()   },j=async()=>{     if(v.size!==0){       D(!0);       try{         let e=Array.from(v),t=v.si
+--- [status===] Dashboard-2mxANXyi.pretty.js @5019
+  alert(`导入失败: ${h(e,`网络错误`)}`)       }       T(!1),O.current&&(O.current.value=``)     }   },N=e.filter(e=>e.status===`running`).length,P=e.filter(e=>e.status===`completed`).length,F=e.filter(e=>e.status===`failed`).length,I=e.filter(e=>S===`research`?!f(e.template)&&!p(e.template):S===`competitio
+--- [status===] Dashboard-2mxANXyi.pretty.js @5062
+   T(!1),O.current&&(O.current.value=``)     }   },N=e.filter(e=>e.status===`running`).length,P=e.filter(e=>e.status===`completed`).length,F=e.filter(e=>e.status===`failed`).length,I=e.filter(e=>S===`research`?!f(e.template)&&!p(e.template):S===`competition`?f(e.template):S!==`academic`||p(e.templa
+--- [status===] Dashboard-2mxANXyi.pretty.js @5107
+}   },N=e.filter(e=>e.status===`running`).length,P=e.filter(e=>e.status===`completed`).length,F=e.filter(e=>e.status===`failed`).length,I=e.filter(e=>S===`research`?!f(e.template)&&!p(e.template):S===`competition`?f(e.template):S!==`academic`||p(e.template));   return(0,c.jsxs)(`div`,{     classNam
+--- [status===] Dashboard-2mxANXyi.pretty.js @9752
+     className:`space-y-2`,children:I.map(e=>{         let r=l[e.status]||l.pending,i=e.runtime_activity,a=i?.status===`queued`?l.pending:r,s=i?.kind===`chat`?i.status===`running`?`协同执行中`:`协同排队`:r.text;         return(0,c.jsxs)(`div`,{           className:`card flex items-center gap-4 px-5 py-4 gro
+--- [status===] Dashboard-2mxANXyi.pretty.js @9803
+    let r=l[e.status]||l.pending,i=e.runtime_activity,a=i?.status===`queued`?l.pending:r,s=i?.kind===`chat`?i.status===`running`?`协同执行中`:`协同排队`:r.text;         return(0,c.jsxs)(`div`,{           className:`card flex items-center gap-4 px-5 py-4 group ${v.has(e.id)?`border-indigo-500/40 bg-indigo-50
+--- [status===] Dashboard-2mxANXyi.pretty.js @11680
+]`,children:m(e.created_at)           }),(0,c.jsx)(`button`,{             onClick:()=>{               let n=e.status===`running`?`该工作流正在运行，删除将立即中止！确认删除？`:`确认删除？`;               confirm(n)&&g(e.id).catch(()=>{                 alert(`删除失败`),t()               })             },className:`dashboard-col-
+--- [current_step] Dashboard-2mxANXyi.pretty.js @10749
+               className:`text-xs text-[var(--text-muted)] mt-1 truncate`,children:i.message             }):e.current_step&&(0,c.jsxs)(`p`,{               className:`text-xs text-[var(--text-muted)] mt-1`,children:[`步骤: `,e.current_step]             })]           }),(0,c.jsxs)(`span`,{             cla
+--- [current_step] Dashboard-2mxANXyi.pretty.js @10863
+ent_step&&(0,c.jsxs)(`p`,{               className:`text-xs text-[var(--text-muted)] mt-1`,children:[`步骤: `,e.current_step]             })]           }),(0,c.jsxs)(`span`,{             className:`dashboard-col-template w-44 text-sm text-[var(--text-secondary)] flex items-center gap-2`,children:[(0,c.j
+
+========== react-router future flags / version ==========
+--- [future:] jsx-runtime-DriIcras.pretty.js @23681
+RouteId:t,...i}))},[e,t])}var ot={};function st(e,t,n){!t&&!ot[e]&&(ot[e]=!0,h(!1,n))}r.memo(ct);function ct({routes:e,manifest:t,future:n,state:r,isStatic:i,onError:a}){return Ge(e,void 0,{manifest:t,state:r,isStatic:i,onError:a,future:n})}function lt({to:e,replace:t,state:n,relative:i}){m(H(),`<Navigate> may be used only in the conte
+--- [future:] jsx-runtime-DriIcras.pretty.js @23781
+ction ct({routes:e,manifest:t,future:n,state:r,isStatic:i,onError:a}){return Ge(e,void 0,{manifest:t,state:r,isStatic:i,onError:a,future:n})}function lt({to:e,replace:t,state:n,relative:i}){m(H(),`<Navigate> may be used only in the context of a <Router> component.`);let{static:a}=r.useContext(R);h(!a,`<Navigate> must not be used on the
+--- [future:] jsx-runtime-DriIcras.pretty.js @24853
+ore than one in your app.`);let c=e.replace(/^\/*/,`/`),l=r.useMemo(()=>({       basename:c,navigator:a,static:o,useTransitions:s,future:{ }     }),[c,a,o,s]);     typeof n==`string`&&(n=b(n));     let{       pathname:u=`/`,search:d=``,hash:f=``,state:p=null,key:g=`default`,mask:_     }     =n,v=r.useMemo(()=>{       let e=j(u,c);     
+--- [future:] jsx-runtime-DriIcras.pretty.js @34537
+e)       }),()=>{         r=!0       }     },[e,t,n]),i   }   function Ht({     page:e,matches:t,...n   }){     let i=U(),{       future:a     }     =Z(),{       basename:o     }     =It(),s=r.useMemo(()=>{       if(e===i.pathname+i.search+i.hash)return[];       let n=Et(e,o,a.v8_trailingSlashAwareDataRequests,`rsc`),r=!1,s=[];       f
+--- [future:] jsx-runtime-DriIcras.pretty.js @35183
+   key:e,rel:`prefetch`,as:`fetch`,href:e,...n     })))   }   function Ut({     page:e,matches:t,...n   }){     let i=U(),{       future:a,manifest:o,routeModules:s     }     =Z(),{       basename:c     }     =It(),{       loaderData:l,matches:u     }     =Lt(),d=r.useMemo(()=>jt(e,t,u,o,i,`data`),[e,t,u,o,i]),f=r.useMemo(()=>jt(e,t,u,
+--- [useViewTransitionState] jsx-runtime-DriIcras.pretty.js @43541
+ame===`/`?n:P([n,o.pathname])),y(o)   }   function rn(e,{     relative:t   }   ={ }){     let n=r.useContext(je);     m(n!=null,"`useViewTransitionState` must be used within `react-router-dom`'s `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");     let{       basename:i     }     =Xt(`useViewTransitionState`),a=G
+--- [useViewTransitionState] jsx-runtime-DriIcras.pretty.js @43735
+ `RouterProvider`.  Did you accidentally import `RouterProvider` from `react-router`?");     let{       basename:i     }     =Xt(`useViewTransitionState`),a=G(e,{       relative:t     });     if(!n.isTransitioning)return!1;     let o=j(n.currentLocation.pathname,i)||n.currentLocation.pathname,s=j(n.nextLocation.pathname,i)||n.nextLocation.pathname;  
+--- [startTransition] jsx-runtime-DriIcras.pretty.js @37019
+     let o=a.current,[s,c]=r.useState({       action:o.action,location:o.location     }),l=r.useCallback(e=>{       n===!1?c(e):r.startTransition(()=>c(e))     },[n]);     return r.useLayoutEffect(()=>o.listen(l),[o,l]),r.createElement(dt,{       basename:e,children:t,location:s.location,navigationType:s.action,navigator:o,useTransitions:n    
+--- [startTransition] jsx-runtime-DriIcras.pretty.js @40332
+te:n,replace:a,state:o,relative:d,preventScrollReset:f,viewTransition:p,defaultShouldRevalidate:m         });         _&&n!==!1?r.startTransition(()=>l()):l()       },...h,"data-discover":!x&&e===`render`?`true`:void 0     })   });   Jt.displayName=`Form`;   function Yt(e){     return`${e} must be used within a data router.  See https://reactr
+--- [startTransition] jsx-runtime-DriIcras.pretty.js @41145
+      replace:t,mask:i,state:a,preventScrollReset:o,relative:s,viewTransition:c,defaultShouldRevalidate:l         });         u?r.startTransition(()=>h()):h()       }     },[f,d,p,n,i,a,t,e,o,s,c,l,u])   }   function Qt(e){     h(typeof URLSearchParams<`u`,"You cannot use the `useSearchParams` hook in a browser that does not support the URLSea
+
+========== Account page native billing / realname / software (Account) ==========
+--- [wallet] Account-CFNFyFpM.pretty.js @17224
+||e.hash)throw Error(`支付地址校验失败。`)   }   return t } function G({   refreshKey:e=0,cacheScope:t=`` }){   let n=`wallet:`+t,[r,i]=(0,y.useState)(()=>t?g(n):null),[a,o]=(0,y.useState)(``),[s,c]=(0,y.useState)(!1),[l,d]=(0,y.useState)(!1),[f,x]=(0,y.useState)(!1),[S,C]=(0,y.useState)(null),[w,T]=(0,y.useState)
+--- [wallet] Account-CFNFyFpM.pretty.js @17752
+     return K.current=!1,x(!1),d(!1),i(t?g(n):null),k(null),C(null),F(null),c(!1),T(!1),o(``),D(1e3),M(``),H(`wallet`,void 0,r.signal).then(r=>{       if(e!==G.current)return;       let o=U(r);       i(o),d(!0),t&&p(n,o,3e5,a),k(I(o.account_id,1e3))     }).catch(t=>{       !r.signal.aborted&&e===G.current
+--- [wallet] Account-CFNFyFpM.pretty.js @18390
+   }     finally{       n()&&(K.current=!1,x(!1))     }   }   async function J(e){     let a=m(),o=U(await H(`wallet`));     if(r&&o.account_id!==r.account_id)throw Error(`账号已切换，请重新打开账户页。`);     e()&&(i(o),d(!0),t&&p(n,o,3e5,a))   }   function Y(e,t=``){     if(!(!r||f)){       D(e),M(t),C(null),o(``);   
+--- [wallet] Account-CFNFyFpM.pretty.js @20700
+ge:`+r.account_id+`:`),F(`usage`))   }   return(0,b.jsxs)(`section`,{     className:`account-page-card native-wallet`,children:[(0,b.jsxs)(`div`,{       className:`account-section-row`,children:[(0,b.jsxs)(`div`,{         children:[(0,b.jsx)(`span`,{           className:`access-eyebrow`,children:`MODEX 积分
+--- [wallet] Account-CFNFyFpM.pretty.js @21018
+,(0,b.jsx)(`h2`,{           children:`我的积分`         })]       }),(0,b.jsx)(`span`,{         className:`native-wallet-mark`,"aria-hidden":`true`,children:`M`       })]     }),a&&!s&&(0,b.jsx)(`p`,{       role:`alert`,className:`access-notice access-notice-error`,children:a     }),(0,b.jsxs)(`div`,{       c
+--- [wallet] Account-CFNFyFpM.pretty.js @25600
+=>void q(te),children:`保留旧订单，重新充值此套餐`         })]       })]     }),(0,b.jsxs)(`div`,{       className:`native-wallet-links`,children:[(0,b.jsxs)(`button`,{         disabled:!r||f,onClick:()=>F(`orders`),children:[(0,b.jsx)(`span`,{           children:`充值记录`         }),(0,b.jsx)(`span`,{           "aria-hi
+--- [checkout] Account-CFNFyFpM.pretty.js @11900
+unction P(e,t){   if(!/^newapi:[1-9][0-9]*$/.test(e)||!j(t))throw Error(`充值账号或金额不正确。`);   return`modex-native-checkout:${e}:${t}` } function F(e){   let t=JSON.parse(e);   if(!t||!/^[A-Za-z0-9_-]{16,80}$/.test(t.key)||!j(t.cny_fen)||t.order_id!==void 0&&!/^mdx_[a-f0-9]{32}$/.test(t.order_id))throw Error(`原订
+--- [checkout] Account-CFNFyFpM.pretty.js @12185
+der_id))throw Error(`原订单恢复信息异常，请从充值记录查询或联系支持。`);   return t } function I(e,t){   let n=P(e,t),r=`modex-native-checkout:`+e,i=localStorage.getItem(r);   if(i){     let t=F(i),n=P(e,t.cny_fen),a=localStorage.getItem(n);     if(!a)localStorage.setItem(n,JSON.stringify(t));     else if(F(a).key!==t.key)throw Er
+--- [checkout] Account-CFNFyFpM.pretty.js @16861
+(t.order_id)||![`pending`,`paid`].includes(t.status)||!j(t.cny_fen))throw Error(`订单状态未确认，请保留原订单后重试。`);   if(t.checkout_expired!==void 0&&typeof t.checkout_expired!=`boolean`)throw Error(`支付链接状态未确认，请查询原订单。`);   if(t.checkout_url){     let e=new URL(t.checkout_url);     if(e.origin!==`https://openapi.alipay.c
+--- [checkout] Account-CFNFyFpM.pretty.js @16897
+cludes(t.status)||!j(t.cny_fen))throw Error(`订单状态未确认，请保留原订单后重试。`);   if(t.checkout_expired!==void 0&&typeof t.checkout_expired!=`boolean`)throw Error(`支付链接状态未确认，请查询原订单。`);   if(t.checkout_url){     let e=new URL(t.checkout_url);     if(e.origin!==`https://openapi.alipay.com`||e.pathname!==`/gateway.do`||e.u
+--- [checkout] Account-CFNFyFpM.pretty.js @16966
+if(t.checkout_expired!==void 0&&typeof t.checkout_expired!=`boolean`)throw Error(`支付链接状态未确认，请查询原订单。`);   if(t.checkout_url){     let e=new URL(t.checkout_url);     if(e.origin!==`https://openapi.alipay.com`||e.pathname!==`/gateway.do`||e.username||e.password||e.hash)throw Error(`支付地址校验失败。`)   }   return t }
+--- [checkout] Account-CFNFyFpM.pretty.js @17001
+eof t.checkout_expired!=`boolean`)throw Error(`支付链接状态未确认，请查询原订单。`);   if(t.checkout_url){     let e=new URL(t.checkout_url);     if(e.origin!==`https://openapi.alipay.com`||e.pathname!==`/gateway.do`||e.username||e.password||e.hash)throw Error(`支付地址校验失败。`)   }   return t } function G({   refreshKey:e=0,cach
+--- [checkout] Account-CFNFyFpM.pretty.js @18972
+t&&E>=r.custom_amount.min_cny_fen&&E<=r.custom_amount.max_cny_fen),Q=S?.status===`pending`&&S.cny_fen===E&&!S.checkout_expired?S.checkout_url:void 0;   async function ee(e){     !r||!w||!r.payment_enabled||!Z||await z(r.account_id,E,async()=>{       if(!e())return;       let t=I(r.account_id,E)||{         k
+--- [checkout] Account-CFNFyFpM.pretty.js @18991
+nt.min_cny_fen&&E<=r.custom_amount.max_cny_fen),Q=S?.status===`pending`&&S.cny_fen===E&&!S.checkout_expired?S.checkout_url:void 0;   async function ee(e){     !r||!w||!r.payment_enabled||!Z||await z(r.account_id,E,async()=>{       if(!e())return;       let t=I(r.account_id,E)||{         key:crypto.randomUUI
+--- [orders] Account-CFNFyFpM.pretty.js @19821
+         }       }     })   }   async function $(e,t=S?.order_id){     if(!t||!r)return;     let n=W(await H(`orders/`+t+`/query`,{       account_id:r.account_id     }));     if(!e())return;     if(n.order_id!==t)throw Error(`返回的订单与查询订单不一致，请保留原订单并联系支持。`);     if(S?.order_id===t&&n.cny_fen!==S.cny_fen)thro
+--- [orders] Account-CFNFyFpM.pretty.js @25684
+{       className:`native-wallet-links`,children:[(0,b.jsxs)(`button`,{         disabled:!r||f,onClick:()=>F(`orders`),children:[(0,b.jsx)(`span`,{           children:`充值记录`         }),(0,b.jsx)(`span`,{           "aria-hidden":`true`,children:`↗`         })]       }),(0,b.jsxs)(`button`,{         disable
+--- [orders] Account-CFNFyFpM.pretty.js @26131
+en:`↗`         })]       })]     }),(0,b.jsxs)(u,{       open:P!==null,onClose:()=>F(null),wide:!0,title:P===`orders`?`充值记录`:`消费明细`,closeLabel:`关闭记录窗口`,description:P===`orders`?`与 New API 同一份账单，较早记录自动收起，随时可查。`:`按时间与模型查询，积分以实际结算为准。`,children:[P===`orders`&&r&&(0,b.jsx)(v,{         accountId:r.account_id,ch
+--- [orders] Account-CFNFyFpM.pretty.js @26190
+en:P!==null,onClose:()=>F(null),wide:!0,title:P===`orders`?`充值记录`:`消费明细`,closeLabel:`关闭记录窗口`,description:P===`orders`?`与 New API 同一份账单，较早记录自动收起，随时可查。`:`按时间与模型查询，积分以实际结算为准。`,children:[P===`orders`&&r&&(0,b.jsx)(v,{         accountId:r.account_id,checking:f,onCheck:e=>void q(t=>$(t,e))       },r.account_id)
+--- [orders] Account-CFNFyFpM.pretty.js @26268
+Label:`关闭记录窗口`,description:P===`orders`?`与 New API 同一份账单，较早记录自动收起，随时可查。`:`按时间与模型查询，积分以实际结算为准。`,children:[P===`orders`&&r&&(0,b.jsx)(v,{         accountId:r.account_id,checking:f,onCheck:e=>void q(t=>$(t,e))       },r.account_id),P===`usage`&&r&&(0,b.jsx)(h,{         accountId:r.account_id,quotaPerPoint:r.
+--- [credits] Account-CFNFyFpM.pretty.js @1508
+f r.price_sha256!=`string`||!/^[0-9a-f]{64}$/.test(r.price_sha256)||!Number.isSafeInteger(r.max_reserved_microcredits)||Number(r.max_reserved_microcredits)<1||Number(r.max_reserved_microcredits)>9e15||!Number.isSafeInteger(r.expires_at)||Number(r.expires_at)<1||Number(r.expires_at)>253402300799||typeof r.e
+--- [credits] Account-CFNFyFpM.pretty.js @1545
+f]{64}$/.test(r.price_sha256)||!Number.isSafeInteger(r.max_reserved_microcredits)||Number(r.max_reserved_microcredits)<1||Number(r.max_reserved_microcredits)>9e15||!Number.isSafeInteger(r.expires_at)||Number(r.expires_at)<1||Number(r.expires_at)>253402300799||typeof r.exchange_revision!=`string`||!/^[A-Za-
+--- [credits] Account-CFNFyFpM.pretty.js @1584
+isSafeInteger(r.max_reserved_microcredits)||Number(r.max_reserved_microcredits)<1||Number(r.max_reserved_microcredits)>9e15||!Number.isSafeInteger(r.expires_at)||Number(r.expires_at)<1||Number(r.expires_at)>253402300799||typeof r.exchange_revision!=`string`||!/^[A-Za-z0-9_.:-]{1,128}$/.test(r.exchange_revi
+--- [credits] Account-CFNFyFpM.pretty.js @9168
+ry`,"aria-label":`本次调用报价`,children:[(0,b.jsxs)(`strong`,{           children:[`本次最高预留 `,D(H.max_reserved_microcredits),` 积分`]         }),(0,b.jsx)(`p`,{           className:`access-hint`,children:`预留不等于最终扣费。按已确认的原生用量结算，未使用部分退回可用积分；结果不明时继续核对，不自动重发。`         }),(0,b.jsxs)(`p`,{           className:`access-hi
+--- [balance] Account-CFNFyFpM.pretty.js @21231
+t`,className:`access-notice access-notice-error`,children:a     }),(0,b.jsxs)(`div`,{       className:`native-balance`,children:[(0,b.jsx)(`span`,{         children:`可用积分`       }),(0,b.jsx)(`strong`,{         title:r?V(r.quota/r.quota_per_point)+` 积分`:void 0,children:r?r.quota>0&&r.quota/r.quota_per_point
+--- [balance] Account-CFNFyFpM.pretty.js @29110
+`,children:o?`已开放`:t?`读取中`:i?`待确认`:a?`未登录`:`筹备中`       })]     }),(0,b.jsxs)(`div`,{       className:`account-balance`,children:[(0,b.jsx)(`span`,{         children:`可用积分`       }),(0,b.jsx)(`strong`,{         "aria-label":`积分余额尚未确认`,children:`—`       }),(0,b.jsx)(`small`,{         children:`余额尚未确认，不代表余额为
+
+========== NewWorkflow AI disclosure / competition guard ==========
+--- [AI 使用记录] NewWorkflow-Ld6TEJjT.pretty.js @13508
+!n||!t.trim()?``:n.modelPattern.test(t)?t:`` } function w(e){   return e===`comp_cumcm` } function de(e,t){   if(!t)return`请先确认所填 AI 使用记录真实、完整，并已由参赛队人工核验`;   if(e.length<1||e.length>5)return`请填写 1–5 条真实 AI 工具记录`;   let n=new Set(b.map(e=>e.id)),r=new Set(oe.map(e=>e.id)),i=new Set;   for(let t=0;   t<e.length;   t+=1){     let a=e[t];     if(!a.provider_i
+--- [comp_] NewWorkflow-Ld6TEJjT.pretty.js @13454
+trim()):!1 } function ue(e,t){   let n=le(e);   return!n||!t.trim()?``:n.modelPattern.test(t)?t:`` } function w(e){   return e===`comp_cumcm` } function de(e,t){   if(!t)return`请先确认所填 AI 使用记录真实、完整，并已由参赛队人工核验`;   if(e.length<1||e.length>5)return`请填写 1–5 条真实 AI 工具记录`;   let n=new Set(b.map(e=>e.id)),r=new Set(oe.map(e=>e.id)),i=new Set;   for(let t=0;   t
+--- [comp_] NewWorkflow-Ld6TEJjT.pretty.js @45387
+o-500 hover:bg-indigo-400 text-white font-medium transition`,children:`确定`         })]       })]     })   }) } var Te=[{   value:`comp_tianfu`,icon:`🐼`,label:`天府杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`3月`,lang:`zh`,pages:30,stars:4,group:`zh` },{   value:`comp_certcup`,icon:`📝`,label:`认证杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4-5月`,lang:`z
+--- [comp_] NewWorkflow-Ld6TEJjT.pretty.js @45520
+p_tianfu`,icon:`🐼`,label:`天府杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`3月`,lang:`zh`,pages:30,stars:4,group:`zh` },{   value:`comp_certcup`,icon:`📝`,label:`认证杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4-5月`,lang:`zh`,pages:35,stars:3,group:`zh` },{   value:`comp_mathorcup`,icon:`☕`,label:`MathorCup`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4月`
+--- [comp_] NewWorkflow-Ld6TEJjT.pretty.js @45656
+ertcup`,icon:`📝`,label:`认证杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4-5月`,lang:`zh`,pages:35,stars:3,group:`zh` },{   value:`comp_mathorcup`,icon:`☕`,label:`MathorCup`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4月`,lang:`zh`,pages:30,stars:4,group:`zh` },{   value:`comp_teddy`,icon:`🧸`,label:`泰迪杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4月`,lan
+--- [comp_] NewWorkflow-Ld6TEJjT.pretty.js @45797
+cup`,icon:`☕`,label:`MathorCup`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4月`,lang:`zh`,pages:30,stars:4,group:`zh` },{   value:`comp_teddy`,icon:`🧸`,label:`泰迪杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4月`,lang:`zh`,pages:40,stars:3,group:`zh` },{   value:`comp_huadong`,icon:`🌊`,label:`华东杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4-5月`,lang:`zh
+--- [comp_] NewWorkflow-Ld6TEJjT.pretty.js @45929
+mp_teddy`,icon:`🧸`,label:`泰迪杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4月`,lang:`zh`,pages:40,stars:3,group:`zh` },{   value:`comp_huadong`,icon:`🌊`,label:`华东杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4-5月`,lang:`zh`,pages:30,stars:2,group:`zh` },{   value:`comp_huazhong`,icon:`🏛️`,label:`华中杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4-5月`,la
+--- [comp_] NewWorkflow-Ld6TEJjT.pretty.js @46065
+uadong`,icon:`🌊`,label:`华东杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4-5月`,lang:`zh`,pages:30,stars:2,group:`zh` },{   value:`comp_huazhong`,icon:`🏛️`,label:`华中杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4-5月`,lang:`zh`,pages:30,stars:2,group:`zh` },{   value:`comp_wuyi`,icon:`🎯`,label:`五一杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`5月`,lang:`z
+--- [comp_] NewWorkflow-Ld6TEJjT.pretty.js @46203
+zhong`,icon:`🏛️`,label:`华中杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`4-5月`,lang:`zh`,pages:30,stars:2,group:`zh` },{   value:`comp_wuyi`,icon:`🎯`,label:`五一杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`5月`,lang:`zh`,pages:30,stars:3,group:`zh` },{   value:`comp_zhongqing`,icon:`🌱`,label:`中青杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`5月`,lang:`zh`
+--- [comp_] NewWorkflow-Ld6TEJjT.pretty.js @46334
+omp_wuyi`,icon:`🎯`,label:`五一杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`5月`,lang:`zh`,pages:30,stars:3,group:`zh` },{   value:`comp_zhongqing`,icon:`🌱`,label:`中青杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`5月`,lang:`zh`,pages:30,stars:3,group:`zh` },{   value:`comp_yangtze`,icon:`🌉`,label:`长三角`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`5月`,lang:`
+--- [comp_] NewWorkflow-Ld6TEJjT.pretty.js @46470
+hongqing`,icon:`🌱`,label:`中青杯`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`5月`,lang:`zh`,pages:30,stars:3,group:`zh` },{   value:`comp_yangtze`,icon:`🌉`,label:`长三角`,desc:`赛题分析 → 建模 → 编程 → 图表 → 论文 → 编译`,time:`5月`,lang:`zh`,pages:30,stars:2,group:`zh` },{   value:`comp_stats`,icon:`📈`,label:`统计建模大赛`,desc:`选题规划 → 数据采集分析 → 图表 → 论文 → 编译`,time:`5月`,lang:`zh
+--- [enable_comp_review] NewWorkflow-Ld6TEJjT.pretty.js @56843
+en`,`nature`]).has(Br)?`en`:`zh`):Y?(e.language=Te.find(e=>e.value===u)?.lang||`zh`,e.output_format=k,e.flowchart_engine=P,xn&&(e.enable_comp_review=!0)):Cr?(e.project_type=V,e.skip_report=!Mt,Mt&&(e.output_format=Pt)):Or&&(e.output_format=Ar),vi&&(e.skip_improvement_loop=!yi),R.trim()&&(e.format_text=R.trim()),I?e.template_file=`user_data/${I.name}`:Q&&Or&&(e.templ
+--- [enable_comp_review] NewWorkflow-Ld6TEJjT.pretty.js @65877
+.min_tables=hn?ln:`auto`,n.min_models=_n?dn:`auto`,N!=="default"&&(n.figure_style=N),et!==`strict`&&(n.validation_mode=et),xn&&(n.enable_comp_review=!0)       }       Or&&(n.output_format=Ar,n.language=Mr,n.max_rounds=Pr,n.target_score=Ir,F.trim()&&(n.custom_requirements=F.trim()),Q&&(n.template_files=[`user_data/${Q.name}`],n.template_file=`user_data/${Q.name}`)),k
+--- [competition] NewWorkflow-Ld6TEJjT.pretty.js @50066
+`~20-40 分钟`,category:`ip` }],je=[{   value:`academic_zh`,label:`学术论文（中文）` },{   value:`academic_en`,label:`学术论文（英文）` },{   value:`competition`,label:`竞赛论文（数模/认证杯等）` },{   value:`course`,label:`课程论文 / 课程报告` },{   value:`nature`,label:`Nature / SCI 期刊风格` }],Me=[{   value:`cs`,label:`计算机科学` },{   value:`humanities`,label:`人文社科` },{   value:`economics`,label:`经济管
+--- [competition] NewWorkflow-Ld6TEJjT.pretty.js @65440
+ength>0&&(n.template_files=e.map(e=>`user_data/${e.name}`))       }       if(Y){         let e=Te.find(e=>e.value===u);         n.competition=u.replace(`comp_`,``),n.language=e?.lang||`zh`,n.max_pages=yt,n.output_format=k,n.flowchart_engine=P,yn&&(n.rich_mode=!0),u===`comp_stats`?gt.trim()&&(n.custom_title=gt.trim()):gt.trim()&&(n.problem_id=gt.trim()),n.tool
+--- [competition] NewWorkflow-Ld6TEJjT.pretty.js @75431
+condary)]`}`,children:[`📝`,` 学术写作`]           }),(0,v.jsxs)(`button`,{             type:`button`,onClick:()=>{               ht(`competition`),f(`comp_cumcm`),bt(30),x(!1)             },className:`flex-1 px-2.5 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition ${B===`competition`?`bg-[var(--bg-card)] text-[var(--text-primary)] shadow-sm`:`text
+--- [competition] NewWorkflow-Ld6TEJjT.pretty.js @75585
+mcm`),bt(30),x(!1)             },className:`flex-1 px-2.5 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition ${B===`competition`?`bg-[var(--bg-card)] text-[var(--text-primary)] shadow-sm`:`text-[var(--text-muted)] hover:text-[var(--text-secondary)]`}`,children:[`🏆`,` 竞赛工作流`]           }),(0,v.jsxs)(`button`,{             type:`button`,onClick:(
+--- [competition] NewWorkflow-Ld6TEJjT.pretty.js @85191
+5 bg-white rounded-full m-auto mt-[3px]`                 })               })]             },e.value)           })         }),B===`competition`&&(()=>{           let e=Te.filter(e=>e.group===`zh`),t=Te.filter(e=>e.group===`en`),n=Math.min(e.length,t.length)*58;           return(0,v.jsxs)(`div`,{             className:`grid grid-cols-2 gap-4`,children:[(0,v.jsx
+
+========== editor: word/docx/latex toolchain (LatexEditor) ==========
+--- [xelatex] LatexEditor-I1nsgpA4.pretty.js @109078
+（但保留用户已填的标题、摘要、关键词文字内容） - 保留当前的 \\input{sections/...} 引用不变 - 从 _templates/[文件夹]/ 复制缺失的 cls、字体、图片文件到 paper/  第四步：编译验证 运行 xelatex 编译确认无错误。`),setTimeout(()=>{                   document.querySelector(`[data-send-btn]`)?.click()                 },100)               },disabled:G||N,className:`btn-ghost px-3 py-1 text-[11px] text-a
+--- [docx] LatexEditor-I1nsgpA4.pretty.js @1649
+w URLSearchParams;   return t.sha256&&n.set(`expected_sha256`,t.sha256),t.fresh===!1&&n.set(`allow_stale`,`true`),`${e}/docx?${n}` } function ie(e,t){   let n=e?.runId===t.run_id?e:null;   if(n?.sequence&&t.sequence&&t.sequence<n.sequence||t.type===`heartbeat`&&n?.connectedAt&&Date.now()-n.connectedAt<1e4)return n;   let r
+--- [docx] LatexEditor-I1nsgpA4.pretty.js @3455
+ let t=e?.export;   if(!(!t?.success||!t.published||t.fresh===!1||!/^[a-f0-9]{64}$/.test(t.output_sha256||``)))return t.docx_path||t.pdf_path } var ce=e=>Math.min(15e3,1e3*2**Math.min(4,e)); async function le(e,t,n,r=15e3){   let i=new AbortController,a=()=>i.abort(),o=()=>{     n.removeEventListener(`abort`,a),i.abort()  
+--- [docx] LatexEditor-I1nsgpA4.pretty.js @51032
+=>{     Lt.current++   }),[e]);   let Rt=async()=>{     let t=++Lt.current;     try{       let n=await fetch(`${P}/${e}/docx-status`,{         cache:`no-store`       });       if(!n.ok)return;       let r=await n.json();       if(t!==Lt.current)return;       It(r),Pt(!!r.available)     }     catch{ }   },[zt,Bt]=(0,b.useSt
+--- [docx] LatexEditor-I1nsgpA4.pretty.js @54540
+eof e?.id==`string`&&typeof e?.name==`string`):[]))     }).catch(()=>{ });     let s=++Lt.current;     fetch(`${P}/${e}/docx-status`).then(e=>e.ok?e.json():null).then(e=>{       e?.available&&t&&s===Lt.current&&(Pt(!0),It(e),e.path&&Bt(e.path+`?t=`+(e.sha256||Date.now())))     }).catch(()=>{ }),T(`${P}/${e}/chat-history`,i
+--- [docx] LatexEditor-I1nsgpA4.pretty.js @59921
+`),rr(!0),m(``);       return     }     if(i===`document`||i===`binary`){       St(`preview`),Bt(t+`?t=`+Date.now()),F(`docx`),rr(!0),m(``);       return     }     if(St(e=>e===`preview`?`split`:e),R===`markdown`&&A(``),g&&(V.current[g]=v),V.current[t]!==void 0){       m(``),_(t),y(V.current[t]),S(V.current[t]),w(U.current
+--- [docx] LatexEditor-I1nsgpA4.pretty.js @60377
+  }     let a;     try{       let n=await ue(`${P}/${e}`,t);       if(r())return;       if(n.type===`binary`||n.type===`docx`){         Bt(t),F(`docx`);         return       }       a=n     }     catch(e){       if(r())return;       m(`无法打开 ${t}：${e instanceof Error?e.message:`读取失败`}。`);       return     }     m(``),_(t),y
+--- [docx] LatexEditor-I1nsgpA4.pretty.js @60402
+     let n=await ue(`${P}/${e}`,t);       if(r())return;       if(n.type===`binary`||n.type===`docx`){         Bt(t),F(`docx`);         return       }       a=n     }     catch(e){       if(r())return;       m(`无法打开 ${t}：${e instanceof Error?e.message:`读取失败`}。`);       return     }     m(``),_(t),y(a.content),S(a.content),
+--- [docx] LatexEditor-I1nsgpA4.pretty.js @69319
+)?n.errors:[]),ke(Array.isArray(n.precheck)?n.precheck:[]),Me(!!n.kept_previous_pdf),n.success)R===`markdown`?(Pt(!0),n.docx_path&&(Lt.current++,It({           available:!0,fresh:!0,path:n.docx_path,sha256:n.output_sha256         }),Bt(n.docx_path+`?t=`+(n.output_sha256||Date.now())),F(`docx`)),j(e=>[...e,{           role:
+
+========== localStorage keys ==========
+--- [localStorage.getItem(] Account-CFNFyFpM.pretty.js @12200
+记录查询或联系支持。`);   return t } function I(e,t){   let n=P(e,t),r=`modex-native-checkout:`+e,i=localStorage.getItem(r);   if(i){     let t=F(i),n=P(e,t.cny_fen),a=localStorage.getItem(n);     if(!a)localStorage.setItem(n,JSON.stringify(t));     e
+--- [localStorage.getItem(] Account-CFNFyFpM.pretty.js @12268
+native-checkout:`+e,i=localStorage.getItem(r);   if(i){     let t=F(i),n=P(e,t.cny_fen),a=localStorage.getItem(n);     if(!a)localStorage.setItem(n,JSON.stringify(t));     else if(F(a).key!==t.key)throw Error(`存在多笔待核对的充值，请从充值记录查询或联系支持。`);   
+--- [localStorage.getItem(] Account-CFNFyFpM.pretty.js @12460
+.key)throw Error(`存在多笔待核对的充值，请从充值记录查询或联系支持。`);     localStorage.removeItem(r)   }   let a=localStorage.getItem(n);   if(!a)return null;   let o=F(a);   if(o.cny_fen!==t)throw Error(`充值金额与恢复信息不一致。`);   return o } function L(e,t){   localStora
+--- [localStorage.setItem(] Account-CFNFyFpM.pretty.js @12303
+getItem(r);   if(i){     let t=F(i),n=P(e,t.cny_fen),a=localStorage.getItem(n);     if(!a)localStorage.setItem(n,JSON.stringify(t));     else if(F(a).key!==t.key)throw Error(`存在多笔待核对的充值，请从充值记录查询或联系支持。`);     localStorage.removeItem(r)   }   
+--- [localStorage.setItem(] Account-CFNFyFpM.pretty.js @12601
+ o=F(a);   if(o.cny_fen!==t)throw Error(`充值金额与恢复信息不一致。`);   return o } function L(e,t){   localStorage.setItem(P(e,t.cny_fen),JSON.stringify(t)) } function R(e,t){   I(e,t.cny_fen)?.key===t.key&&localStorage.removeItem(P(e,t.cny_fen)) } asyn
+--- [localStorage.getItem(] ChatWorkbench-B0gSrHl3.pretty.js @1049
+ar T=e(t(),1),E=`modex.chat.draft.v1:`; function D(e){   try{     let t=JSON.parse(window.localStorage.getItem(E+e)||`null`);     return typeof t?.text==`string`&&t.text.length<=1e5?t.text:``   }   catch{     return``   } } function O(e,t){ 
+--- [localStorage.getItem(] ChatWorkbench-B0gSrHl3.pretty.js @146164
+)(`polish`),[Z,Gt]=(0,T.useState)(()=>{if(typeof window>`u`)return[];try{return Nt(window.localStorage.getItem(Mt))}catch{return[]}}),[Yt,Xt]=(0,T.useState)(null),[Zt,Q]=(0,T.useState)(null),[$t,an]=(0,T.useState)({}),[cn,ln]=(0,T.useState)(
+--- [localStorage.setItem(] ChatWorkbench-B0gSrHl3.pretty.js @1227
+1e5?t.text:``   }   catch{     return``   } } function O(e,t){   try{     return t?window.localStorage.setItem(E+e,JSON.stringify({       text:t,updatedAt:Date.now()     })):window.localStorage.removeItem(E+e),!0   }   catch{     return!1   
+--- [localStorage.setItem(] ChatWorkbench-B0gSrHl3.pretty.js @147353
+own`,e),document.removeEventListener(`keydown`,t)}},[Ft]),(0,T.useEffect)(()=>{try{window.localStorage.setItem(Mt,JSON.stringify(Z))}catch{}},[Z]),(0,T.useEffect)(()=>{if(t)return Te(t),()=>{y.getState().stopPolling()}},[t]),(0,T.useEffect)(
+--- [localStorage.getItem(] LatexEditor-I1nsgpA4.pretty.js @9822
+  let r=`modex.editor.undo:${e}`,i=(async()=>{     let n=E.get(e)||``;     try{       n||=localStorage.getItem(r)||``     }     catch{ }     if(t&&n&&n!==t)throw Error(`另一次撤回结果尚未确认，请先重试那次撤回；不会撤回不同版本`);     n||=t||``;     let i=new AbortContr
+--- [localStorage.getItem(] LatexEditor-I1nsgpA4.pretty.js @11035
+urn D.set(e,i),i } var O=e=>`modex-image-request:${e}`; function Se(e){   try{     return localStorage.getItem(O(e))   }   catch{     return null   } } function Ce(e,t){   Se(e)===t&&localStorage.removeItem(O(e)) } function we(e){   let t=e;
+--- [localStorage.setItem(] LatexEditor-I1nsgpA4.pretty.js @10467
+!/^[a-f0-9]{32}$/.test(n))throw Error(`没有可确认的撤回版本`);       E.set(e,n);       try{         localStorage.setItem(r,n)       }       catch{ }       let t=await fetch(`${e}/ai-agent-undo?version_id=${n}`,{         method:`POST`,signal:i.signal  
+--- [localStorage.setItem(] LatexEditor-I1nsgpA4.pretty.js @11984
+ Ee(e,t){   if(Se(e))throw Error(`已有待确认的生图请求，请先查询结果。`);   let n=crypto.randomUUID();   if(localStorage.setItem(O(e),n),Se(e)!==n)throw Error(`无法保存生图恢复记录，未发起生成。`);   return Te(await fetch(`/api/editor/${encodeURIComponent(e)}/generate-image`,
+--- [localStorage.getItem(] WorkflowDetail-bN89YgNS.pretty.js @442683
+     }),t.status===`running`&&(0,k.jsx)(`button`,{           onClick:()=>{             if(localStorage.getItem(`mhagent_pause_warning_seen`)!==`true`){               if(!confirm(`确认暂停？  说明：暂停会立即终止本地进程。但 Anthropic 服务端已发出的 API 请求会继续生成响应（约 1-3 
+--- [localStorage.setItem(] WorkflowDetail-bN89YgNS.pretty.js @442933
+oken 仍会计费——这是 Anthropic API 的原生行为，所有 Claude CLI 工具都一样。  此提示只显示一次。`))return;               localStorage.setItem(`mhagent_pause_warning_seen`,`true`)             }             m(t.id)           },title:`暂停后已发出的 API 请求仍会消耗少量 token`,className:`b
+--- [localStorage.getItem(] index-BeImsYqE.pretty.js @232679
+ght`,`green`],P={   bg:`#c7e6c9`,text:`#1e3524`,accent:`#2e7d32` }; function F(){   let e=localStorage.getItem(`MH Agent-theme`);   return e===`light`||e===`green`||e===`custom`||e===`warm`?e:`warm` } function re(){   try{     let e=localSto
+--- [localStorage.getItem(] index-BeImsYqE.pretty.js @232822
+`light`||e===`green`||e===`custom`||e===`warm`?e:`warm` } function re(){   try{     let e=localStorage.getItem(`MH Agent-custom-colors`);     if(e){       let t=JSON.parse(e);       if(t&&typeof t.bg==`string`&&typeof t.text==`string`&&typeo
+--- [localStorage.getItem(] index-BeImsYqE.pretty.js @315142
+})   }) } function at({   children:e }){   let[t,n]=(0,j.useState)(()=>typeof window<`u`&&localStorage.getItem(`mhagent_disclaimer_accepted`)===`true`);   return t?(0,M.jsx)(M.Fragment,{     children:e   }):(0,M.jsx)(`div`,{     className:`m
+--- [localStorage.setItem(] index-BeImsYqE.pretty.js @233406
+j.useEffect)(()=>{     let e=document.documentElement;     e.setAttribute(`data-theme`,t),localStorage.setItem(`MH Agent-theme`,t),t===`custom`?(e.style.setProperty(`--bg-base`,r.bg),e.style.setProperty(`--text-primary`,r.text),e.style.setPr
+--- [localStorage.setItem(] index-BeImsYqE.pretty.js @233737
+--text-primary`),e.style.removeProperty(`--accent`))   },[t,r]),(0,j.useEffect)(()=>{     localStorage.setItem(`MH Agent-custom-colors`,JSON.stringify(r))   },[r]),(0,M.jsx)(ie.Provider,{     value:{       theme:t,setTheme:n,toggle:()=>n(e=>
+--- [localStorage.setItem(] index-BeImsYqE.pretty.js @318458
+`           })]         })]       }),(0,M.jsx)(`button`,{         onClick:()=>{           localStorage.setItem(`mhagent_disclaimer_accepted`,`true`),n(!0)         },className:`w-full py-3 rounded-xl bg-indigo-500 hover:bg-indigo-400 text-whi
+--- [localStorage.getItem(] useWebSocket-DhwRyw4C.pretty.js @3057
+hat-outbox:v1:${e}`; function h(e){   if(p.has(e))return p.get(e)||null;   try{     let t=localStorage.getItem(m(e));     if(t){       let e=JSON.parse(t);       if(typeof e.text==`string`&&/^[A-Za-z0-9_-]{8,80}$/.test(e.turn_id)&&[`auto`,`c
+--- [localStorage.setItem(] useWebSocket-DhwRyw4C.pretty.js @3387
+     }   }   catch{ }   return p.get(e)||null } function g(e,t){   p.set(e,t);   try{     localStorage.setItem(m(e),JSON.stringify(t))   }   catch{ } } function _(e,t){   if(!(t&&h(e)?.turn_id!==t)){     p.set(e,null);     try{       localSt
+
+========== CSS version banners ==========
+--- AccountHistory-BQC6oeQy.css
+
+--- AccountModelCatalog-B-39sxIm.css
+
+--- ArtifactLibrary-BZT0hHTw.css
+
+--- ChatWorkbench-B0-Ql5KH.css
+
+--- index-mr3gZRQa.css
+/*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com 
+--- LatexEditor-BlOG1ykV.css
+
+--- newApiWallet-CX4Wo2tR.css
+
+--- NewWorkflow-BphoyP15.css

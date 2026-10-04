@@ -1,0 +1,6595 @@
+{
+ "routers.account": {
+  "module": "routers.account",
+  "router_objects": [
+   "router",
+   "newapi_account_router",
+   "account_inference_router",
+   "account_messages_router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": null,
+    "name": null,
+    "status_code": null,
+    "tags": [],
+    "methods": [],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": null,
+    "name": null,
+    "status_code": null,
+    "tags": [],
+    "methods": [],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": null,
+    "name": null,
+    "status_code": null,
+    "tags": [],
+    "methods": [],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/status",
+    "name": "status",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/workbench-access",
+    "name": "workbench_access_status",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/login",
+    "name": "login",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/logout",
+    "name": "logout",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/activate",
+    "name": "activate",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/send-code",
+    "name": "account-send-code",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/register",
+    "name": "account-register",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/reset-password",
+    "name": "account-reset-password",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/bind-email",
+    "name": "account-bind-email",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/identity",
+    "name": "account-identity-submit",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/identity/withdraw",
+    "name": "account-identity-withdraw",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/licenses/claim",
+    "name": "account-license-claim",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/logout-all",
+    "name": "account-logout-all",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/identity",
+    "name": "account-identity-status",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/model-account",
+    "name": "account-model-account-status",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/model-account",
+    "name": "account-model-account-link",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/access-mode",
+    "name": "access_mode_status",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/access-mode",
+    "name": "select_access_mode",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/models",
+    "name": "account_models",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/credits",
+    "name": "account_credits",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/licenses/{license_id}/unbind",
+    "name": "unbind",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "license_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/wallet/catalog",
+    "name": "account-wallet-catalog",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/wallet/quotes",
+    "name": "account-wallet-quotes",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/wallet/orders",
+    "name": "account-wallet-orders",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/wallet/orders/{order_id}",
+    "name": "account-wallet-orders/{order_id}",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/wallet/orders",
+    "name": "account-wallet-orders",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/wallet/entries",
+    "name": "account-wallet-entries",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/account/wallet/history",
+    "name": "account-wallet-history",
+    "status_code": null,
+    "tags": [
+     "account"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/realname",
+    "name": "realname",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/image-settings",
+    "name": "image_settings",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/image-settings",
+    "name": "save_image_settings",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "PUT"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/software",
+    "name": "software",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/software/consent",
+    "name": "software_consent",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/login/verify",
+    "name": "verify",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/register",
+    "name": "handle",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/register-code",
+    "name": "handle",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/reset-email",
+    "name": "handle",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/wallet",
+    "name": "wallet",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/checkout",
+    "name": "checkout",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/orders",
+    "name": "orders",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "page",
+      "type": "int",
+      "required": false,
+      "default": "1",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/orders/{number}/query",
+    "name": "query",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "number",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/history",
+    "name": "history",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "page",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "start",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "end",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "model",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/usage",
+    "name": "usage",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "start",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "end",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "model",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "cursor",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/adjustments",
+    "name": "adjustments",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "page",
+      "type": "int",
+      "required": false,
+      "default": "1",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "newapi_account_router",
+    "path": "/native/requests",
+    "name": "requests",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "page",
+      "type": "int",
+      "required": false,
+      "default": "1",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "account_inference_router",
+    "path": "/inference/capabilities",
+    "name": "capabilities",
+    "status_code": null,
+    "tags": [
+     "account-text-candidate"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "account_inference_router",
+    "path": "/inference/operations",
+    "name": "operations",
+    "status_code": null,
+    "tags": [
+     "account-text-candidate"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "account_inference_router",
+    "path": "/inference/operations/{operation_id}",
+    "name": "recover",
+    "status_code": null,
+    "tags": [
+     "account-text-candidate"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "operation_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "account_inference_router",
+    "path": "/inference/operations",
+    "name": "submit",
+    "status_code": null,
+    "tags": [
+     "account-text-candidate"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "account_messages_router",
+    "path": "/messages/capabilities",
+    "name": "capabilities",
+    "status_code": null,
+    "tags": [
+     "account-messages"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "account_messages_router",
+    "path": "/messages/operations",
+    "name": "operations",
+    "status_code": null,
+    "tags": [
+     "account-messages"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "account_messages_router",
+    "path": "/messages/operations/{operation_id}",
+    "name": "recover",
+    "status_code": null,
+    "tags": [
+     "account-messages"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "operation_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "account_messages_router",
+    "path": "/messages/operations",
+    "name": "submit",
+    "status_code": null,
+    "tags": [
+     "account-messages"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   }
+  ]
+ },
+ "routers.account_inference": {
+  "module": "routers.account_inference",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/inference/capabilities",
+    "name": "capabilities",
+    "status_code": null,
+    "tags": [
+     "account-text-candidate"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/inference/operations",
+    "name": "operations",
+    "status_code": null,
+    "tags": [
+     "account-text-candidate"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/inference/operations/{operation_id}",
+    "name": "recover",
+    "status_code": null,
+    "tags": [
+     "account-text-candidate"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "operation_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/inference/operations",
+    "name": "submit",
+    "status_code": null,
+    "tags": [
+     "account-text-candidate"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   }
+  ]
+ },
+ "routers.account_messages": {
+  "module": "routers.account_messages",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/messages/capabilities",
+    "name": "capabilities",
+    "status_code": null,
+    "tags": [
+     "account-messages"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/messages/operations",
+    "name": "operations",
+    "status_code": null,
+    "tags": [
+     "account-messages"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/messages/operations/{operation_id}",
+    "name": "recover",
+    "status_code": null,
+    "tags": [
+     "account-messages"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "operation_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/messages/operations",
+    "name": "submit",
+    "status_code": null,
+    "tags": [
+     "account-messages"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   }
+  ]
+ },
+ "routers.artifact_context": {
+  "module": "routers.artifact_context",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/artifact-context/inspect/{artifact_path:path}",
+    "name": "get_artifact_context",
+    "status_code": null,
+    "tags": [
+     "artifact-context"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "artifact_path",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/artifact-context/prompt/build",
+    "name": "build_artifact_prompt",
+    "status_code": null,
+    "tags": [
+     "artifact-context"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "PromptIn",
+    "body_fields": {
+     "path": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "instruction": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "action": {
+      "type": "typing.Literal['modify', 'regenerate', 'validate']",
+      "required": false,
+      "default": "'modify'"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   }
+  ]
+ },
+ "routers.artifacts": {
+  "module": "routers.artifacts",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/artifacts",
+    "name": "list_artifacts",
+    "status_code": null,
+    "tags": [
+     "artifacts"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "view",
+      "type": "str",
+      "required": false,
+      "default": "'all'",
+      "fields": null
+     },
+     {
+      "name": "collection",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "offset",
+      "type": "int",
+      "required": false,
+      "default": "0",
+      "fields": null
+     },
+     {
+      "name": "limit",
+      "type": "int",
+      "required": false,
+      "default": "40",
+      "fields": null
+     },
+     {
+      "name": "query",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "snapshot",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "refresh",
+      "type": "bool",
+      "required": false,
+      "default": "False",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/artifacts/upload",
+    "name": "upload_files",
+    "status_code": null,
+    "tags": [
+     "artifacts"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "上传用户文件到工作区（数据、大纲、参考文献等）。\ntarget_dir 可选值：'user_data'（默认）、''（根目录）、'paper'、'figures'。\n\n``mark_as_problem`` couples the uploaded source and its internal marker in\none request.  This prevents collaborative/automatic vision selection from\ndiverging when a second, best-effort marker upload is lost.",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "Body_upload_files_api_workflows__wf_id__artifacts_upload_post",
+    "body_fields": {
+     "files": {
+      "type": "typing.List[fastapi.datastructures.UploadFile]",
+      "required": true,
+      "default": null
+     },
+     "target_dir": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "'user_data'"
+     },
+     "mark_as_problem": {
+      "type": "<class 'bool'>",
+      "required": false,
+      "default": "False"
+     },
+     "prepare_chat_materials": {
+      "type": "<class 'bool'>",
+      "required": false,
+      "default": "False"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/artifacts/extract-status",
+    "name": "extract_status",
+    "status_code": null,
+    "tags": [
+     "artifacts"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "查询当前目录下所有文件的提取状态. 前端轮询用.\n\n返回结构:\n{\n  \"files\": {\n    \"01.pdf\": {\"status\": \"done\", \"extracted_path\": \"01_extracted.txt\", ...},\n    \"02.pdf\": {\"status\": \"extracting\", ...},\n    \"03.pdf\": {\"status\": \"failed\", \"error\": \"...\"},\n  },\n  \"summary\": {\"total\": 3, \"pending\": 0, \"extracting\": 1, \"done\": 1, \"failed\": 1}\n}",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "target_dir",
+      "type": "str",
+      "required": false,
+      "default": "'user_data'",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/artifacts/custom-requirements",
+    "name": "upload_custom_requirements",
+    "status_code": null,
+    "tags": [
+     "artifacts"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "上传自定义要求文档。任何支持的格式（含 Word/PDF）都会被转成纯文本写入 CUSTOM_REQUIREMENTS.md。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "Body_upload_custom_requirements_api_workflows__wf_id__artifacts_custom_requirements_post",
+    "body_fields": {
+     "file": {
+      "type": "<class 'fastapi.datastructures.UploadFile'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/artifacts/{path:path}",
+    "name": "update_artifact",
+    "status_code": null,
+    "tags": [
+     "artifacts"
+    ],
+    "methods": [
+     "PUT"
+    ],
+    "doc": "更新（或创建）产物文件。用于用户在线编辑大纲等文本文件。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "ArtifactUpdateBody",
+    "body_fields": {
+     "content": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "path",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/artifacts/export",
+    "name": "export_workspace",
+    "status_code": null,
+    "tags": [
+     "artifacts"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "导出工作区为 zip 文件（只包含用户需要的文件）",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/artifacts/{path:path}",
+    "name": "read_artifact",
+    "status_code": null,
+    "tags": [
+     "artifacts"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "读取或下载产物文件。\n- `?raw=true` 下载原始文件\n- `?preview=html` 返回 HTML 预览（仅对 .docx 有效，可被 iframe 直接 src= 加载）\n- `?as_png=true` 把 .pdf 首页渲染成 PNG 返回（浏览器 <img> 无法显示 PDF，\n  流程图/架构图/TikZ 图是矢量 PDF，预览时经此转 PNG 才能显示）",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "raw",
+      "type": "bool",
+      "required": false,
+      "default": "False",
+      "fields": null
+     },
+     {
+      "name": "preview",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "as_png",
+      "type": "bool",
+      "required": false,
+      "default": "False",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "path",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   }
+  ]
+ },
+ "routers.chat": {
+  "module": "routers.chat",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/materials",
+    "name": "materials_status",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/materials/prepare",
+    "name": "prepare_materials",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "MaterialPrepareIn",
+    "body_fields": {
+     "paths": {
+      "type": "list[str] | None",
+      "required": false,
+      "default": "None"
+     },
+     "retry": {
+      "type": "<class 'bool'>",
+      "required": false,
+      "default": "False"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/materials/upload",
+    "name": "upload_materials",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "Body_upload_materials_api_workflows__wf_id__chat_materials_upload_post",
+    "body_fields": {
+     "files": {
+      "type": "list[fastapi.datastructures.UploadFile]",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/config",
+    "name": "get_chat_config",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/config",
+    "name": "patch_chat_config",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "PATCH"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "ChatConfigIn",
+    "body_fields": {
+     "interaction_mode": {
+      "type": "typing.Literal['auto', 'conversation', 'focused', 'full']",
+      "required": true,
+      "default": null
+     },
+     "model_preset_id": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "effort": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "project_brief": {
+      "type": "typing.Optional[chat.ChatProjectBriefIn]",
+      "required": false,
+      "default": "None"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/session",
+    "name": "open_session",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/session",
+    "name": "close_session",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "DELETE"
+    ],
+    "doc": "关闭会话（前端离开工作台、或用户主动结束）。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/turns/{turn_id}",
+    "name": "turn_receipt",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "Exact read-only receipt, independent of CLI liveness or the latest page.",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "turn_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/say",
+    "name": "say",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "SayIn",
+    "body_fields": {
+     "text": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "turn_id": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     },
+     "mode": {
+      "type": "typing.Literal['auto', 'conversation', 'focused', 'full']",
+      "required": false,
+      "default": "'auto'"
+     },
+     "focus_target": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/messages/{msg_id}/confirm",
+    "name": "confirm",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "用户点「跑」。这是唯一能让 skill 真正执行的入口。\n\n⛔ 三道闸按顺序：\n   ① 消息必须是 proposed 状态（不能重复确认、不能确认已取消的）\n   ② 依赖必须齐（出队时还会再查一次，因为排队期间可能变）\n   ③ 上游指纹必须没变 —— 你收到卡片去吃饭，回来点「跑」，\n      这期间上游可能被改过，卡片上写的\"基于 X@a1b2\"已不成立",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "Optional",
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "msg_id",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/messages/{msg_id}/resume-draft",
+    "name": "resume_focused_draft",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "Reopen the SAME card for review, never queue/run it automatically.",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "ResumeDraftIn",
+    "body_fields": {
+     "revision": {
+      "type": "<class 'int'>",
+      "required": true,
+      "default": null
+     },
+     "resolution": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "msg_id",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/messages/{msg_id}/proposal",
+    "name": "edit_proposal",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "PATCH"
+    ],
+    "doc": "只允许改系统整理的执行要点；用户原话永远保持只读。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "ProposalEditIn",
+    "body_fields": {
+     "instruction": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "revision": {
+      "type": "<class 'int'>",
+      "required": true,
+      "default": null
+     },
+     "execution_scope": {
+      "type": "typing.Optional[typing.Literal['full', 'focused']]",
+      "required": false,
+      "default": "None"
+     },
+     "focus_target": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     },
+     "model_preset_id": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     },
+     "effort": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     },
+     "target_paths": {
+      "type": "typing.Optional[list[str]]",
+      "required": false,
+      "default": "None"
+     },
+     "target_sections": {
+      "type": "typing.Optional[dict[str, list[str]]]",
+      "required": false,
+      "default": "None"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "msg_id",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/queue",
+    "name": "queue",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "队列面板：正在跑的 + 排队中的，带每条的 skill 和预计耗时。\n\n⛔ 正在跑的那条已经不在队列里了（消费循环 get 出来了），要单独取。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/queue/{msg_id}/promote",
+    "name": "promote",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "插到队首。\n\n⛔ 不打断正在跑的那条 —— 那会损坏工作区（两个进程写同一批文件）。\n   只是排到它后面第一个。想立刻跑就先 cancel 当前那条。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "msg_id",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/messages/{msg_id}/validation-proposal",
+    "name": "create_validation_proposal",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "从真实完成产物直接创建只读质检卡，不再经过主模型二次意图判断。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "msg_id",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/messages/{msg_id}/cancel",
+    "name": "cancel",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "取消提议或正在跑的任务。\n\n⛔ 三种状态三种处理：\n   proposed —— 直接改库（还没进队列）\n   queued   —— 改库，消费循环出队时会跳过（不碰进程）\n   running  —— 必须杀进程",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "msg_id",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/messages",
+    "name": "messages",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "拉消息列表。\n\n⛔ 前端 WS 重连后必须调这个 —— WS 不补发，断线期间丢的提议卡片\n   只能靠重拉。库是真相源，WS 只是实时加速。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "after",
+      "type": "int",
+      "required": false,
+      "default": "0",
+      "fields": null
+     },
+     {
+      "name": "before",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     },
+     {
+      "name": "limit",
+      "type": "int",
+      "required": false,
+      "default": "100",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/history",
+    "name": "history",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "Independent task history across sessions, including old and failed work.",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "before",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     },
+     {
+      "name": "limit",
+      "type": "int",
+      "required": false,
+      "default": "30",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/messages/{msg_id}/rollback-preview",
+    "name": "rollback_preview",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "Read-only eligibility snapshot. POST independently rechecks before undo.",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "msg_id",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/messages/{msg_id}/diff",
+    "name": "message_diff",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "返回已提交局部修改的可审阅差异；不读取或暴露私有 Skill。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "msg_id",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/messages/{msg_id}/events",
+    "name": "message_run_events",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "Replay sanitized V2 execution events after a per-run sequence.\n\nWebSocket delivery is only a low-latency hint.  This endpoint is the\nauthoritative reconnect path and deliberately returns no raw model stream.",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "after_sequence",
+      "type": "int",
+      "required": false,
+      "default": "0",
+      "fields": null
+     },
+     {
+      "name": "limit",
+      "type": "int",
+      "required": false,
+      "default": "80",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "msg_id",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/messages/{msg_id}/rollback",
+    "name": "rollback_message_patch",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "安全撤销一次局部修改。\n\n撤销不是“强制覆盖旧文件”：只有文件仍等于该 patch 的提交版本时才允许，\n后续任何人工或 AI 修改都会触发冲突并拒绝撤销。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "Optional",
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "msg_id",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/decisions",
+    "name": "add_decision",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "手工记一条决定。\n\n⛔ 为什么必须有这个入口：自动识别（chat_decisions.detect_rejection）\n   必然有漏 ——「别用遗传算法」能认，「GA 不合适」「那套方法风险大」未必。\n   没有手工兜底就又是\"看起来在记、实际漏了\"，比没有这功能更坑人。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "DecisionIn",
+    "body_fields": {
+     "topic": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "choice": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "rejected": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "evidence": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/decisions/{decision_id}",
+    "name": "revoke_decision",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "DELETE"
+    ],
+    "doc": "撤销一条决定（你改主意了，但还没有新的替代）。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "decision_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/forks",
+    "name": "forks",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "岔路口清单。默认只返回还没选的。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "pending_only",
+      "type": "bool",
+      "required": false,
+      "default": "True",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/forks/{fork_id}/choose",
+    "name": "choose_fork",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "选定一个岔路口。\n\n⛔ 选完【立刻写进决定清单】—— 这是整个岔路口功能的意义所在：\n   不写进去的话，你的选择只停留在界面上，下一步 skill 根本不知道。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "ForkChoiceIn",
+    "body_fields": {
+     "choice": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     },
+     "skip": {
+      "type": "<class 'bool'>",
+      "required": false,
+      "default": "False"
+     },
+     "action": {
+      "type": "typing.Optional[typing.Literal['select', 'accept_recommendation', 'defer', 'reopen']]",
+      "required": false,
+      "default": "None"
+     },
+     "expected_revision": {
+      "type": "typing.Optional[int]",
+      "required": false,
+      "default": "None"
+     },
+     "expected_choice_label": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "fork_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/stages/{skill}/accept",
+    "name": "accept_existing_stage",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "User-triggered local acceptance, no model, no paper rewrite, no next run.",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "StageAcceptIn",
+    "body_fields": {
+     "snapshot": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "skill",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/chat/state",
+    "name": "state",
+    "status_code": null,
+    "tags": [
+     "chat"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "工作区记忆摘要（决定 / 运行 / 过期）。前端侧栏用。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   }
+  ]
+ },
+ "routers.chat_internal": {
+  "module": "routers.chat_internal",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/internal/chat/propose",
+    "name": "propose",
+    "status_code": null,
+    "tags": [
+     "chat-internal"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "MCP 工具调用它，然后【立刻返回】—— 不等执行。\n\n⛔ MCP 是请求-响应协议，comp-code 要跑 32 分钟，客户端等不到就超时。\n   所以这里只建 proposed 记录 + 广播卡片，真正执行走后端自己的队列。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "ProposeIn",
+    "body_fields": {
+     "session_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "workflow_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "skill": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "instruction": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "raw_text": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "execution_scope": {
+      "type": "typing.Literal['full', 'focused']",
+      "required": false,
+      "default": "'full'"
+     },
+     "focus_target": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "operation_kind": {
+      "type": "typing.Optional[typing.Literal['run_step', 'focused_run', 'research', 'patch', 'validate']]",
+      "required": false,
+      "default": "None"
+     },
+     "target_paths": {
+      "type": "list[str]",
+      "required": false,
+      "default": "PydanticUndefined"
+     },
+     "target_sections": {
+      "type": "dict[str, list[str]]",
+      "required": false,
+      "default": "PydanticUndefined"
+     },
+     "input_paths": {
+      "type": "list[str]",
+      "required": false,
+      "default": "PydanticUndefined"
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": [
+     {
+      "name": "x_modex_chat_ticket",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ]
+   },
+   {
+    "router": "router",
+    "path": "/api/internal/chat/deps",
+    "name": "deps",
+    "status_code": null,
+    "tags": [
+     "chat-internal"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "主会话想在提议之前先确认能不能跑时用。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "DepsIn",
+    "body_fields": {
+     "session_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "workflow_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "skill": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "input_paths": {
+      "type": "list[str]",
+      "required": false,
+      "default": "PydanticUndefined"
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": [
+     {
+      "name": "x_modex_chat_ticket",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ]
+   },
+   {
+    "router": "router",
+    "path": "/api/internal/chat/capabilities",
+    "name": "capabilities",
+    "status_code": null,
+    "tags": [
+     "chat-internal"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "StateIn",
+    "body_fields": {
+     "session_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "workflow_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": [
+     {
+      "name": "x_modex_chat_ticket",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ]
+   },
+   {
+    "router": "router",
+    "path": "/api/internal/chat/state",
+    "name": "state",
+    "status_code": null,
+    "tags": [
+     "chat-internal"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": ".mh/STATE.json 的摘要。回答\"某数字哪来的/为什么这么定/踩过什么坑\"用。\n\n⛔ 只返回记忆内容，不含任何配置或密钥。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "StateIn",
+    "body_fields": {
+     "session_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "workflow_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": [
+     {
+      "name": "x_modex_chat_ticket",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ]
+   },
+   {
+    "router": "router",
+    "path": "/api/internal/chat/artifacts/list",
+    "name": "list_artifacts",
+    "status_code": null,
+    "tags": [
+     "chat-internal"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "StateIn",
+    "body_fields": {
+     "session_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "workflow_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": [
+     {
+      "name": "x_modex_chat_ticket",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ]
+   },
+   {
+    "router": "router",
+    "path": "/api/internal/chat/artifacts/read",
+    "name": "read_artifact",
+    "status_code": null,
+    "tags": [
+     "chat-internal"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "ArtifactIn",
+    "body_fields": {
+     "session_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "workflow_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "path": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": [
+     {
+      "name": "x_modex_chat_ticket",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ]
+   },
+   {
+    "router": "router",
+    "path": "/api/internal/chat/artifacts/image",
+    "name": "read_image",
+    "status_code": null,
+    "tags": [
+     "chat-internal"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "VisualArtifactIn",
+    "body_fields": {
+     "session_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "workflow_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "path": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "page": {
+      "type": "<class 'int'>",
+      "required": false,
+      "default": "1"
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": [
+     {
+      "name": "x_modex_chat_ticket",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ]
+   },
+   {
+    "router": "router",
+    "path": "/api/internal/chat/artifacts/material",
+    "name": "read_material",
+    "status_code": null,
+    "tags": [
+     "chat-internal"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "ArtifactIn",
+    "body_fields": {
+     "session_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "workflow_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "path": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": [
+     {
+      "name": "x_modex_chat_ticket",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ]
+   },
+   {
+    "router": "router",
+    "path": "/api/internal/chat/artifacts/search",
+    "name": "search_artifacts",
+    "status_code": null,
+    "tags": [
+     "chat-internal"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "SearchIn",
+    "body_fields": {
+     "session_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "workflow_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "query": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": [
+     {
+      "name": "x_modex_chat_ticket",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ]
+   }
+  ]
+ },
+ "routers.checkpoints": {
+  "module": "routers.checkpoints",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/checkpoints/plan",
+    "name": "save_plan",
+    "status_code": null,
+    "tags": [
+     "checkpoints"
+    ],
+    "methods": [
+     "PUT"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "PlanDraft",
+    "body_fields": {
+     "checkpoint_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "content": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/checkpoints/current",
+    "name": "get_current_checkpoint",
+    "status_code": null,
+    "tags": [
+     "checkpoints"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/checkpoints/resolve",
+    "name": "resolve",
+    "status_code": null,
+    "tags": [
+     "checkpoints"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "CheckpointResponse",
+    "body_fields": {
+     "action": {
+      "type": "typing.Literal['approve', 'select', 'feedback', 'stop']",
+      "required": true,
+      "default": null
+     },
+     "checkpoint_id": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     },
+     "data": {
+      "type": "typing.Dict",
+      "required": false,
+      "default": "{}"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   }
+  ]
+ },
+ "routers.cli_gateway": {
+  "module": "routers.cli_gateway",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/v1/messages",
+    "name": "proxy_messages",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/internal/model-tools/images/generations",
+    "name": "proxy_model_tool",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "No desktop control credential is granted to model tool processes.",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/internal/model-tools/chat/completions",
+    "name": "proxy_model_tool",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "No desktop control credential is granted to model tool processes.",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   }
+  ]
+ },
+ "routers.client_config": {
+  "module": "routers.client_config",
+  "error": "ateway_config.py\", line 29, in init client_gateway_config\r\n  File \"runtime_guard.py\", line 442, in runtime_guard.load_trusted_gateway_policy\r\nruntime_guard.RuntimeInspectionUnavailable: 网关验证组件完整性检查未通过；未执行该组件，请使用官方安装包修复\r\n"
+ },
+ "routers.docx_export": {
+  "module": "routers.docx_export",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/export-docx",
+    "name": "export_docx",
+    "status_code": null,
+    "tags": [
+     "docx-export"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "Use exactly the editor's source/profile/quality/publication pipeline.",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "DocxExportRequest",
+    "body_fields": {
+     "source_file": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     },
+     "style_profile": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     },
+     "engine": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "'auto'"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   }
+  ]
+ },
+ "routers.editor": {
+  "module": "routers.editor",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/mode",
+    "name": "get_mode",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "返回工作流的编辑器模式：latex 或 markdown。\n\n前端进入编辑器时调用此端点，根据返回的 mode 决定：\n- 默认打开哪个文件\n- 文件树显示哪些文件类型\n- \"编译\"按钮的行为（xelatex 或 docx-export）\n- AI 系统提示词（LATEX_SYSTEM_PROMPT 或 MARKDOWN_SYSTEM_PROMPT）",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/files",
+    "name": "list_files",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "show_hidden",
+      "type": "bool",
+      "required": false,
+      "default": "False",
+      "fields": null
+     },
+     {
+      "name": "view",
+      "type": "str",
+      "required": false,
+      "default": "'all'",
+      "fields": null
+     },
+     {
+      "name": "collection",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "offset",
+      "type": "int",
+      "required": false,
+      "default": "0",
+      "fields": null
+     },
+     {
+      "name": "limit",
+      "type": "int",
+      "required": false,
+      "default": "40",
+      "fields": null
+     },
+     {
+      "name": "query",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "snapshot",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "refresh",
+      "type": "bool",
+      "required": false,
+      "default": "False",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/file-preview-html",
+    "name": "file_preview_html",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "对二进制文件（如 .docx）返回 HTML 预览，iframe 可直接 src= 加载，避免 JSON 长度问题。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "path",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "expected_sha256",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/file",
+    "name": "read_file",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "path",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/file",
+    "name": "save_file",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "PUT"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "SaveRequest",
+    "body_fields": {
+     "path": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "content": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "expected_sha256": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/upload",
+    "name": "upload_file",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "Body_upload_file_api_editor__wf_id__upload_post",
+    "body_fields": {
+     "file": {
+      "type": "<class 'fastapi.datastructures.UploadFile'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [
+     {
+      "name": "path",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "expected_sha256",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/create-file",
+    "name": "create_file",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "CreateFileRequest",
+    "body_fields": {
+     "path": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "content": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/file",
+    "name": "delete_file",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "DELETE"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "path",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/download",
+    "name": "download_file",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "path",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/drawio-export",
+    "name": "drawio_export",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "DrawioExportRequest",
+    "body_fields": {
+     "path": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/image-check",
+    "name": "image_check",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "检查 GPT Image API 是否已配置",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/image-requests/{request_id}",
+    "name": "image_request_status",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "request_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/generate-image",
+    "name": "generate_image",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "使用已配置的生图模型；断线后可凭请求编号读取，不重复派发。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "GenerateImageRequest",
+    "body_fields": {
+     "prompt": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "lang": {
+      "type": "typing.Literal['zh', 'en']",
+      "required": false,
+      "default": "'zh'"
+     },
+     "aspect_ratio": {
+      "type": "typing.Literal['1:1', '16:9', '3:2', '4:3', '9:16', '2:3', '3:4']",
+      "required": false,
+      "default": "'3:2'"
+     },
+     "filename": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "model_id": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "request_id": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "PydanticUndefined"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/compile",
+    "name": "compile_paper",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "CompileRequest",
+    "body_fields": {
+     "source_md": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/pdf",
+    "name": "get_pdf",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/docx-status",
+    "name": "docx_status",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "Expose freshness separately from availability, including legacy exports.",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/docx",
+    "name": "get_docx",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "返回 Markdown 模式编译产出的 .docx 文件，浏览器会下载。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "allow_stale",
+      "type": "bool",
+      "required": false,
+      "default": "False",
+      "fields": null
+     },
+     {
+      "name": "expected_sha256",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/stats",
+    "name": "get_stats",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "返回字数统计和 PDF 页数信息（兼容 LaTeX/Markdown 双模式）。\n\n- 不传 path: 返回全文统计 + PDF/估算页数 + max_pages\n- 传 path: 返回该文件的字数统计",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "path",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-edit",
+    "name": "ai_edit_endpoint",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "AiEditRequest",
+    "body_fields": {
+     "message": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "current_file": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "current_content": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "compile_log": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "ref_file": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "role": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "'auto'"
+     },
+     "current_sha256": {
+      "type": "typing.Optional[str]",
+      "required": false,
+      "default": "None"
+     },
+     "account_model": {
+      "type": "dict | None",
+      "required": false,
+      "default": "None"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/model-options",
+    "name": "editor_model_options",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent",
+    "name": "ai_agent_endpoint",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "AiAgentRequest",
+    "body_fields": {
+     "message": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "current_file": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "compile_log": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "request_id": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "auto_export": {
+      "type": "<class 'bool'>",
+      "required": false,
+      "default": "True"
+     },
+     "auto_repair": {
+      "type": "<class 'bool'>",
+      "required": false,
+      "default": "True"
+     },
+     "allowed_paths": {
+      "type": "list[str] | None",
+      "required": false,
+      "default": "None"
+     },
+     "permission_mode": {
+      "type": "typing.Literal['project', 'intent']",
+      "required": false,
+      "default": "'project'"
+     },
+     "account_model": {
+      "type": "dict | None",
+      "required": false,
+      "default": "None"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent-events/{run_id}",
+    "name": "ai_agent_events",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "after",
+      "type": "int",
+      "required": false,
+      "default": "0",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "run_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent-apply",
+    "name": "ai_agent_apply",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "AiAgentApplyRequest",
+    "body_fields": {
+     "paths": {
+      "type": "list[str]",
+      "required": true,
+      "default": null
+     },
+     "run_id": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent-discard",
+    "name": "ai_agent_discard",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "run_id",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent-undo",
+    "name": "ai_agent_undo",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "version_id",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent-stop",
+    "name": "ai_agent_stop",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "run_id",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "request_id",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent-check",
+    "name": "ai_agent_check",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "log_offset",
+      "type": "int",
+      "required": false,
+      "default": "0",
+      "fields": null
+     },
+     {
+      "name": "run_id",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "request_id",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent-history",
+    "name": "ai_agent_history",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent-runs",
+    "name": "ai_agent_runs",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "limit",
+      "type": "int",
+      "required": false,
+      "default": "20",
+      "fields": null
+     },
+     {
+      "name": "before",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent-runs/{run_id}",
+    "name": "ai_agent_run_history",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "run_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/ai-agent-version/{version_id}",
+    "name": "ai_agent_version",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "version_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/run-script-stop",
+    "name": "stop_run_script",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "Stop only the Python tree spawned by this editor workflow.",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/run-script",
+    "name": "run_script",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "RunScriptRequest",
+    "body_fields": {
+     "path": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "cwd": {
+      "type": "typing.Literal['workspace', 'script']",
+      "required": false,
+      "default": "'workspace'"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/describe-image",
+    "name": "describe_image_endpoint",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "手动触发图片描述（用于已有图片或 PDF 转图片）",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "path",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "expected_sha256",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/chat-history",
+    "name": "get_chat_history",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/chat-history",
+    "name": "clear_chat_history",
+    "status_code": null,
+    "tags": [
+     "editor"
+    ],
+    "methods": [
+     "DELETE"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   }
+  ]
+ },
+ "routers.newapi_account": {
+  "module": "routers.newapi_account",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/native/realname",
+    "name": "realname",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/image-settings",
+    "name": "image_settings",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/image-settings",
+    "name": "save_image_settings",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "PUT"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/software",
+    "name": "software",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/software/consent",
+    "name": "software_consent",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/login/verify",
+    "name": "verify",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/register",
+    "name": "handle",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/register-code",
+    "name": "handle",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/reset-email",
+    "name": "handle",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/wallet",
+    "name": "wallet",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/checkout",
+    "name": "checkout",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/orders",
+    "name": "orders",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "page",
+      "type": "int",
+      "required": false,
+      "default": "1",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/orders/{number}/query",
+    "name": "query",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "number",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/history",
+    "name": "history",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "page",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "start",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "end",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "model",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/usage",
+    "name": "usage",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "start",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "end",
+      "type": "int",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "model",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     },
+     {
+      "name": "cursor",
+      "type": "str",
+      "required": false,
+      "default": "''",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/adjustments",
+    "name": "adjustments",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "page",
+      "type": "int",
+      "required": false,
+      "default": "1",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/native/requests",
+    "name": "requests",
+    "status_code": null,
+    "tags": [],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "page",
+      "type": "int",
+      "required": false,
+      "default": "1",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   }
+  ]
+ },
+ "routers.palette_preview": {
+  "module": "routers.palette_preview",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/palette-preview",
+    "name": "palette_preview",
+    "status_code": null,
+    "tags": [
+     "palette-preview"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "colors",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   }
+  ]
+ },
+ "routers.project_preview": {
+  "module": "routers.project_preview",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/serve",
+    "name": "start_serve",
+    "status_code": null,
+    "tags": [
+     "project-preview"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "启动本地预览服务。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "ServeRequest",
+    "body_fields": {
+     "mode": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "'both'"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/serve",
+    "name": "stop_serve",
+    "status_code": null,
+    "tags": [
+     "project-preview"
+    ],
+    "methods": [
+     "DELETE"
+    ],
+    "doc": "停止本地预览服务。kind 省略则停全部；否则停 frontend/backend。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "kind",
+      "type": "Optional",
+      "required": false,
+      "default": "None",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/editor/{wf_id}/serve/status",
+    "name": "serve_status",
+    "status_code": null,
+    "tags": [
+     "project-preview"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "查询本地预览服务状态。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   }
+  ]
+ },
+ "routers.settings": {
+  "module": "routers.settings",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/settings",
+    "name": "get_settings",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "返回所有配置（API Key 脱敏）",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/settings",
+    "name": "update_settings",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "PUT"
+    ],
+    "doc": "批量保存配置（跳过脱敏占位值与无权覆盖的 URL 字段）",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "SettingsUpdate",
+    "body_fields": {
+     "settings": {
+      "type": "typing.Dict[str, str]",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/settings/presets",
+    "name": "get_presets",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "列出预设与上下文（Key 脱敏；元数据仅查内存短缓存）。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/settings/presets",
+    "name": "create_preset",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "新建预设。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "PresetBody",
+    "body_fields": {
+     "name": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "model_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "api_key": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "context_mode": {
+      "type": "typing.Optional[typing.Literal['auto', '200k', '1m']]",
+      "required": false,
+      "default": "None"
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/settings/presets/{preset_id}",
+    "name": "update_preset",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "PUT"
+    ],
+    "doc": "更新预设和显式上下文选项；脱敏 Key/省略模式都保留原值。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "PresetBody",
+    "body_fields": {
+     "name": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "model_id": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "api_key": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "context_mode": {
+      "type": "typing.Optional[typing.Literal['auto', '200k', '1m']]",
+      "required": false,
+      "default": "None"
+     }
+    },
+    "query": [],
+    "path_params": [
+     {
+      "name": "preset_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/settings/presets/{preset_id}",
+    "name": "remove_preset",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "DELETE"
+    ],
+    "doc": "删除预设。已被角色/工作流引用的会在执行时回退全局，不影响运行。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "preset_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/settings/models/discover",
+    "name": "get_available_models",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "从固定官方中转获取当前 Key 真正可用的模型列表。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "ModelDiscoveryBody",
+    "body_fields": {
+     "api_key": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "preset_id": {
+      "type": "<class 'str'>",
+      "required": false,
+      "default": "''"
+     },
+     "agent": {
+      "type": "typing.Optional[typing.Literal['executor', 'reviewer', 'editor_ai', 'gpt_image']]",
+      "required": false,
+      "default": "None"
+     },
+     "force_refresh": {
+      "type": "<class 'bool'>",
+      "required": false,
+      "default": "False"
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/settings/data-dir",
+    "name": "get_data_dir",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/settings/data-dir",
+    "name": "set_data_dir",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "PUT"
+    ],
+    "doc": "Select an existing complete data library; never switch into an empty partial copy.",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "DataDirUpdate",
+    "body_fields": {
+     "data_dir": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/settings/test/{agent}",
+    "name": "test_agent_connection",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "测试 API 连通性",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "agent",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/settings/detect-claude",
+    "name": "detect_claude",
+    "status_code": null,
+    "tags": [
+     "settings"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "自动探测 Claude CLI 路径",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   }
+  ]
+ },
+ "routers.style_preview": {
+  "module": "routers.style_preview",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/style-preview",
+    "name": "style_preview",
+    "status_code": null,
+    "tags": [
+     "style-preview"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "frame",
+      "type": "str",
+      "required": false,
+      "default": "'open'",
+      "fields": null
+     },
+     {
+      "name": "grid",
+      "type": "str",
+      "required": false,
+      "default": "'none'",
+      "fields": null
+     },
+     {
+      "name": "lw",
+      "type": "str",
+      "required": false,
+      "default": "'mid'",
+      "fields": null
+     },
+     {
+      "name": "font",
+      "type": "str",
+      "required": false,
+      "default": "'medium'",
+      "fields": null
+     },
+     {
+      "name": "legend",
+      "type": "str",
+      "required": false,
+      "default": "'noframe'",
+      "fields": null
+     },
+     {
+      "name": "bg",
+      "type": "str",
+      "required": false,
+      "default": "'white'",
+      "fields": null
+     }
+    ],
+    "path_params": [],
+    "headers": []
+   }
+  ]
+ },
+ "routers.workflows": {
+  "module": "routers.workflows",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/api/workflows",
+    "name": "create",
+    "status_code": 201,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "WorkflowCreate",
+    "body_fields": {
+     "template": {
+      "type": "<enum 'TemplateType'>",
+      "required": true,
+      "default": null
+     },
+     "title": {
+      "type": "<class 'str'>",
+      "required": true,
+      "default": null
+     },
+     "params": {
+      "type": "typing.Dict",
+      "required": false,
+      "default": "PydanticUndefined"
+     },
+     "enable_checkpoints": {
+      "type": "<class 'bool'>",
+      "required": false,
+      "default": "False"
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows",
+    "name": "list_all",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": "list",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}",
+    "name": "get_one",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/logs",
+    "name": "get_logs",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "从数据库读取历史日志（WebSocket 断开后的兜底）",
+    "response_model": "list",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "limit",
+      "type": "int",
+      "required": false,
+      "default": "500",
+      "fields": null
+     },
+     {
+      "name": "compact",
+      "type": "bool",
+      "required": false,
+      "default": "False",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/start",
+    "name": "start",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/pause",
+    "name": "pause",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/resume",
+    "name": "resume",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "Optional",
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/checkpoint",
+    "name": "submit_checkpoint",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "dict",
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/restart",
+    "name": "restart",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "完全重置工作流，重新从头执行所有步骤。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/steps/{skill_name}/rerun",
+    "name": "rerun_step",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "重新执行工作流中的单个步骤。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "skill_name",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/mode",
+    "name": "set_workflow_mode",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "PATCH"
+    ],
+    "doc": "切换工作流的运行模式（写 params.chat_mode）。\n\nbody: { chat_mode: bool }\n\n⛔ 两种模式互斥，切换前必须确认对面没在跑：\n   · 切去协同 → 全自动不能在跑（否则两个进程抢同一工作区）\n   · 切回全自动 → 对话队列不能有任务在跑\n这两条后端硬拦，不能只靠前端弹确认框。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "dict",
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/steps/{skill_name}/account-model",
+    "name": "set_account_step_model",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "PATCH"
+    ],
+    "doc": "Save a server-listed account model without restarting or spending credits.",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "dict",
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "skill_name",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/steps/{skill_name}/model",
+    "name": "set_step_model",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "PATCH"
+    ],
+    "doc": "修改工作流某步骤用的模型预设（写 params.step_models），可选自动重跑本步。\n\nbody: { preset_id: str（空串=删除该步覆盖，回退全局）, rerun: bool }\n- 更新 params 后：pending/未跑的步骤下次跑自然生效；\n- rerun=true 或该步当前 running → 复用单步重跑（取消旧进程 + run_single_step），立即换模型生效。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "dict",
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "skill_name",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/steps/{skill_name}/effort",
+    "name": "set_step_effort",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "PATCH"
+    ],
+    "doc": "修改工作流某步骤的思考强度（写 params.step_efforts），可选自动重跑本步。\n\nbody: { effort: str（low/medium/high/xhigh/max；空串=删除该步覆盖，回退全局）, rerun: bool }\n\n与 set_step_model 完全同构（同一把启动锁、同样的清键逻辑、同样的 running 自动重跑）。\n⛔ 值必须过 effort.sanitize：CLI 对非法 --effort 直接报错退出，脏值落库\n   会让该步骤之后每次启动都失败。非法值一律当\"清除该步覆盖\"处理。",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": "dict",
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     },
+     {
+      "name": "skill_name",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}",
+    "name": "delete",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "DELETE"
+    ],
+    "doc": "",
+    "response_model": "dict",
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/{wf_id}/export",
+    "name": "export_one",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "GET"
+    ],
+    "doc": "导出单个工作流为 zip。\nmode=full（默认）：全量导出（DB 元数据 + 全部工作区文件），行为同旧版。\nmode=clean：参赛精简版（只 paper/code/figures/结果，剔工具产物与自举头 + README）。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [
+     {
+      "name": "mode",
+      "type": "str",
+      "required": false,
+      "default": "'full'",
+      "fields": null
+     }
+    ],
+    "path_params": [
+     {
+      "name": "wf_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/export-batch",
+    "name": "export_batch",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "批量导出多个工作流为单个 zip。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "_BatchExportRequest",
+    "body_fields": {
+     "ids": {
+      "type": "list[str]",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": []
+   },
+   {
+    "router": "router",
+    "path": "/api/workflows/import",
+    "name": "import_workflows",
+    "status_code": null,
+    "tags": [
+     "workflows"
+    ],
+    "methods": [
+     "POST"
+    ],
+    "doc": "从 zip 文件导入工作流。支持单个和批量导出的 zip。",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": "Body_import_workflows_api_workflows_import_post",
+    "body_fields": {
+     "file": {
+      "type": "<class 'fastapi.datastructures.UploadFile'>",
+      "required": true,
+      "default": null
+     }
+    },
+    "query": [],
+    "path_params": [],
+    "headers": []
+   }
+  ]
+ },
+ "routers.ws": {
+  "module": "routers.ws",
+  "router_objects": [
+   "router"
+  ],
+  "routes": [
+   {
+    "router": "router",
+    "path": "/ws/{workflow_id}",
+    "name": "ws_endpoint",
+    "status_code": null,
+    "tags": [],
+    "methods": [],
+    "doc": "",
+    "response_model": null,
+    "response_fields": null,
+    "body_model": null,
+    "body_fields": null,
+    "query": [],
+    "path_params": [
+     {
+      "name": "workflow_id",
+      "type": "str",
+      "required": false,
+      "default": "PydanticUndefined",
+      "fields": null
+     }
+    ],
+    "headers": []
+   }
+  ]
+ }
+}

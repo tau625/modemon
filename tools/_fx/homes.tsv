@@ -1,0 +1,49 @@
+App.tsx (disclaimer gate)	index-BeImsYqE
+useTheme.tsx	index-BeImsYqE
+accessMode.ts	useAccessMode-CYwsqbbI
+accountAccess.ts	useAccessMode-CYwsqbbI
+clientConfig.ts	index-BeImsYqE
+Account.tsx	Account-CFNFyFpM
+chatDraft.ts	ChatWorkbench-B0gSrHl3
+chatOutbox.ts	useWebSocket-DhwRyw4C
+editorUndo.ts	LatexEditor-I1nsgpA4
+editorImage.ts	LatexEditor-I1nsgpA4
+nativeCheckout.ts	Account-CFNFyFpM
+MarkdownViewer.tsx (react-markdown)	ArtifactLibrary-BPEftl07
+ArtifactLibrary.tsx	ArtifactLibrary-BPEftl07
+ChatWorkbench.tsx	ChatWorkbench-B0gSrHl3
+WorkflowDetail.tsx	WorkflowDetail-bN89YgNS
+CheckpointModal.tsx	WorkflowDetail-bN89YgNS
+LogStream.tsx	WorkflowDetail-bN89YgNS
+ScoreChart.tsx	WorkflowDetail-bN89YgNS
+LatexEditor.tsx	LatexEditor-I1nsgpA4
+NewWorkflow.tsx	Dashboard-2mxANXyi | NewWorkflow-Ld6TEJjT
+Settings.tsx	Settings-D4EW1h0L
+Dashboard.tsx	(NOT FOUND)
+ArtifactViewer.tsx	ArtifactViewer-DS3mPR9-
+PatchReviewDialog.tsx	ChatWorkbench-B0gSrHl3 | PatchReviewDialog-CE7kb4Sp
+AccountModelCatalog.tsx	AccountModelCatalog-DdzyHjab
+newApiWallet.tsx	newApiWallet-BJVw6ude
+AccountMessagesInference.tsx	AccountMessagesInference-C-hk-by7 | NewWorkflow-Ld6TEJjT | useAccessMode-CYwsqbbI | WorkflowDetail-bN89YgNS
+useWebSocket.ts	useWebSocket-DhwRyw4C
+workflowStore.ts	Dashboard-2mxANXyi | workflowStore-DtYgz0OF
+useAccessMode.tsx	useAccessMode-CYwsqbbI
+useCheckpointSession.ts	WorkflowDetail-bN89YgNS
+useWorkflowSteps.ts	NewWorkflow-Ld6TEJjT
+chatStore.ts	ChatWorkbench-B0gSrHl3 | useWebSocket-DhwRyw4C
+ProposalCard.tsx	ChatWorkbench-B0gSrHl3
+StepCard.tsx	WorkflowDetail-bN89YgNS | workflowStore-DtYgz0OF
+ArtifactCollection.tsx	ArtifactLibrary-BPEftl07 | ChatWorkbench-B0gSrHl3 | LatexEditor-I1nsgpA4 | WorkflowDetail-bN89YgNS
+useTailScroll.ts	index-BeImsYqE | LatexEditor-I1nsgpA4 | WorkflowDetail-bN89YgNS
+scrollFollow.ts	ChatWorkbench-B0gSrHl3 | index-BeImsYqE | useTailScroll-BttpCSjs | WorkflowDetail-bN89YgNS
+effort.ts	effort-BoZu8WGp
+modelDiscovery.ts	modelDiscovery-BRyakWgC
+accountModelSelection.ts	AccountModelCatalog-DdzyHjab | useAccessMode-CYwsqbbI | WorkflowDetail-bN89YgNS
+WorkflowPayerBadge.tsx	WorkflowPayerBadge-qKnYExmn
+LicenseGate.tsx	index-BeImsYqE
+recharts (vendor)	WorkflowDetail-bN89YgNS
+immer (vendor, recharts dep)	WorkflowDetail-bN89YgNS
+redux toolkit (vendor, recharts dep)	WorkflowDetail-bN89YgNS
+react-router (vendor)	jsx-runtime-DriIcras
+KaTeX (vendor)	ArtifactLibrary-BPEftl07
+react-markdown (vendor)	ArtifactLibrary-BPEftl07

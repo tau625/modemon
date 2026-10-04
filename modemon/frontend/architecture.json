@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "modemon 前端架构（无构建步骤）",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "main-path",
+        "label": "主路径：页面到落库",
+        "focus": ["browser", "shell", "pages", "store", "api", "sqlite"],
+        "note": "从壳到 REST 再到 SQLite：所有状态以 REST 为准。"
+      },
+      {
+        "id": "realtime",
+        "label": "实时通道",
+        "focus": ["store", "ws", "hooks", "api"],
+        "note": "WebSocket 只推通知；断线重连后仍以 run-events 全量回放。"
+      },
+      {
+        "id": "custom-events",
+        "label": "三类自定义事件",
+        "focus": ["hooks", "events", "pages"],
+        "note": "审计与渲染钩子的 verdict 单独高亮，不混进普通事件流。"
+      }
+    ]
+  },
+  "components": [
+    { "id": "browser", "type": "external", "label": "浏览器", "sublabel": "原生 ES module", "pos": [40, 300], "size": [140, 62] },
+    { "id": "shell", "type": "frontend", "label": "index.html + app.js", "sublabel": "hash 路由 · 顶栏徽标", "pos": [250, 300], "size": [148, 62] },
+    { "id": "events", "type": "frontend", "label": "lib/events.js", "sublabel": "事件分类与渲染", "pos": [460, 130], "size": [148, 62] },
+    { "id": "pages", "type": "frontend", "label": "pages/*.js ×5", "sublabel": "工作流 / 详情 / 成文 / 排版 / 运行时", "pos": [460, 300], "size": [148, 62] },
+    { "id": "store", "type": "frontend", "label": "lib/store.js", "sublabel": "全局状态 · WS 重连 · 事件去重", "pos": [670, 300], "size": [148, 62] },
+    { "id": "api", "type": "backend", "label": "FastAPI /api/*", "sublabel": "同源托管 · REST", "pos": [930, 300], "size": [148, 62] },
+    { "id": "ws", "type": "messagebus", "label": "WebSocket /ws/{id}", "sublabel": "只通知，状态走 REST", "pos": [930, 130], "size": [148, 62] },
+    { "id": "hooks", "type": "backend", "label": "步骤后钩子", "sublabel": "审计 · 图表渲染 · 引用审计", "tag": "三类自定义事件", "pos": [1180, 130], "size": [148, 62] },
+    { "id": "sqlite", "type": "database", "label": "SQLite modemon.db", "sublabel": "workflows · chat_run_events", "pos": [1180, 300], "size": [148, 62] },
+    { "id": "workspace", "type": "external", "label": "工作区目录", "sublabel": "论文与图表产物", "pos": [930, 470], "size": [148, 62] },
+    { "id": "runtimes", "type": "external", "label": "agent CLI / TeX", "sublabel": "运行时探测", "pos": [1180, 470], "size": [148, 62] }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "前端 frontend/（无构建步骤）", "wraps": ["shell", "pages", "store", "events"] },
+    { "kind": "region", "label": "后端 backend/（同源托管）", "wraps": ["api", "ws", "sqlite", "hooks"] }
+  ],
+  "connections": [
+    { "id": "load-shell", "from": "browser", "to": "shell", "label": "HTTP GET /", "variant": "emphasis", "fromSide": "right", "toSide": "left" },
+    { "id": "route-pages", "from": "shell", "to": "pages", "label": "hash 路由", "fromSide": "right", "toSide": "left" },
+    { "id": "pages-events", "from": "pages", "to": "events", "label": "渲染事件行", "fromSide": "top", "toSide": "bottom" },
+    { "id": "pages-store", "from": "pages", "to": "store", "label": "动作 / 订阅", "fromSide": "right", "toSide": "left" },
+    { "id": "store-rest", "from": "store", "to": "api", "label": "fetch /api/*", "variant": "emphasis", "fromSide": "right", "toSide": "left" },
+    { "id": "store-ws", "from": "store", "to": "ws", "label": "仅通知", "variant": "dashed", "fromSide": "top", "toSide": "left" },
+    { "id": "api-db", "from": "api", "to": "sqlite", "label": "读写落库", "fromSide": "right", "toSide": "left" },
+    { "id": "api-hooks", "from": "api", "to": "hooks", "label": "步骤成功后派生", "fromSide": "top", "toSide": "bottom" },
+    { "id": "hooks-ws", "from": "hooks", "to": "ws", "label": "广播自定义事件", "fromSide": "left", "toSide": "right" },
+    { "id": "api-workspace", "from": "api", "to": "workspace", "label": "论文产物", "variant": "dashed", "fromSide": "bottom", "toSide": "top", "labelAt": [1004, 416] },
+    { "id": "api-runtimes", "from": "api", "to": "runtimes", "label": "探测可用性", "fromSide": "right", "toSide": "top", "labelAt": [1166, 404] }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "前端形态",
+      "items": [
+        "一个壳 + 5 个页面模块，hash 路由切页不重载文档",
+        "原生 HTML / CSS / ES module，刻意不引入打包工具",
+        "后端 /static 同源托管：放进 frontend/ 即可访问"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "状态与实时",
+      "items": [
+        "WebSocket 只做通知，状态一律以 REST 为准",
+        "指数退避重连，重连后走 /run-events 全量回放",
+        "事件按 (run_id, sequence) 去重，不重复显示"
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "事件与审计",
+      "items": [
+        "result_audit / figure_render / citation_audit 单独高亮成卡片",
+        "verdict 决定语义色；ok=false 压过 verdict",
+        "审计失败降级为 skipped，绝不影响步骤状态"
+      ]
+    }
+  ]
+}
